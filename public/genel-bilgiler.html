@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+	Genel Bilgiler
+</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="page-dashboard">
+
+  
+
+<aside class="sidebar">
+
+  <button class="sidebar__toggle">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </button>
+
+  <div class="sidebar__profile">
+    <div class="sidebar__avatar">
+      <img src="assets/images/calisan-avatar.jpg" alt="">
+    </div>
+    <h3 class="sidebar__fullname">
+      AYŞE EKİN <br> OSMANOĞULLARI
+    </h3>
+  </div>
+  <nav class="sidebar__nav">
+    <ul class="navigation">
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          KİŞİSEL BİLGİLER
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuOzgecmis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ÖZGEÇMİŞ GÖRÜNTÜLEME
+        </a>
+
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuOzgecmis">
+          <a class="dropdown-item" href="#">Ücretli</a>
+          <a class="dropdown-item" href="#">Ücretsiz</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIzin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İZİN GİRİŞİ
+        </a>
+
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIzin">
+          <a class="dropdown-item" href="#">Onay durumu</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          BORDRO SORGULAMA
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PERFORMANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuPerformans">
+          <div class="dropdown dropdown-child">
+            <a href="" class="navigation__link dropdown-toggle dropdown-toggle" id="dropdownMenuBireyselPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bireysel Performans
+            </a>
+            <div class="dropdown-menu dropdown-menu-child dropdown-menu--right" aria-labelledby="dropdownMenuBireyselPerformans">
+              <a class="dropdown-item" href="#">Güncel dönem işlemleri</a>
+              <a class="dropdown-item" href="#">Geçmiş dönem görüntüleme</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuFazlaMesai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          FAZLA MESAİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuFazlaMesai">
+          <a class="dropdown-item" href="#">Fazla Mesai girişi</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuDigerIslemler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DİĞER İŞLEMLER
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuDigerIslemler">
+          <a class="dropdown-item" href="#">Avans talep</a>
+          <a class="dropdown-item" href="#">Anket</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          ÇIKIŞ YAP
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <img src="assets/images/logo.png" class="logo__img" alt="">
+  </div>
+</aside>
+
+<div class="app container">
+	
+	<div class="search">
+  <div class="form-control">
+    <i class="fa fa-search"></i>
+    <input type="text" class="form-control" placeholder="Aramak istediğiniz kelimeyi yazınız...">
+  </div>
+  <button class="button button--aqua">Arama Yap</button>
+</div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-9">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Kişisel Bilgiler</h2>
+          <a href="#" class="button button--cyan">Şifremi Değiştir</a>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Sicil No</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="90998" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Şirkete Giriş Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="21.10.1997" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ad</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Ayşe Ekin" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Gruba Giriş Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="21.10.1997" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Soyad</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Osmanoğulları" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Kıdem Referans Taribi</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="21.10.1997" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Önceki Soyadı</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yıllık İzin Referans Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="21.10.1997" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Personel Türü</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Beyaz Yakalı" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Emeklilik Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Personel Grubu</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Kadrolu" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="sidebar sidebar--card text-align-center col-md-3">
+        <picture class="sidebar__avatar sidebar__avatar--lg">
+          <img src="assets/images/calisan-avatar-lg.jpg" alt="">
+        </picture>
+      </aside>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="card__main card__main--tabs">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#genel-bilgiler" role="tab">Genel Bilgiler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#nufus" role="tab">Nüfus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#adres" role="tab">Adres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#telefon" role="tab">Telefon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#yabanci-dil" role="tab">Yabancı Dil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#ogrenim" role="tab">Öğrenim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#grup-deneyimi" role="tab">Grup Deneyimi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#grup-disi-deneyimi" role="tab">Grup Dışı Deneyim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#acil-durum" role="tab">Acil Durum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#agi-bildirimi" role="tab">AGİ Bildirimi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#beceri" role="tab">Beceri</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#ceza" role="tab">Ceza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#odul" role="tab">Ödül</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#performans" role="tab">Performans</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="genel-bilgiler" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="list list--content form-layout">
+                <li class="list__item">
+                  <label class="list__item-title">Şirket</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Doğuş Otomotiv Servis ve Tic. A.Ş." disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">E-Posta (Kişisel)</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="aekin@gmail.com">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">İşyeri</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="DOS Merkez Şekerpınar" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">E-Posta (İş)</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="ekin@dogus.com.tr" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Bölümü</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="VW Binek &amp; Ticaret SSH" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Ehliyet No</label>
+                  <div class="list__item-form-group">
+                    <input type="number" class="form-control" value="195210">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Görevi</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="SSH Müdürü" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Ehliyet Sınıfı</label>
+                  <div class="list__item-form-group">
+                    <div class="selectbox">
+                      <select name="ehliyet-sinifi" id="ehliyet-sinifi">
+                        <option value="0">Seciniz</option>
+                        <option value="B">B Sınıfı</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">İş Ünvanı</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Müdür" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Sözleşme Durmu</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Süresiz" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">İş Ailesi</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Kapsam Dışı" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Kademe</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="-" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Öğrenim Durumu</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Lisan" disabled="disabled">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
+                <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
+                <a href="" class="button button--aqua">Kaydet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="nufus" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="list list--content form-layout">
+                <li class="list__item">
+                  <label class="list__item-title">T.C. Kimlik No</label>
+                  <div class="list__item-form-group">
+                    <input type="number" class="form-control" value="99999999999" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">İl</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="İzmir">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Seri No</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="A01">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">İlçe</label>
+                  <div class="list__item-form-group">
+                    <input type="text" class="form-control" value="Alaçatı">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Cüzdan No</label>
+                  <div class="list__item-form-group">
+                    <input type="number" class="form-control" value="00000">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Mahalle/Köy</label>
+                  <div class="list__item-form-group">
+                    <input type="text" class="form-control" value="Güven">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Doğum Tarihi</label>
+                  <div class="list__item-form-group">
+                    <input type="date" class="form-control" value="25.10.1967" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Cilt No</label>
+                  <div class="list__item-form-group">
+                    <input type="number" class="form-control" value="99">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Doğum Yeri</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Almanya">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Sayfa / Aile Sıra No</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="98">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Baba Adı</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Kemalettin">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Sıra No</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="97">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Ana Adı</label>
+                  <div class="list__item-form-group">
+                    <input type="email" class="form-control" value="Keriman" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Veriliş Tarihi</label>
+                  <div class="list__item-form-group">
+                    <input type="date" class="form-control" value="16.02.1984">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Medeni Durumu</label>
+                  <div class="list__item-form-group">
+                    <input type="text" class="form-control" value="Bekar" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Veriliş Nedeni</label>
+                  <div class="list__item-form-group">
+                    <input type="text" class="form-control" value="Değiştirme">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Uyruğu</label>
+                  <div class="list__item-form-group">
+                    <input type="text" class="form-control" value="T.C" disabled="disabled">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Verildiği Nüf Dai.</label>
+                  <div class="list__item-form-group">
+                    <input type="text" class="form-control" value="İzmir">
+                  </div>
+                </li>
+                <li class="list__item">
+                  <label class="list__item-title">Kayıt No</label>
+                  <div class="list__item-form-group">
+                    <input type="number" class="form-control" value="99999" disabled="disabled">
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
+                <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
+                <a href="" class="button button--aqua">Kaydet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="adres" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card card--gray">
+                <h3 class="card__title">Ev</h3>
+                <p>Şekerpınar Mahallesi, Anadolu Caddesi No:22/45, Pk: 41420</p>
+                <p class="small-text">Çayırova / Kocaeli</p>
+                <div class="button-group">
+                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="" class="button button--size-xs button--red">Sil</a>
+                </div>
+              </div>
+              <div class="card card--gray">
+                <h3 class="card__title">Baba Evi</h3>
+                <p>Feneryolu Mahallesi, Bağdat Caddesi No: 147/3 Pk: 34724</p>
+                <p class="small-text">Kadıköy / İstanbul</p>
+                <div class="button-group">
+                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="" class="button button--size-xs button--red">Sil</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Onayda bekleyen alanlar turuncu ile gösterilmiştir.</p>
+                <p>Değişiklik talebinizin onaylanabilmesi için ikametgah bilgilerinizin İnsan Kaynakları Personel Özlük İşlerine teslim edilmesi gerekmektedir.</p>
+                <a href="" class="button button--aqua">Yeni Adres Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="telefon" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card card--gray">
+                <h3 class="card__title">Cep Telefonu</h3>
+                <p>90 532 01 02</p>
+                <div class="button-group">
+                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="" class="button button--size-xs button--red">Sil</a>
+                </div>
+              </div>
+              <div class="card card--gray">
+                <h3 class="card__title">Ev Telefonu</h3>
+                <p>90 212 341 00 99</p>
+                <div class="button-group">
+                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="" class="button button--size-xs button--red">Sil</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <a href="" class="button button--aqua">Yeni Telefon Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="yabanci-dil" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Yabancı <br> Dil</th>
+                      <th>Yabancı Dil <br> Düzeyi</th>
+                      <th>Geçerlilik <br> Tarihi</th>
+                      <th>Öğrenim <br> Yeri</th>
+                      <th>Sınav <br> Notu</th>
+                      <th>Yazılı Test <br> Puanı</th>
+                      <th>Yazılı Teste <br> Göre Düzeyi</th>
+                      <th>Konuşma <br> Düzeyi</th>
+                      <th>Kümülatif <br> Düzeyi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>İngilizce</td>
+                      <td>Çok İyi</td>
+                      <td>26.05.2018</td>
+                      <td>Kurs</td>
+                      <td>100</td>
+                      <td>100</td>
+                      <td>Mid Upper <br> Intermadiate</td>
+                      <td>Mid Upper <br> Intermadiate</td>
+                      <td>Mid Upper <br> Intermadiate</td>
+                    </tr>
+                    <tr>
+                      <td>Almanca</td>
+                      <td>İyi</td>
+                      <td>26.05.2018</td>
+                      <td>Kurs</td>
+                      <td>85</td>
+                      <td>85</td>
+                      <td>Intermadiate</td>
+                      <td>Intermadiate</td>
+                      <td>Intermadiate</td>
+                    </tr>
+                    <tr>
+                      <td>Fransızca</td>
+                      <td>İyi</td>
+                      <td>26.05.2018</td>
+                      <td>Kurs</td>
+                      <td>80</td>
+                      <td>80</td>
+                      <td>Intermadiate</td>
+                      <td>Intermadiate</td>
+                      <td>Intermadiate</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Onayda bekleyen alanlar turuncu ile gösterilmiştir.</p>
+                <p>Değişiklik talebinizin onaylanabilmesi için değişikliğe neden olan resmi belgenin İnsan Kaynakları Personel Özlük işlemleri’ne teslim edeilmesi gerekmektedir.</p>
+                <a href="" class="button button--aqua">Yeni Yabancı Dil Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="ogrenim" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Öğrenim <br> Durumu</th>
+                      <th width="90">Başlangıç - <br> Bitiş Tarihi</th>
+                      <th>Okul <br> Adı</th>
+                      <th width="100">Fakülte <br> Adı</th>
+                      <th width="100">Bölüm <br> Adı</th>
+                      <th width="100">Okul <br> Türü</th>
+                      <th width="72">Süre</th>
+                      <th>Mezuniyet <br> Durumu</th>
+                      <th>Mezuniyet <br> Derecesi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lisans</td>
+                      <td>1988 - 1993</td>
+                      <td>Kahramanmaraş Sütçü İmam Üniversitesi</td>
+                      <td>Bilgi İktisadi ve İdari Bilimler Fakültesi</td>
+                      <td>Kamu Yönetimi</td>
+                      <td>&nbsp;</td>
+                      <td>4 Yıl</td>
+                      <td>Mezun</td>
+                      <td>3.80</td>
+                    </tr>
+                    <tr>
+                      <td>Ön Lisans</td>
+                      <td>1985 - 1987</td>
+                      <td>Çanakkale Onsekiz Mart Üniversitesi</td>
+                      <td>Mühendislik ve Mimarlık Fakültesi</td>
+                      <td>Elektrik-Elektronik Mühendisliği</td>
+                      <td>&nbsp;</td>
+                      <td>2 Yıl</td>
+                      <td>Mezun</td>
+                      <td>3.10</td>
+                    </tr>
+                    <tr>
+                      <td>Lisans</td>
+                      <td>1981 - 1985</td>
+                      <td>Beşiktaş Kabataş Erkek Lisesi</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>Eşit Ağırlık</td>
+                      <td>4 Yıl</td>
+                      <td>Mezun</td>
+                      <td>4.05</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Onayda bekleyen alanlar turuncu ile gösterilmiştir.</p>
+                <p>Değişiklik talebinizin onaylanabilmesi için değişikliğe neden olan resmi belgenin İnsan Kaynakları Personel Özlük işlemleri’ne teslim edeilmesi gerekmektedir.</p>
+                <a href="" class="button button--aqua">Yeni Yabancı Dil Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="grup-deneyimi" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Kurum</th>
+                      <th width="90">Hareket <br> Türü</th>
+                      <th>Başlangıç <br> Tarihi</th>
+                      <th>Birim</th>
+                      <th>Görev</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dos Merkez Şekerpınar</td>
+                      <td>Görev Değişikliği</td>
+                      <td>13.10.2014</td>
+                      <td>VW Binek &amp; Ticari Araç - VW Binek &amp; Ticari SSH</td>
+                      <td>Müdür</td>
+                    </tr>
+                    <tr>
+                      <td>Dos Maslak</td>
+                      <td>Kademe Düzeltmesi</td>
+                      <td>01.06.2008</td>
+                      <td>Audi - SSH</td>
+                      <td>Satış Sonrası Hizmetler Müdürü</td>
+                    </tr>
+                    <tr>
+                      <td>Doğuş Otomotiv Servis</td>
+                      <td>Otomotiv Grubu</td>
+                      <td>01.01.1999</td>
+                      <td>SSH Genel Müdür Yardımcılığı</td>
+                      <td>Servis Bölge Şefi</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Grup içi deneyim bilgileri resmi kayıtları etkilediği için bu alanda herhangi bir değişiklik yapmamız mümkün değildir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="grup-disi-deneyimi" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Sektör</th>
+                      <th width="90">Başlangıç <br> Tarihi</th>
+                      <th>Bitiş <br> Tarihi</th>
+                      <th width="102">Kurum</th>
+                      <th width="98">Birim</th>
+                      <th width="60">Görev</th>
+                      <th width="60">Ünvan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Otomotiv</td>
+                      <td>13.10.2014</td>
+                      <td>13.10.2014</td>
+                      <td>Aktiv Otomotiv</td>
+                      <td>Satış Sonrası Hizmetler</td>
+                      <td>Servis Müdürü</td>
+                      <td>Servis Müdürü</td>
+                    </tr>
+                    <tr>
+                      <td>Otomotiv</td>
+                      <td>1.06.2008</td>
+                      <td>1.06.2008</td>
+                      <td>Mengenler Ticaret Türk A.Ş.</td>
+                      <td>Servis</td>
+                      <td>Servis Müdürü</td>
+                      <td>Servis Müdürü</td>
+                    </tr>
+                    <tr>
+                      <td>Otomotiv</td>
+                      <td>1.06.2008</td>
+                      <td>1.06.2008</td>
+                      <td>Mengenler Ticaret Türk A.Ş.</td>
+                      <td>Servis</td>
+                      <td>Servis Müdürü</td>
+                      <td>Servis Müdürü</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Grup dışı deneyim bilgileri resmi kayıtları etkilediği için bu alanda herhangi bir değişiklik yapmamız mümkün değildir.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="acil-durum" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Yakınlık Derecesi</th>
+                      <th>Adı Soyadı</th>
+                      <th>İrtibat Telefonu</th>
+                      <th>İrtibat Adresi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Eşi</td>
+                      <td>Kemalettin Osmanoğulları</td>
+                      <td>0532 999 88 77</td>
+                      <td>Barbaros Mahallesi Halk Caddesi Kardelen Sokak No:2 Incıty C Blok Ataşehir / İstanbul</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <a href="" class="button button--aqua">Yeni Kayıt Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="agi-bildirimi" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Yakınlık Derecesi</th>
+                      <th>TC Kimlik No</th>
+                      <th>Adı Soyadı</th>
+                      <th>Cinsiyeti</th>
+                      <th>Doğum Tarihi</th>
+                      <th>Doğum Yeri</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Eşi</td>
+                      <td>99999999999</td>
+                      <td>Kemalettin Osmanoğulları</td>
+                      <td>Erkek</td>
+                      <td>09.09.1974</td>
+                      <td>Kahramanmaraş</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Asgari Geçim İndirimi (AGİ) resmi bildirimlerde kullanılmaktadır. Bu nedenle herhangi bir değişiklik yaptığınız taktirde “AGİ Formu Görüntüle” butonundan yeni formunuzu basarak İnsan Kaynakları Bölümüne İletmeniz gerekmektedir.</p>
+                <h3 class="panel__title">Asgari Geçim İndirimi formunu nasıl doldurmalıyım?</h3>
+                <a href="" class="button button--aqua">AGİ Formu Görüntüle</a>
+                <a href="" class="button button--aqua">AGİ Formu Bilgilendirme</a>
+                <a href="" class="button button--aqua">Yeni Kayıt Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="beceri" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Beceri Tipi</th>
+                      <th>Beceri</th>
+                      <th>Açıklama</th>
+                      <th>Başlangıç Tarihi</th>
+                      <th>Bitiş Tarihi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lorem Ipsum</td>
+                      <td>What is Lorem Ipsum</td>
+                      <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                      <td>09.09.2019</td>
+                      <td>09.09.2019</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+                <p>Onyada bekleyen alanlar turuncu ile gösterilmiştir. Değişiklik talebinizin onaylanabilmesi için değişikliğe neden olan resmi belgenin İnsan Kaynakları Personel Özlük İşleri’ne teslim edilmesi gerekmektedir.</p>
+                <a href="" class="button button--aqua">Yeni Beceri Ekle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="ceza" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Ceza Türü</th>
+                      <th>Konu</th>
+                      <th>Veriliş Tarihi</th>
+                      <th>Bitiş Tarihi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lorem Ipsum</td>
+                      <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                      <td>09.09.2019</td>
+                      <td>09.09.2019</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="odul" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Ödül Türü</th>
+                      <th>Konu</th>
+                      <th>Veriliş Tarihi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Lorem Ipsum</td>
+                      <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</td>
+                      <td>09.09.2019</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="performans" role="tabpanel">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Dönem</th>
+                      <th>Sonuç</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel--warning"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+  
+  <script src="assets/js/libs.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.social-share {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+	.social-share__item {
+		height: 25px;
+		display: flex;
+		justify-content: center;
+		margin-right: 5px;
+	}
+
+	.social-share__link {
+		display: block;
+	}
+}

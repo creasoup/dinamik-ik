@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Haritasi</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+</head>
+
+<body>
+  <h1>Site Haritasi</h1>
+  <ul>
+    <li>
+      <a href="login.html">Login</a>
+    </li>
+    <li>
+      <a href="calisan-dashboard.html">Calisan Ana sayfa</a>
+    </li>
+    <li>
+      <a href="yonetici-dashboard.html">Yonetici Ana sayfa</a>
+    </li>
+    <li>
+      <a href="genel-bilgiler.html">Genel Bilgiler</a>
+    </li>
+  </ul>
+</body>
+</html>

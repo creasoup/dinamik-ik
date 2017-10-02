@@ -1,0 +1,7 @@
+<div class="search">
+  <div class="form-control">
+    <i class="fa fa-search"></i>
+    <input type="text" class="form-control" placeholder="Aramak istediğiniz kelimeyi yazınız...">
+  </div>
+  <button class="button button--aqua">Arama Yap</button>
+</div>

@@ -1,0 +1,50 @@
+.form-control,
+.selectbox {
+  background: $white;
+  border: 2px solid #DFE6EE;
+  border-radius: $border-radius-base;
+  height: 36px;
+
+  &:hover {
+    border-color: #B9C3CD;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #B9C3CD;
+  }
+}
+
+textarea.form-control {
+  height: 170px;
+  resize: none;
+}
+
+.label-control {
+  @include light-regular;
+  font-size: 13px;
+  color: #4A4A4A;
+}
+
+.form--horizontal {
+  .label-control {
+    display: inline-block;
+    width: 10%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+    line-height: 36px;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+  .form-control {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+  }
+  .button {
+    position: relative;
+    left: 10%;
+    margin-left: 20px;
+  }
+}

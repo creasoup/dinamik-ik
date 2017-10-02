@@ -1,0 +1,89 @@
+<aside class="sidebar">
+
+  <button class="sidebar__toggle">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </button>
+
+  <div class="sidebar__profile">
+    <div class="sidebar__avatar">
+      <img src="assets/images/calisan-avatar.jpg" alt="">
+    </div>
+    <h3 class="sidebar__fullname">
+      AYŞE EKİN <br> OSMANOĞULLARI
+    </h3>
+  </div>
+  <nav class="sidebar__nav">
+    <ul class="navigation">
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          KİŞİSEL BİLGİLER
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuOzgecmis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ÖZGEÇMİŞ GÖRÜNTÜLEME
+        </a>
+
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuOzgecmis">
+          <a class="dropdown-item" href="#">Ücretli</a>
+          <a class="dropdown-item" href="#">Ücretsiz</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIzin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İZİN GİRİŞİ
+        </a>
+
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIzin">
+          <a class="dropdown-item" href="#">Onay durumu</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          BORDRO SORGULAMA
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PERFORMANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuPerformans">
+          <div class="dropdown dropdown-child">
+            <a href="" class="navigation__link dropdown-toggle dropdown-toggle" id="dropdownMenuBireyselPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bireysel Performans
+            </a>
+            <div class="dropdown-menu dropdown-menu-child dropdown-menu--right" aria-labelledby="dropdownMenuBireyselPerformans">
+              <a class="dropdown-item" href="#">Güncel dönem işlemleri</a>
+              <a class="dropdown-item" href="#">Geçmiş dönem görüntüleme</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuFazlaMesai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          FAZLA MESAİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuFazlaMesai">
+          <a class="dropdown-item" href="#">Fazla Mesai girişi</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuDigerIslemler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DİĞER İŞLEMLER
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuDigerIslemler">
+          <a class="dropdown-item" href="#">Avans talep</a>
+          <a class="dropdown-item" href="#">Anket</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          ÇIKIŞ YAP
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <img src="assets/images/logo.png" class="logo__img" alt="">
+  </div>
+</aside>

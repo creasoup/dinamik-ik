@@ -1,0 +1,36 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Dashboard Login - Dinamik
+{% endblock %}
+
+{% block bodyClass %}page-login{% endblock %}
+
+{% block content %}
+
+<div class="page-login__container">
+
+  <div class="panel">
+    <img src="assets/images/panel-login.png" alt="">
+
+    <div class="panel__login">
+      <div class="form">
+        <div class="form-group">
+          <label for="username" class="label-control">Kullanıcı Adı</label>
+          <input type="text" id="username" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password" class="label-control">Şifre</label>
+          <input type="password" id="passwordusername" class="form-control">
+        </div>
+        <div class="panel__login__submit form-group m-top-10">
+          <a href="#" class="button button--link button--link-light-gray">Şifremi Unuttum!</a>
+          <button class="button button--aqua">Giriş Yap</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

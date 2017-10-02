@@ -1,0 +1,165 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Calisan Dashboard - Dinamik
+{% endblock %}
+
+{% block bodyClass %}page-dashboard{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+	<div class="row">
+
+		<div class="col-12 col-md-7">
+			
+			<div class="card card--slider">
+				<div id="cardSlider" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<img class="d-block img-fluid" src="assets/images/slide_image_3-1.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="assets/images/slide_image_3-1.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block img-fluid" src="assets/images/slide_image_3-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="carousel-control">
+						<a class="carousel-control-prev" href="#cardSlider" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</a>
+						<a class="carousel-control-next" href="#cardSlider" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="row">
+						<div class="col-12 col-widget col--size-sm">
+							<div class="card card--widget card--widget-cyan">
+								<header class="card__header">
+									<h2 class="card__title">Ücret Artışı</h2>
+								</header>
+								<div class="card__main">
+									<p>
+										<strong class="card__price card__price--xl display-block"><small>%</small>2,5</strong>
+										ücret artışı yapılmıştır.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-widget col--size-md">
+							<div class="card card--widget card--widget-dark_blue">
+								<header class="card__header">
+									<h2 class="card__title">CV</h2>
+								</header>
+								<div class="card__main">
+									<ul class="list--bar">
+										<li class="list--bar__item">
+											<a href="#" class="button button--darkBlue" style="width: 100%;">Ücret Bigili CV</a>
+										</li>
+										<li class="list--bar__item">
+											<a href="#" class="button button--darkBlue" style="width: 80%;">Ücret Bilgisiz CV</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 col--size-xl">
+					<div class="row">
+						<div class="col-12 col-widget col--size-sm">
+							<div class="card card--widget card--widget-yellow">
+								<header class="card__header">
+									<h2 class="card__title">İzin İşlemleri</h2>
+								</header>
+								<div class="card__main">
+									<p>
+										<strong class="card__price">23 Gün</strong>
+										izniniz kaldı.
+									</p>
+									<p>
+										Kullanılan izin günü: <strong class="card__price card__price--min">5</strong>
+									</p>
+									<a href="" class="button button--yellow">İzin Talep Formu</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-wiget col--size-md">
+							<div class="card card--widget card--widget-dark_orange">
+								<header class="card__header">
+									<h2 class="card__title">Bordro</h2>
+								</header>
+								<div class="card__main">
+									<ul class="list--bar">
+										<li class="list--bar__item">
+											<a href="" class="button button--darkOrange">Bordro Sorgulama</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-12 col-md-5 col--size-xl">
+			<div class="card card--widget col-widget card--widget-aqua no-height">
+				<header class="card__header">
+					<h2 class="card__title">Eğitim İşlemleri</h2>
+				</header>
+				<div class="card__main">
+					<a href="">
+						<img src="assets/images/gelisim-okulu.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="card card--widget col-widget card--widget-aqua no-height">
+				<header class="card__header">
+					<h2 class="card__title">Performans Sistemi</h2>
+				</header>
+				<div class="card__main">
+					<a href="">
+						<img src="assets/images/d-insan.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="card card--widget col-widget card--widget-green no-height">
+				<header class="card__header">
+					<h2 class="card__title">Bize Sorun</h2>
+				</header>
+				<div class="card__main card__main--form">
+					<div class="form form--horizontal">
+						<div class="form-group">
+							<label for="konu" class="label-control">Konu</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="mesaj" class="label-control">Mesaj</label>
+							<textarea name="mesaj" id="mesaj" cols="30" rows="10" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="submit" class="button button--green">Gönder</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+{% endblock %}

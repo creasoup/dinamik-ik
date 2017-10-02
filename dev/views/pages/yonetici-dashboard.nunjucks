@@ -1,0 +1,245 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Yonetici Dashboard - Dinamik
+{% endblock %}
+
+{% block bodyClass %}page-dashboard{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-yonetici.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+	<div class="row">
+
+		<div class="col-12 col-md-7">
+			
+			<div class="card card--slider">
+				<div id="cardSlider" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<img src="assets/images/slide_image_3-1.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="assets/images/slide_image_3-1.jpg" alt="">
+						</div>
+					</div>
+					<div class="carousel-control">
+						<a class="carousel-control-prev" href="#cardSlider" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</a>
+						<a class="carousel-control-next" href="#cardSlider" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="row">
+						<div class="col-12">
+							<div class="card card--widget card--widget-cyan">
+								<header class="card__header">
+									<h2 class="card__title">Ücret Artışı</h2>
+								</header>
+								<div class="card__main">
+									<p>
+										<strong class="card__price card__price--xl display-block"><small>%</small>2,5</strong>
+										ücret artışı yapılmıştır.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="card card--widget card--widget-dark_blue p-bottom-0">
+								<header class="card__header">
+									<h2 class="card__title">İşe Alım</h2>
+								</header>
+								<div class="card__main">
+									<ul class="list--bar">
+										<li class="list--bar__item">
+											<a href="#" class="button button--darkBlue" style="width: 100%;">Personel Talebi</a>
+										</li>
+										<li class="list--bar__item">
+											<a href="#" class="button button--darkBlue" style="width: 80%;">Stajyer Talebi</a>
+										</li>
+										<li class="list--bar__item">
+											<a href="#" class="button button--darkBlue" style="width: 60%;">İş Teklif Formu</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="row">
+						<div class="col-12">
+							<div class="card card--widget card--widget-purple p-bottom-0">
+								<header class="card__header">
+									<h2 class="card__title">Görev Değişikliği</h2>
+								</header>
+								<div class="card__main">
+									<ul class="list--bar">
+										<li class="list--bar__item">
+											<a href="#" class="button button--purple" style="width: 100%;">Görev Değişikliği Başlat</a>
+										</li>
+										<li class="list--bar__item">
+											<a href="#" class="button button--purple" style="width: 80%;">Terfi Başlat</a>
+										</li>
+										<li class="list--bar__item">
+											<a href="#" class="button button--purple" style="width: 60%;">Transfer Başlat</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="card card--widget card--widget-yellow p-bottom-0">
+								<header class="card__header">
+									<h2 class="card__title">İzin İşlemleri</h2>
+								</header>
+								<div class="card__main">
+									<p>
+										<strong class="card__price">23 Gün</strong>
+										izniniz kaldı.
+									</p>
+									<p>
+										Kullanılan izin günü: <strong class="card__price card__price--min">5</strong>
+									</p>
+									<a href="" class="button button--yellow">İzin Talep Formu</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-12 col-md-5">
+			<div class="card card--widget card--widget-green card--size-full">
+				<header class="card__header">
+					<h2 class="card__title">Görevlerim</h2>
+				</header>
+				<div class="card__main">
+					<ul class="list list--content">
+						<li class="list__item">
+							<h4 class="list__title">İzin Onayları:</h4>
+							<div class="list__context">
+								<p>
+									<span class="title">Adı Soyadı :</span>
+									<strong>Ozan Çağlargil</strong>
+								</p>
+								<p>
+									<span class="title">Pozisyon :</span>
+									<strong>Pazarlama Müdür Yardımcısı</strong>
+								</p>
+								<p>
+									<span class="title">Tarih :</span>
+									<strong>21.06.2017 - 24.06.2017 (3 Gün)</strong>
+								</p>
+							</div>
+							<div class="card__main-action">
+								<a href="" class="button button--size-md button--green">Onayla</a>
+								<div class="button-group visible-block-lg-down">
+									<a href="" class="button button--link button--link-success button--size-md">İncele</a>
+									<a href="" class="button button--link button--link-error button--size-md">Reddet</a>
+								</div>
+							</div>
+						</li>
+						<li class="list__item">
+							<div class="list__context">
+								<p>
+									<span class="title">Adı Soyadı :</span>
+									<strong>Ozan Çağlargil</strong>
+								</p>
+								<p>
+									<span class="title">Pozisyon :</span>
+									<strong>Pazarlama Müdür Yardımcısı</strong>
+								</p>
+								<p>
+									<span class="title">Tarih :</span>
+									<strong>21.06.2017 - 24.06.2017 (3 Gün)</strong>
+								</p>
+							</div>
+							<div class="card__main-action">
+								<a href="" class="button button--size-md button--green">Onayla</a>
+								<div class="button-group visible-block-lg-down">
+									<a href="" class="button button--link button--link-success button--size-md">İncele</a>
+									<a href="" class="button button--link button--link-error button--size-md">Reddet</a>
+								</div>
+							</div>
+						</li>
+						<li class="list__item--notification">
+							<p class="notification--link notification--error">
+								4 izin onay beklemektedir. <a href="">Tümünü Göster</a>
+							</p>
+						</li>
+						<li class="list__item">
+							<h4 class="list__title">İşe Alım Onayları:</h4>
+							<div class="list__context">
+								<p>
+									<span class="title">Adı Soyadı :</span>
+									<strong>Ozan Çağlargil</strong>
+								</p>
+								<p>
+									<span class="title">Pozisyon :</span>
+									<strong>Pazarlama Müdür Yardımcısı</strong>
+								</p>
+								<p>
+									<span class="title">Tarih :</span>
+									<strong>21.06.2017 - 24.06.2017 (3 Gün)</strong>
+								</p>
+							</div>
+							<div class="card__main-action">
+								<a href="" class="button button--size-md button--green">Onayla</a>
+								<div class="button-group visible-block-lg-down">
+									<a href="" class="button button--link button--link-success button--size-md">İncele</a>
+									<a href="" class="button button--link button--link-error button--size-md">Reddet</a>
+								</div>
+							</div>
+						</li>
+						<li class="list__item">
+							<div class="list__context">
+								<p>
+									<span class="title">Adı Soyadı :</span>
+									<strong>Ozan Çağlargil</strong>
+								</p>
+								<p>
+									<span class="title">Pozisyon :</span>
+									<strong>Pazarlama Müdür Yardımcısı</strong>
+								</p>
+								<p>
+									<span class="title">Tarih :</span>
+									<strong>21.06.2017 - 24.06.2017 (3 Gün)</strong>
+								</p>
+							</div>
+							<div class="card__main-action">
+								<a href="" class="button button--size-md button--green">Onayla</a>
+								<div class="button-group visible-block-lg-down">
+									<a href="" class="button button--link button--link-success button--size-md">İncele</a>
+									<a href="" class="button button--link button--link-error button--size-md">Reddet</a>
+								</div>
+							</div>
+						</li>
+						<li class="list__item--notification list__item--notification--no-border">
+							<p class="notification--link notification--error">
+								3 işe alım onay beklemektedir. <a href="">Tümünü Göster</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+{% endblock %}

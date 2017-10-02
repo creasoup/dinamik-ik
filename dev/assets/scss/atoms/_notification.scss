@@ -1,0 +1,13 @@
+.notification--link {
+  margin: 0;
+  padding: 0;
+  
+  @include light-regular;
+  font-size: 13px;
+
+  &.notification--error {
+    color: $red;
+    @include regular;
+  }
+
+}

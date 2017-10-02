@@ -1,0 +1,20 @@
+.panel {
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  @include light-regular;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4A4A4A;
+
+  p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+  }
+
+  &--warning {
+    background: rgba(245,196,0,0.10);
+  }
+}
