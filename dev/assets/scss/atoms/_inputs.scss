@@ -48,3 +48,9 @@ textarea.form-control {
     margin-left: 20px;
   }
 }
+
+.input-group {
+  .form-control {
+    float: left;
+  }
+}

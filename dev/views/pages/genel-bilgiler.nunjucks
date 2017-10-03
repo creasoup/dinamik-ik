@@ -10,6 +10,18 @@
 
 {% include "./partials/sidebar-calisan.nunjucks" %}
 
+{# Modals #}
+{% include "./modals/onay-bildirimi.nunjucks" %}
+{% include "./modals/sifre-degistir.nunjucks" %}
+{% include "./modals/adres-ekle.nunjucks" %}
+{% include "./modals/telefon-ekle.nunjucks" %}
+{% include "./modals/yabanci-dil-ekle.nunjucks" %}
+{% include "./modals/ogrenim-ekle.nunjucks" %}
+{% include "./modals/acil-durum-ekle.nunjucks" %}
+{% include "./modals/asgari-gecim-indirimi-ekle.nunjucks" %}
+{% include "./modals/agi-bilgilendirme.nunjucks" %}
+{% include "./modals/beceri-ekle.nunjucks" %}
+
 <div class="app container">
 	
 	{% include "./partials/header.nunjucks" %}
@@ -19,7 +31,7 @@
       <div class="col-md-9">
         <header class="card__header card__header--cols">
           <h2 class="card__title">Kişisel Bilgiler</h2>
-          <a href="#" class="button button--cyan">Şifremi Değiştir</a>
+          <a href="#" class="button button--cyan" data-toggle="modal" data-target="#sifreDegistir">Şifremi Değiştir</a>
         </header>
         <div class="card__main card__main--listing">
           <ul class="list list--content form-layout">
@@ -240,7 +252,7 @@
               <div class="panel panel--warning">
                 <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
                 <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
-                <a href="" class="button button--aqua">Kaydet</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#onayBildirimi">Kaydet</a>
               </div>
             </div>
           </div>
@@ -400,7 +412,7 @@
               <div class="panel panel--warning">
                 <p>Onayda bekleyen alanlar turuncu ile gösterilmiştir.</p>
                 <p>Değişiklik talebinizin onaylanabilmesi için ikametgah bilgilerinizin İnsan Kaynakları Personel Özlük İşlerine teslim edilmesi gerekmektedir.</p>
-                <a href="" class="button button--aqua">Yeni Adres Ekle</a>
+                <a href="" class="button button--aqua" data-toggle="modal" data-target="#adresEkle">Yeni Adres Ekle</a>
               </div>
             </div>
           </div>
@@ -427,7 +439,7 @@
             </div>
             <div class="col-md-4">
               <div class="panel panel--warning">
-                <a href="" class="button button--aqua">Yeni Telefon Ekle</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#telefonEkle">Yeni Telefon Ekle</a>
               </div>
             </div>
           </div>
@@ -439,15 +451,15 @@
                 <table class="table table-striped">
                   <thead>
                     <tr>
-                      <th>Yabancı <br> Dil</th>
-                      <th>Yabancı Dil <br> Düzeyi</th>
-                      <th>Geçerlilik <br> Tarihi</th>
-                      <th>Öğrenim <br> Yeri</th>
-                      <th>Sınav <br> Notu</th>
-                      <th>Yazılı Test <br> Puanı</th>
-                      <th>Yazılı Teste <br> Göre Düzeyi</th>
-                      <th>Konuşma <br> Düzeyi</th>
-                      <th>Kümülatif <br> Düzeyi</th>
+                      <th>Yabancı Dil</th>
+                      <th>Yabancı Dil Düzeyi</th>
+                      <th>Geçerlilik Tarihi</th>
+                      <th>Öğrenim Yeri</th>
+                      <th>Sınav Notu</th>
+                      <th>Yazılı Test Puanı</th>
+                      <th>Yazılı Teste Göre Düzeyi</th>
+                      <th>Konuşma Düzeyi</th>
+                      <th>Kümülatif Düzeyi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -458,9 +470,9 @@
                       <td>Kurs</td>
                       <td>100</td>
                       <td>100</td>
-                      <td>Mid Upper <br> Intermadiate</td>
-                      <td>Mid Upper <br> Intermadiate</td>
-                      <td>Mid Upper <br> Intermadiate</td>
+                      <td>Mid Upper Intermadiate</td>
+                      <td>Mid Upper Intermadiate</td>
+                      <td>Mid Upper Intermadiate</td>
                     </tr>
                     <tr>
                       <td>Almanca</td>
@@ -492,7 +504,7 @@
               <div class="panel panel--warning">
                 <p>Onayda bekleyen alanlar turuncu ile gösterilmiştir.</p>
                 <p>Değişiklik talebinizin onaylanabilmesi için değişikliğe neden olan resmi belgenin İnsan Kaynakları Personel Özlük işlemleri’ne teslim edeilmesi gerekmektedir.</p>
-                <a href="" class="button button--aqua">Yeni Yabancı Dil Ekle</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#yabanciDilEkle">Yeni Yabancı Dil Ekle</a>
               </div>
             </div>
           </div>
@@ -557,7 +569,7 @@
               <div class="panel panel--warning">
                 <p>Onayda bekleyen alanlar turuncu ile gösterilmiştir.</p>
                 <p>Değişiklik talebinizin onaylanabilmesi için değişikliğe neden olan resmi belgenin İnsan Kaynakları Personel Özlük işlemleri’ne teslim edeilmesi gerekmektedir.</p>
-                <a href="" class="button button--aqua">Yeni Yabancı Dil Ekle</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#ogrenimEkle">Yeni Öğrenim Ekle</a>
               </div>
             </div>
           </div>
@@ -690,7 +702,7 @@
             </div>
             <div class="col-md-4">
               <div class="panel panel--warning">
-                <a href="" class="button button--aqua">Yeni Kayıt Ekle</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#acilDurumEkle">Yeni Kayıt Ekle</a>
               </div>
             </div>
           </div>
@@ -727,9 +739,9 @@
               <div class="panel panel--warning">
                 <p>Asgari Geçim İndirimi (AGİ) resmi bildirimlerde kullanılmaktadır. Bu nedenle herhangi bir değişiklik yaptığınız taktirde “AGİ Formu Görüntüle” butonundan yeni formunuzu basarak İnsan Kaynakları Bölümüne İletmeniz gerekmektedir.</p>
                 <h3 class="panel__title">Asgari Geçim İndirimi formunu nasıl doldurmalıyım?</h3>
-                <a href="" class="button button--aqua">AGİ Formu Görüntüle</a>
-                <a href="" class="button button--aqua">AGİ Formu Bilgilendirme</a>
-                <a href="" class="button button--aqua">Yeni Kayıt Ekle</a>
+                <a href="#" class="button button--aqua">AGİ Formu Görüntüle</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#agiBilgilendirme">AGİ Formu Bilgilendirme</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#asgariGecimIndirimiEkle">Yeni Kayıt Ekle</a>
               </div>
             </div>
           </div>
@@ -763,7 +775,7 @@
             <div class="col-md-4">
               <div class="panel panel--warning">
                 <p>Onyada bekleyen alanlar turuncu ile gösterilmiştir. Değişiklik talebinizin onaylanabilmesi için değişikliğe neden olan resmi belgenin İnsan Kaynakları Personel Özlük İşleri’ne teslim edilmesi gerekmektedir.</p>
-                <a href="" class="button button--aqua">Yeni Beceri Ekle</a>
+                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#beceriEkle">Yeni Beceri Ekle</a>
               </div>
             </div>
           </div>

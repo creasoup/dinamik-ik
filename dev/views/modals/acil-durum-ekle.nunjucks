@@ -1,0 +1,68 @@
+<div class="modal fade" id="acilDurumEkle">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Acil Durum İrtibat Ekle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list list--column list--content form-layout">
+          <li class="list__item">
+            <label class="list__item-title">Yakınlık Derecesi</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="yakinlik-derecesi" id="yakinlik-derecesi">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Adı Soyadı</label>
+            <div class="list__item-form-group">
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">İrtibat Telefonu</label>
+            <div class="list__item-form-group">
+              <input type="text" class="form-control">
+            </div>
+          </li>
+          <li class="list__item list__item-flex-start">
+            <label class="list__item-title">Adres</label>
+            <div class="list__item-form-group">
+              <textarea class="form-control" cols="30" rows="10"></textarea>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">İl</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="il" id="il">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">İlçe</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="ilce" id="ilce">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item list__item-footer">
+            <label class="list__item-title">&nbsp;</label>
+            <button type="button" class="button button--aqua button--size-sm" data-dismiss="modal">Kaydet</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

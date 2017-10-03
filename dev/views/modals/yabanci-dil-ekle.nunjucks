@@ -1,0 +1,102 @@
+<div class="modal fade" id="yabanciDilEkle">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Yabancı Dil Ekle</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="list list--column list--content form-layout">
+          <li class="list__item">
+            <label class="list__item-title">Yabancı Dil</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="yabanci-dil-select" id="yabanci-dil-select">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Yabancı Dil Düzeyi</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="yabanci-dil-duzeyi" id="yabanci-dil-duzeyi">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Geçerlilik Tarihi</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="gecerlilik-tarihi" id="gecerlilik-tarihi">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Öğrenim Yeri</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="ogrenim-yeri" id="ogrenim-yeri">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Sınav Notu</label>
+            <div class="list__item-form-group">
+              <input type="number" class="form-control">
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Yazılı Test Notu</label>
+            <div class="list__item-form-group">
+              <input type="number" class="form-control">
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Yazılı Teste Göre Düzeyi</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="yazili-teste-gore-duzeyi" id="yazili-teste-gore-duzeyi">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Konuşma Düzeyi</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="konusma-duzeyi" id="konusma-duzeyi">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item">
+            <label class="list__item-title">Kümülatif Düzeyi</label>
+            <div class="list__item-form-group">
+              <div class="selectbox">
+                <select name="kumulatif-duzeyi" id="kumulatif-duzeyi">
+                  <option value="0">Seciniz</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="list__item list__item-footer">
+            <label class="list__item-title">&nbsp;</label>
+            <button type="button" class="button button--aqua button--size-sm" data-dismiss="modal">Kaydet</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

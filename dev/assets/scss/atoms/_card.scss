@@ -449,3 +449,12 @@ $cardBottomSpace: 20px;
     opacity: 1;
   }
 }
+
+.list--column {
+  flex-direction: column;
+  
+  .list__item-footer {
+    // padding-left: 120px;
+    padding-top: 25px;
+  }
+}

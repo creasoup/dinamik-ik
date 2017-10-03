@@ -1,0 +1,57 @@
+<div class="modal fade" id="agiBilgilendirme">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Asgari Geçim İndirimi formunu nasıl doldurmalıyım?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body--align-left">
+        <div class="modal-body__content">
+          <div class="item">
+            <div class="widget widget--sidebar">
+              <h6>Medeni Durum</h6>
+              <span>Bekar/Çocuksuz</span>
+            </div>
+            <div class="widget">
+              <h6>Yapılacak İşlem</h6>
+              <p>“AGİ Formu Görüntüle” butonuna basarak form görüntülenir, çıktısı alınıp imzalandıktan sonra İnsan Kaynakları’na gönderilir. Medeni durum “Bekar” olarak belirtildiği için sistem otomatik olarak AGİ’den kişinin kendisi yararlanacak şekilde ayarlama yaparak formu hazırlayacaktır.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="widget widget--sidebar">
+              <h6></h6>
+              <span>Bekar/Çocuklu</span>
+            </div>
+            <div class="widget">
+              <h6></h6>
+              <p>Kişi bekar ve bakmakla yükümlü olduğu bir çocuğu varsa “Yeni Kayıt Ekle” butonuna basılır. Yakınlık derecesi “Çocuk” olarak seçilir. Çalışma durumuna göre iligli seçenek işaretlenir. “Çocuk için kim faydalanıyor?” kısmında çocuğun velayetinin kimde olduğuna bağlı olarak “Kendisi” ya da “Eşi” seçeneği işaretlenir. Çocuğunuz başlığı altındaki açıklama hariç tüm kısımların doldulması gerekmektedir. Bilgi girişi tamamlandırktan sonra “Kaydet” butonuna basılarak bilgiler kayıt edilir ve “AGİ Formu Görüntüle butonuna basılarak form görüntülenir, çıktısı alınıp imzalandıktan sonra İnsan Kaynakları’na gönderilir.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="widget widget--sidebar">
+              <h6></h6>
+              <span>Evli/Çocuksuz</span>
+            </div>
+            <div class="widget">
+              <h6></h6>
+              <p>“Yeni Kayıt Ekle” butonuna basılır. Yakınlık derecesi “Eşi” olarak seçilir. “ Çalışma Durumu” kısmından eşin çalışma durumuna uygun seçenek işaretlenir. “Çocuk için kim faydalanıyor?” kısmı ve Çocuğunuz başlığı altındaki kısımlar boş gerçilir. Bilgi girişi tamamlandırktan sonra “Kaydet” butonuna basılarak bilgiler kayıt edilir ve “AGİ Formu Görüntüle butonuna basılarak form görüntülenir, çıktısı alınıp imzalandıktan sonra İnsan Kaynakları’na gönderilir.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="widget widget--sidebar">
+              <h6></h6>
+              <span>Evli/Çocuklu</span>
+            </div>
+            <div class="widget">
+              <h6></h6>
+              <p><strong>1.Adım</strong> - “Eşi” İçin: “Yeni Kayıt Ekle”  butonuna basılır. Yakınlık derecesi “Eş” seçilir. “Çalışma Durmu” kısmından eşin çalışma durumuna uygun seçenek işaretlenir. “Çocuk için kim faydalanıyor?” kısmında AGİ’den kimin faydalandığına bağlı olarak “Kendisi” ya da “Eşi” seçeneği işraretlenir. Çocuğunuz başlığı altındaki seçenekler boş seçilerek giriş tamamlanır.</p>
+              <p><strong>2.Adım</strong> - “Çocuk” İçin: “Yeni Kayıt Ekle”  butonuna basılır. Yakınlık derecesi “Çocuk” seçilir. “Çalışma Durmu” kısmından eşin çalışma durumuna uygun seçenek işaretlenir. “Çocuk için kim faydalanıyor?” kısmında AGİ’den kimin faydalandığına bağlı olarak “Kendisi” ya da “Eşi” seçeneği işraretlenir. Çocuğunuz başlığı altındaki açıklama hariç tüm kısımların doldurulması gerekmektedir. Tüm çocukların bildirimi için aynı adım tekrarlanır. Bilgi girişi tamamlandırktan sonra “Kaydet” butonuna basılarak bilgiler kayıt edilir ve “AGİ Formu Görüntüle butonuna basılarak form görüntülenir, çıktısı alınıp imzalandıktan sonra İnsan Kaynakları’na gönderilir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
