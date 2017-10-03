@@ -7,6 +7,11 @@
     padding: 3px;
   }
 
+  tbody tr:hover {
+    // background: #FFFFFF;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.20);
+  }
+
   th {
     @include regular;
     font-size: 11px;

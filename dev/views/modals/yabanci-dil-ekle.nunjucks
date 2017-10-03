@@ -8,94 +8,103 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list list--column list--content form-layout">
-          <li class="list__item">
-            <label class="list__item-title">Yabancı Dil</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="yabanci-dil-select" id="yabanci-dil-select">
-                  <option value="0">Seciniz</option>
-                </select>
+        <form class="form" id="yabanciDilEkleForm" method="post" action="">
+          <ul class="list list--column list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Yabancı Dil</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="yabanci-dil-select" id="yabanci-dil-select" required>
+                    <option value="">Seciniz</option>
+                    <option value="ing">Ingilizce</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Yabancı Dil Düzeyi</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="yabanci-dil-duzeyi" id="yabanci-dil-duzeyi">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yabancı Dil Düzeyi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="yabanci-dil-duzeyi" id="yabanci-dil-duzeyi" required>
+                    <option value="">Seciniz</option>
+                    <option value="baslangic">Baslangic</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Geçerlilik Tarihi</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="gecerlilik-tarihi" id="gecerlilik-tarihi">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Geçerlilik Tarihi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="gecerlilik-tarihi" id="gecerlilik-tarihi" required>
+                    <option value="">Seciniz</option>
+                    <option value="10">10.10.2017</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Öğrenim Yeri</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="ogrenim-yeri" id="ogrenim-yeri">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Öğrenim Yeri</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="ogrenim-yeri" id="ogrenim-yeri" required>
+                    <option value="">Seciniz</option>
+                    <option value="kurs">Kurs</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Sınav Notu</label>
-            <div class="list__item-form-group">
-              <input type="number" class="form-control">
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Yazılı Test Notu</label>
-            <div class="list__item-form-group">
-              <input type="number" class="form-control">
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Yazılı Teste Göre Düzeyi</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="yazili-teste-gore-duzeyi" id="yazili-teste-gore-duzeyi">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Sınav Notu</label>
+              <div class="list__item-form-group">
+                <input type="number" class="form-control" id="yabanciDilSinavNotu" name="yabanciDilSinavNotu" required>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Konuşma Düzeyi</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="konusma-duzeyi" id="konusma-duzeyi">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yazılı Test Notu</label>
+              <div class="list__item-form-group">
+                <input type="number" class="form-control" id="yabanciDilYaziliTestNotu" name="yabanciDilYaziliTestNotu" required>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Kümülatif Düzeyi</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="kumulatif-duzeyi" id="kumulatif-duzeyi">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yazılı Teste Göre Düzeyi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="yazili-teste-gore-duzeyi" id="yazili-teste-gore-duzeyi" required>
+                    <option value="">Seciniz</option>
+                    <option value="01">ileri seviye</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="list__item list__item-footer">
-            <label class="list__item-title">&nbsp;</label>
-            <button type="button" class="button button--aqua button--size-sm" data-dismiss="modal">Kaydet</button>
-          </li>
-        </ul>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Konuşma Düzeyi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="konusma-duzeyi" id="konusma-duzeyi" required>
+                    <option value="">Seciniz</option>
+                    <option value="01">Baslangic</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Kümülatif Düzeyi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="kumulatif-duzeyi" id="kumulatif-duzeyi" required>
+                    <option value="">Seciniz</option>
+                    <option value="1">Seviye 1</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item list__item-footer">
+              <label class="list__item-title">&nbsp;</label>
+              <input type="submit" class="button button--aqua button--size-sm" value="Kaydet">
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
   </div>

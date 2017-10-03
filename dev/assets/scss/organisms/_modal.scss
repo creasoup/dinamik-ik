@@ -17,6 +17,10 @@
     @include light-regular;
   }
 
+  .list--content.form-layout .list__item-form-group {
+    width: auto;
+  }
+
   .close {
     color: $aqua;
     border: 0;

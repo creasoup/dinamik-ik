@@ -1,7 +1,7 @@
 {% extends "./templates/layout.nunjucks" %}
 
 {% block title %}
-	Genel Bilgiler
+	Kişisel Bilgiler
 {% endblock %}
 
 {% block bodyClass %}page-dashboard{% endblock %}
@@ -160,231 +160,235 @@
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="genel-bilgiler" role="tabpanel">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="list list--content form-layout">
-                <li class="list__item">
-                  <label class="list__item-title">Şirket</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Doğuş Otomotiv Servis ve Tic. A.Ş." disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">E-Posta (Kişisel)</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="aekin@gmail.com">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">İşyeri</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="DOS Merkez Şekerpınar" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">E-Posta (İş)</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="ekin@dogus.com.tr" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Bölümü</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="VW Binek &amp; Ticaret SSH" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Ehliyet No</label>
-                  <div class="list__item-form-group">
-                    <input type="number" class="form-control" value="195210">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Görevi</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="SSH Müdürü" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Ehliyet Sınıfı</label>
-                  <div class="list__item-form-group">
-                    <div class="selectbox">
-                      <select name="ehliyet-sinifi" id="ehliyet-sinifi">
-                        <option value="0">Seciniz</option>
-                        <option value="B">B Sınıfı</option>
-                      </select>
+          <form class="form" id="genelBilgilerForm" method="post" action="">
+            <div class="row">
+              <div class="col-md-8">
+                <ul class="list list--content form-layout">
+                  <li class="list__item">
+                    <label class="list__item-title">Şirket</label>
+                    <div class="list__item-form-group">
+                      <input type="text" id="genel-bilgiler-sirket" name="genel-bilgiler-sirket" class="form-control" value="" required>
                     </div>
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">İş Ünvanı</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Müdür" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Sözleşme Durmu</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Süresiz" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">İş Ailesi</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Kapsam Dışı" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Kademe</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="-" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Öğrenim Durumu</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Lisan" disabled="disabled">
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <div class="panel panel--warning">
-                <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
-                <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
-                <a href="#" class="button button--aqua" data-toggle="modal" data-target="#onayBildirimi">Kaydet</a>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">E-Posta (Kişisel)</label>
+                    <div class="list__item-form-group">
+                      <input type="email" id="genel-bilgiler-eposta-kisisel" name="genel-bilgiler-eposta-kisisel" class="form-control" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">İşyeri</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="DOS Merkez Şekerpınar" disabled="disabled" id="genel-bilgiler-is-yeri" name="genel-bilgiler-is-yeri">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">E-Posta (İş)</label>
+                    <div class="list__item-form-group">
+                      <input type="email" class="form-control" value="ekin@dogus.com.tr" disabled="disabled" id="genel-bilgiler-eposta-is" name="genel-bilgiler-eposta-is">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Bölümü</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="VW Binek &amp; Ticaret SSH" disabled="disabled" id="genel-bilgiler-bolum" name="genel-bilgiler-bolum">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Ehliyet No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control" id="genel-bilgiler-ehliyet-no" name="genel-bilgiler-ehliyet-no" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Görevi</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="SSH Müdürü" disabled="disabled" id="genel-bilgiler-gorevi" name="genel-bilgiler-gorevi">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Ehliyet Sınıfı</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select name="genel-bilgiler-ehliyet-sinifi" id="genel-bilgiler-ehliyet-sinifi" required>
+                          <option value="">Seciniz</option>
+                          <option value="A">A Sınıfı</option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">İş Ünvanı</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Müdür" disabled="disabled" id="genel-bilgiler-is-unvani" name="genel-bilgiler-is-unvani">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Sözleşme Durmu</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Süresiz" disabled="disabled" id="genel-bilgiler-sozlesme-durumu" name="genel-bilgiler-sozlesme-durumu">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">İş Ailesi</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Kapsam Dışı" disabled="disabled" id="genel-bilgiler-is-ailesi" name="genel-bilgiler-is-ailesi">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Kademe</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="-" disabled="disabled" id="genel-bilgiler-kademe" name="genel-bilgiler-kademe">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Öğrenim Durumu</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Lisan" disabled="disabled" id="genel-bilgiler-ogrenim-durumu" name="genel-bilgiler-ogrenim-durumu">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel--warning">
+                  <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
+                  <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
+                  <input id="genelBilgilerFormSubmit" type="submit" class="button button--aqua" value="Kaydet">
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
         <div class="tab-pane" id="nufus" role="tabpanel">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="list list--content form-layout">
-                <li class="list__item">
-                  <label class="list__item-title">T.C. Kimlik No</label>
-                  <div class="list__item-form-group">
-                    <input type="number" class="form-control" value="99999999999" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">İl</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="İzmir">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Seri No</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="A01">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">İlçe</label>
-                  <div class="list__item-form-group">
-                    <input type="text" class="form-control" value="Alaçatı">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Cüzdan No</label>
-                  <div class="list__item-form-group">
-                    <input type="number" class="form-control" value="00000">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Mahalle/Köy</label>
-                  <div class="list__item-form-group">
-                    <input type="text" class="form-control" value="Güven">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Doğum Tarihi</label>
-                  <div class="list__item-form-group">
-                    <input type="date" class="form-control" value="25.10.1967" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Cilt No</label>
-                  <div class="list__item-form-group">
-                    <input type="number" class="form-control" value="99">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Doğum Yeri</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Almanya">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Sayfa / Aile Sıra No</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="98">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Baba Adı</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Kemalettin">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Sıra No</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="97">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Ana Adı</label>
-                  <div class="list__item-form-group">
-                    <input type="email" class="form-control" value="Keriman" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Veriliş Tarihi</label>
-                  <div class="list__item-form-group">
-                    <input type="date" class="form-control" value="16.02.1984">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Medeni Durumu</label>
-                  <div class="list__item-form-group">
-                    <input type="text" class="form-control" value="Bekar" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Veriliş Nedeni</label>
-                  <div class="list__item-form-group">
-                    <input type="text" class="form-control" value="Değiştirme">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Uyruğu</label>
-                  <div class="list__item-form-group">
-                    <input type="text" class="form-control" value="T.C" disabled="disabled">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Verildiği Nüf Dai.</label>
-                  <div class="list__item-form-group">
-                    <input type="text" class="form-control" value="İzmir">
-                  </div>
-                </li>
-                <li class="list__item">
-                  <label class="list__item-title">Kayıt No</label>
-                  <div class="list__item-form-group">
-                    <input type="number" class="form-control" value="99999" disabled="disabled">
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <div class="panel panel--warning">
-                <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
-                <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
-                <a href="" class="button button--aqua">Kaydet</a>
+          <form class="form" id="nufusBilgileriForm" method="post" action="">
+            <div class="row">
+              <div class="col-md-8">
+                <ul class="list list--content form-layout">
+                  <li class="list__item">
+                    <label class="list__item-title">T.C. Kimlik No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control" value="99999999999" disabled="disabled" id="nufusTcKimlikNo" name="nufusTcKimlikNo">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">İl</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" id="nufusIl" name="nufusIl" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Seri No</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" id="nufusSeriNo" name="nufusSeriNo" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">İlçe</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" id="nufusIlce" name="nufusIlce" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Cüzdan No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control" id="nufusCuzdanNo" name="nufusCuzdanNo" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Mahalle/Köy</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" id="nufusMahalle" name="nufusMahalle" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Doğum Tarihi</label>
+                    <div class="list__item-form-group">
+                      <input type="date" class="form-control" value="25.10.1967" disabled="disabled"  id="nufusDogumTarihi" name="nufusDogumTarihi">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Cilt No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control" value="99"  id="nufusCiltNo" name="nufusCiltNo" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Doğum Yeri</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control"  id="nufusDogumYeri" name="nufusDogumYeri" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Sayfa / Aile Sıra No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control"  id="nufusSayfaAileSiraNo" name="nufusSayfaAileSiraNo" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Baba Adı</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control"  id="nufusBabaAdi" name="nufusBabaAdi" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Sıra No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control" id="nufusSiraNo" name="nufusSiraNo" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Ana Adı</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Keriman" disabled="disabled" id="nufusAnaAdi" name="nufusAnaAdi">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Veriliş Tarihi</label>
+                    <div class="list__item-form-group">
+                      <input type="date" class="form-control"  id="nufusVerilisTarihi" name="nufusVerilisTarihi" disabled="disabled">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Medeni Durumu</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Bekar" disabled="disabled" id="nufusMedeniDurumu" name="nufusMedeniDurumu">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Veriliş Nedeni</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" id="nufusVerilisNedeni" name="nufusVerilisNedeni" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Uyruğu</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="T.C" disabled="disabled" id="nufusUyrugu" name="nufusUyrugu">
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Verildiği Nüf Dai.</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control"  id="nufusVerildigiDaire" name="nufusVerildigiDaire" required>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <label class="list__item-title">Kayıt No</label>
+                    <div class="list__item-form-group">
+                      <input type="number" class="form-control" value="99999" disabled="disabled">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel--warning">
+                  <p>* Yanda görmekte olduğunuz alanlarda sadece aktif olanlarda değişiklik yapabilirsiniz.</p>
+                  <p>* Kırmızı ile belirtilen alanlar insan kaynaklarına ilgili evraklar iletildiğinde gereçli olacaktır.</p>
+                  <input type="submit" class="button button--aqua" value="Kaydet">
+                </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
         <div class="tab-pane" id="adres" role="tabpanel">
           <div class="row">
@@ -394,7 +398,7 @@
                 <p>Şekerpınar Mahallesi, Anadolu Caddesi No:22/45, Pk: 41420</p>
                 <p class="small-text">Çayırova / Kocaeli</p>
                 <div class="button-group">
-                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="#" class="button button--size-xs button--darkBlue" data-toggle="modal" data-target="#adresEkle">Düzenle</a>
                   <a href="" class="button button--size-xs button--red">Sil</a>
                 </div>
               </div>
@@ -403,7 +407,7 @@
                 <p>Feneryolu Mahallesi, Bağdat Caddesi No: 147/3 Pk: 34724</p>
                 <p class="small-text">Kadıköy / İstanbul</p>
                 <div class="button-group">
-                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="#" class="button button--size-xs button--darkBlue" data-toggle="modal" data-target="#adresEkle">Düzenle</a>
                   <a href="" class="button button--size-xs button--red">Sil</a>
                 </div>
               </div>
@@ -424,7 +428,7 @@
                 <h3 class="card__title">Cep Telefonu</h3>
                 <p>90 532 01 02</p>
                 <div class="button-group">
-                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
+                  <a href="#" class="button button--size-xs button--darkBlue" data-toggle="modal" data-target="#telefonEkle">Düzenle</a>
                   <a href="" class="button button--size-xs button--red">Sil</a>
                 </div>
               </div>
@@ -432,8 +436,8 @@
                 <h3 class="card__title">Ev Telefonu</h3>
                 <p>90 212 341 00 99</p>
                 <div class="button-group">
-                  <a href="" class="button button--size-xs button--darkBlue">Düzenle</a>
-                  <a href="" class="button button--size-xs button--red">Sil</a>
+                  <a href="#" class="button button--size-xs button--darkBlue" data-toggle="modal" data-target="#telefonEkle">Düzenle</a>
+                  <a href="#" class="button button--size-xs button--red">Sil</a>
                 </div>
               </div>
             </div>

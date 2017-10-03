@@ -8,30 +8,32 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list list--column list--content form-layout">
-          <li class="list__item">
-            <label class="list__item-title">Eski Şifre</label>
-            <div class="list__item-form-group">
-              <input type="password" class="form-control">
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Yeni Şifre</label>
-            <div class="list__item-form-group">
-              <input type="password" class="form-control">
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Yeni Şifre Tekrar</label>
-            <div class="list__item-form-group">
-              <input type="password" class="form-control">
-            </div>
-          </li>
-          <li class="list__item list__item-footer">
-            <label class="list__item-title">&nbsp;</label>
-            <button type="button" class="button button--aqua button--size-sm" data-dismiss="modal">Tamam</button>
-          </li>
-        </ul>
+        <form class="form" id="sifreDegistirForm" method="post" action="">
+          <ul class="list list--column list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Eski Şifre</label>
+              <div class="list__item-form-group">
+                <input type="password" class="form-control" id="eskiSifre" name="eskiSifre" required>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yeni Şifre</label>
+              <div class="list__item-form-group">
+                <input type="password" class="form-control" id="yeniSifre" name="yeniSifre" required>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yeni Şifre Tekrar</label>
+              <div class="list__item-form-group">
+                <input type="password" class="form-control" id="yeniSifreTekrar" name="yeniSifreTekrar" required>
+              </div>
+            </li>
+            <li class="list__item list__item-footer">
+              <label class="list__item-title">&nbsp;</label>
+              <input type="submit" class="button button--aqua button--size-sm" value="Kaydet">
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
   </div>

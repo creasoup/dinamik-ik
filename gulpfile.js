@@ -63,8 +63,9 @@ gulp.task('libJS', function(){
   		'node_modules/jquery/dist/jquery.min.js',
   		'node_modules/tether/dist/js/tether.min.js',
   		'node_modules/bootstrap/dist/js/bootstrap.min.js',
-      'node_modules/isotope-layout/dist/isotope.pkgd.min.js',
-      'node_modules/select2/dist/js/select2.full.min.js'])
+      'node_modules/select2/dist/js/select2.full.min.js',
+      'node_modules/jquery-validation/dist/jquery.validate.min.js',
+      'node_modules/jquery-validation/dist/additional-methods.min.js'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);

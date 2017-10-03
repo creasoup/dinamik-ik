@@ -27,6 +27,11 @@
     border-top-right-radius: 4px;
     @include bold;
 
+    &:hover {
+      background: #0388B5;
+      border-color: #0388B5;
+    }
+
     &.active {
       background: $white;
       color: $aqua;

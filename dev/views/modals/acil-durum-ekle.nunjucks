@@ -8,60 +8,65 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul class="list list--column list--content form-layout">
-          <li class="list__item">
-            <label class="list__item-title">Yakınlık Derecesi</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="yakinlik-derecesi" id="yakinlik-derecesi">
-                  <option value="0">Seciniz</option>
-                </select>
+        <form class="form" id="acilDurumEkleForm" method="post" action="">
+          <ul class="list list--column list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Yakınlık Derecesi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="yakinlik-derecesi" id="yakinlik-derecesi" required>
+                    <option value="">Seciniz</option>
+                    <option value="es">Esi</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">Adı Soyadı</label>
-            <div class="list__item-form-group">
-              <input type="text" class="form-control">
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">İrtibat Telefonu</label>
-            <div class="list__item-form-group">
-              <input type="text" class="form-control">
-            </div>
-          </li>
-          <li class="list__item list__item-flex-start">
-            <label class="list__item-title">Adres</label>
-            <div class="list__item-form-group">
-              <textarea class="form-control" cols="30" rows="10"></textarea>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">İl</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="il" id="il">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Adı Soyadı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" id="acilDurumAdSoyad" name="acilDurumAdSoyad" required>
               </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <label class="list__item-title">İlçe</label>
-            <div class="list__item-form-group">
-              <div class="selectbox">
-                <select name="ilce" id="ilce">
-                  <option value="0">Seciniz</option>
-                </select>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İrtibat Telefonu</label>
+              <div class="list__item-form-group">
+                <input type="tel" class="form-control" id="acilDurumTelefon" name="acilDurumTelefon" required>
               </div>
-            </div>
-          </li>
-          <li class="list__item list__item-footer">
-            <label class="list__item-title">&nbsp;</label>
-            <button type="button" class="button button--aqua button--size-sm" data-dismiss="modal">Kaydet</button>
-          </li>
-        </ul>
+            </li>
+            <li class="list__item list__item-flex-start">
+              <label class="list__item-title">Adres</label>
+              <div class="list__item-form-group">
+                <textarea class="form-control" cols="30" rows="10" id="acilDurumAdres" name="acilDurumAdres" required></textarea>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İl</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="acilDurumIl" id="acilDurumIl" required>
+                    <option value="">Seciniz</option>
+                    <option value="34">Istanbul</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İlçe</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="acilDurumIlce" id="acilDurumIlce" required>
+                    <option value="">Seciniz</option>
+                    <option value="1">Besiktas</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item list__item-footer">
+              <label class="list__item-title">&nbsp;</label>
+              <input type="submit" class="button button--aqua button--size-sm" value="Kaydet">
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
   </div>

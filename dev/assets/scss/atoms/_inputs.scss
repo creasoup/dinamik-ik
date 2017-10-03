@@ -15,6 +15,74 @@
   }
 }
 
+.input-group {
+  position: static !important;
+}
+
+.list__item-form-group,
+.input-group {
+  margin-top: 1px;
+
+  &.is-error:after,
+  &.is-success:after,
+  .selectbox:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+  }
+
+  .selectbox.is-error {
+    position: relative;
+    border-color: #EE8E96;
+  }
+
+  &.is-error {
+    position: relative;
+    .form-control {
+      border-color: #EE8E96;
+      padding-right: 25px;
+    }
+  }
+
+  &.is-error:after {
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    background: transparent url(../images/icon-error.png) no-repeat 0 0;
+  }
+
+  &.is-success {
+    position: relative;
+    .form-control {
+      border-color: #81BC02;
+      padding-right: 25px;
+    }
+  }
+
+  &.is-success:after {
+    width: 14px;
+    height: 10px;
+    margin-top: -5px;
+    background: transparent url(../images/icon-success.png) no-repeat 0 0;
+  }
+}
+
+.selectbox {
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 16px;
+    height: 9px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -4px;
+    background: transparent url(../images/select-arrow.png) no-repeat center center;
+  }
+}
+
 textarea.form-control {
   height: 170px;
   resize: none;
@@ -53,4 +121,8 @@ textarea.form-control {
   .form-control {
     float: left;
   }
+}
+
+label.error {
+  display: none !important;
 }
