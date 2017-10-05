@@ -5522,6 +5522,9 @@ textarea.form-control {
 label.error {
   display: none !important; }
 
+select::-ms-expand {
+  display: none; }
+
 .card {
   background: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
@@ -5529,7 +5532,8 @@ label.error {
   padding: 10px;
   overflow: auto;
   min-height: 230px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow-x: hidden; }
 
 .card--slider {
   width: 100%;
@@ -6033,6 +6037,7 @@ label.error {
   line-height: 16px;
   color: #4A4A4A; }
   .panel p {
+    width: 100%;
     font-size: 13px;
     line-height: 16px;
     color: #4A4A4A;
@@ -6166,8 +6171,6 @@ label.error {
     font-family: montserratregular; }
 
 .sidebar--card {
-  width: 100%;
-  max-width: 100%;
   height: auto;
   position: static;
   background: transparent;
