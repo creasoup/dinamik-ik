@@ -1,13 +1,15 @@
-.carousel-control {
-  width: 100px;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
+#dinamikWeb {
+  .carousel-control {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
 
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: static;
-    display: inline-block;
-    margin-left: 20px;
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: static;
+      display: inline-block;
+      margin-left: 20px;
+    }
   }
 }

@@ -27,8 +27,8 @@
 	{% include "./partials/header.nunjucks" %}
 
   <div class="card card--widget col-widget card--widget-aqua no-height">
-    <div class="row">
-      <div class="col-md-9">
+    <div class="row personal-card">
+      <div class="col-md-12 personal-card__info">
         <header class="card__header card__header--cols">
           <h2 class="card__title">Kişisel Bilgiler</h2>
           <a href="#" class="button button--cyan" data-toggle="modal" data-target="#sifreDegistir">Şifremi Değiştir</a>
@@ -104,8 +104,8 @@
           </ul>
         </div>
       </div>
-      <aside class="sidebar sidebar--card text-align-center col-md-3">
-        <picture class="sidebar__avatar sidebar__avatar--lg">
+      <aside class="sidebar sidebar--card personal-card__avatar text-align-center">
+        <picture class="sidebar__avatar sidebar__avatar--md">
           <img src="assets/images/calisan-avatar-lg.jpg" alt="">
         </picture>
       </aside>

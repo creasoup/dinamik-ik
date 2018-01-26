@@ -1,132 +1,134 @@
-.form-control,
-.selectbox {
-  background: $white;
-  border: 2px solid #DFE6EE;
-  border-radius: $border-radius-base;
-  height: 36px;
+#dinamikWeb {
+  .form-control,
+  .selectbox {
+    background: $white;
+    border: 2px solid #DFE6EE;
+    border-radius: $border-radius-base;
+    height: 36px;
 
-  &:hover {
-    border-color: #B9C3CD;
+    &:hover {
+      border-color: #B9C3CD;
+    }
+
+    &:active,
+    &:focus {
+      border-color: #B9C3CD;
+    }
   }
 
-  &:active,
-  &:focus {
-    border-color: #B9C3CD;
-  }
-}
-
-.input-group {
-  position: static !important;
-}
-
-.list__item-form-group,
-.input-group {
-  margin-top: 1px;
-
-  &.is-error:after,
-  &.is-success:after,
-  .selectbox:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 10px;
+  .input-group {
+    position: static !important;
   }
 
-  .selectbox.is-error {
-    position: relative;
-    border-color: #EE8E96;
-  }
+  .list__item-form-group,
+  .input-group {
+    margin-top: 1px;
 
-  &.is-error {
-    position: relative;
-    .form-control {
+    &.is-error:after,
+    &.is-success:after,
+    .selectbox:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+    }
+
+    .selectbox.is-error {
+      position: relative;
       border-color: #EE8E96;
-      padding-right: 25px;
+    }
+
+    &.is-error {
+      position: relative;
+      .form-control {
+        border-color: #EE8E96;
+        padding-right: 25px;
+      }
+    }
+
+    &.is-error:after {
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      background: transparent url(../images/icon-error.png) no-repeat 0 0;
+    }
+
+    &.is-success {
+      position: relative;
+      .form-control {
+        border-color: #81BC02;
+        padding-right: 25px;
+      }
+    }
+
+    &.is-success:after {
+      width: 14px;
+      height: 10px;
+      margin-top: -5px;
+      background: transparent url(../images/icon-success.png) no-repeat 0 0;
     }
   }
 
-  &.is-error:after {
-    width: 10px;
-    height: 10px;
-    margin-top: -5px;
-    background: transparent url(../images/icon-error.png) no-repeat 0 0;
-  }
-
-  &.is-success {
+  .selectbox {
     position: relative;
-    .form-control {
-      border-color: #81BC02;
-      padding-right: 25px;
+
+    &:after {
+      content: "";
+      width: 16px;
+      height: 9px;
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      margin-top: -4px;
+      background: transparent url(../images/select-arrow.png) no-repeat center center;
     }
   }
 
-  &.is-success:after {
-    width: 14px;
-    height: 10px;
-    margin-top: -5px;
-    background: transparent url(../images/icon-success.png) no-repeat 0 0;
+  textarea.form-control {
+    height: 170px;
+    resize: none;
   }
-}
 
-.selectbox {
-  position: relative;
-
-  &:after {
-    content: "";
-    width: 16px;
-    height: 9px;
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    margin-top: -4px;
-    background: transparent url(../images/select-arrow.png) no-repeat center center;
-  }
-}
-
-textarea.form-control {
-  height: 170px;
-  resize: none;
-}
-
-.label-control {
-  @include light-regular;
-  font-size: 13px;
-  color: #4A4A4A;
-}
-
-.form--horizontal {
   .label-control {
-    display: inline-block;
-    width: 10%;
-    overflow: hidden;
-    position: relative;
-    margin-right: 20px;
-    line-height: 36px;
-    margin-bottom: 0;
-    vertical-align: top;
+    @include light-regular;
+    font-size: 13px;
+    color: #4A4A4A;
   }
-  .form-control {
-    display: inline-block;
-    width: 70%;
-    vertical-align: top;
+
+  .form--horizontal {
+    .label-control {
+      display: inline-block;
+      width: 10%;
+      overflow: hidden;
+      position: relative;
+      margin-right: 20px;
+      line-height: 36px;
+      margin-bottom: 0;
+      vertical-align: top;
+    }
+    .form-control {
+      display: inline-block;
+      width: 70%;
+      vertical-align: top;
+    }
+    .button {
+      position: relative;
+      left: 10%;
+      margin-left: 20px;
+    }
   }
-  .button {
-    position: relative;
-    left: 10%;
-    margin-left: 20px;
+
+  .input-group {
+    .form-control {
+      float: left;
+    }
+  }
+
+  label.error {
+    display: none !important;
+  }
+
+  select::-ms-expand {
+    display: none;
   }
 }
-
-.input-group {
-  .form-control {
-    float: left;
-  }
-}
-
-label.error {
-  display: none !important;
-}
-
-select::-ms-expand {
-  display: none;
-} 

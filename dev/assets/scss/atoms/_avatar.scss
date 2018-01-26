@@ -1,4 +1,11 @@
-.sidebar__avatar.sidebar__avatar--lg {
-  width: 180px;
-  height: 180px;
+#dinamikWeb {
+  .sidebar__avatar.sidebar__avatar--lg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .sidebar__avatar.sidebar__avatar--md {
+    width: 100px;
+    height: 100px;
+  }
 }

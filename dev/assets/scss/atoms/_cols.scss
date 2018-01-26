@@ -1,8 +1,10 @@
-.main-col {
-  display: flex;
-}
+#dinamikWeb {
+  .main-col {
+    display: flex;
+  }
 
-.main-col--half {
-  width: 50%;
-  flex: 0 0 0 50%;
+  .main-col--half {
+    width: 50%;
+    flex: 0 0 0 50%;
+  }
 }

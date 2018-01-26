@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="dinamikWeb">
 <head>
   <meta charset="UTF-8">
   <title>
 	Yonetici Dashboard - Dinamik
 </title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
-
   <link rel="stylesheet" href="assets/css/app.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body class="page-dashboard">
@@ -32,62 +29,20 @@
   </div>
   <nav class="sidebar__nav">
     <ul class="navigation">
-      <li class="navigation__item">
-        <a href="kisisel-bilgiler.html" class="navigation__link">
+      <li class="navigation__item dropdown">
+        <a href="kisisel-bilgiler.html" class="navigation__link dropdown-toggle" id="dropdownMenuKisiselBilgiler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           KİŞİSEL BİLGİLER
         </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuKisiselBilgiler">
+          <a class="dropdown-item" href="#">Bilgileri Göster</a>
+          <a class="dropdown-item" href="#">Ücretli Özgeçmiş</a>
+          <a class="dropdown-item" href="#">Ücretliz Özgeçmiş</a>
+        </div>
       </li>
       <li class="navigation__item">
         <a href="" class="navigation__link">
-          ÇALIŞAN BİLGİLER
+          ÇALIŞAN BİLGİLERİ
         </a>
-      </li>
-      <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuOzgecmis" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ÖZGEÇMİŞ GÖRÜNTÜLEME
-        </a>
-
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuOzgecmis">
-          <div class="dropdown dropdown-child">
-            <a href="" class="navigation__link dropdown-toggle dropdown-toggle" id="dropdownMenuBireysel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Bireysel
-            </a>
-            <div class="dropdown-menu dropdown-menu-child dropdown-menu--right" aria-labelledby="dropdownMenuBireysel">
-              <a class="dropdown-item" href="#">Ücretli</a>
-              <a class="dropdown-item" href="#">Ücretsiz</a>
-            </div>
-          </div>
-          <div class="dropdown dropdown-child">
-            <a href="" class="navigation__link dropdown-toggle dropdown-toggle" id="dropdownMenuCalisan" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Çalışan
-            </a>
-            <div class="dropdown-menu dropdown-menu-child dropdown-menu--right" aria-labelledby="dropdownMenuCalisan">
-              <a class="dropdown-item" href="#">Ücretli</a>
-              <a class="dropdown-item" href="#">Ücretsiz</a>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIzin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          İZİN İŞLEMLERİ
-        </a>
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIzin">
-          <a class="dropdown-item" href="#">İzin Girişi</a>
-          <a class="dropdown-item" href="#">Onay durumu</a>
-          <a class="dropdown-item" href="#">İzin Onaylama</a>
-          <a class="dropdown-item" href="#">Çalışan için İzin Girişi</a>
-        </div>
-      </li>
-      <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuFazlaMesai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          FAZLA MESAİ
-        </a>
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuFazlaMesai">
-          <a class="dropdown-item" href="#">Fazla Mesai girişi</a>
-          <a class="dropdown-item" href="#">Fazla Mesai Onaylama</a>
-          <a class="dropdown-item" href="#">Toplu Mesai Girişi</a>
-        </div>
       </li>
       <li class="navigation__item">
         <a href="" class="navigation__link">
@@ -95,38 +50,26 @@
         </a>
       </li>
       <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PERFORMANS
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIzin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İZİN İŞLEMLERİ
         </a>
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuPerformans">
-          <div class="dropdown dropdown-child">
-            <a href="" class="navigation__link dropdown-toggle dropdown-toggle" id="dropdownMenuBireyselPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Bireysel işlemler
-            </a>
-            <div class="dropdown-menu dropdown-menu-child dropdown-menu--right" aria-labelledby="dropdownMenuBireyselPerformans">
-              <a class="dropdown-item" href="#">Güncel dönem işlemleri</a>
-              <a class="dropdown-item" href="#">Geçmiş dönem görüntüleme</a>
-            </div>
-          </div>
-          <div class="dropdown dropdown-child">
-            <a href="" class="navigation__link dropdown-toggle dropdown-toggle" id="dropdownMenuCalisanPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Çalışan İşlemleri
-            </a>
-            <div class="dropdown-menu dropdown-menu-child dropdown-menu--right" aria-labelledby="dropdownMenuCalisanPerformans">
-              <a class="dropdown-item" href="#">Güncel dönem işlemleri</a>
-              <a class="dropdown-item" href="#">Geçmiş dönem görüntüleme</a>
-            </div>
-          </div>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIzin">
+          <a class="dropdown-item" href="#">İzin İşlemlerim</a>
+          <a class="dropdown-item" href="#">Onay İşlemlerim</a>
+          <a class="dropdown-item" href="#">Çalışan İzin Bilgileri</a>
+          <a class="dropdown-item" href="#">Planlanan İzin İşlemleri</a>
+          <a class="dropdown-item" href="#">İK İzin Düzeltme</a>
         </div>
       </li>
       <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuGorevDegisikligi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          GÖREV DEĞİŞİKLİĞİ
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuFazlaMesai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          FAZLA MESAİ
         </a>
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuGorevDegisikligi">
-          <a class="dropdown-item" href="#">Görev Değişikliği Talebi</a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuFazlaMesai">
+          <a class="dropdown-item" href="#">Fazla Mesai İşlemlerim</a>
           <a class="dropdown-item" href="#">Onay İşlemleri</a>
-          <a class="dropdown-item" href="#">Görev Değişikliği Sorgulama</a>
+          <a class="dropdown-item" href="#">Çalışan Mesai İşlemleri</a>
+          <a class="dropdown-item" href="#">Toplu Mesai Girişi</a>
         </div>
       </li>
       <li class="navigation__item dropdown">
@@ -134,56 +77,88 @@
           İŞE ALIM
         </a>
         <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIseAlim">
-          <a class="dropdown-item" href="#">Personel Talebi</a>
-          <a class="dropdown-item" href="#">Talep Durumu</a>
-          <a class="dropdown-item" href="#">İş Teklif Formu Onaylama</a>
+          <a class="dropdown-item" href="#">Personel Talep Girişi</a>
+          <a class="dropdown-item" href="#">Talep Sorgulama</a>
+          <a class="dropdown-item" href="#">Talep Onaylama İşlemleri</a>
+          <a class="dropdown-item" href="#">İş Teklifi Formları</a>
           <a class="dropdown-item" href="#">Stajyer Talebi</a>
+          <a class="dropdown-item" href="#">Aday Grubu</a>
+          <a class="dropdown-item" href="#">Aday Filtreleme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PERFORMANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIseAlim">
+          <a class="dropdown-item" href="#">Performans Sonuç</a>
+          <a class="dropdown-item" href="#">Güncel Dönem Değerlendirme</a>
+          <a class="dropdown-item" href="#">Geçmiş Dönem Değerlendirme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuMentor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MENTÖR/MENTEE
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuMentor">
+          <a class="dropdown-item" href="#">Mentör İşlemleri</a>
+          <a class="dropdown-item" href="#">Mentee İşlemleri</a>
+          <a class="dropdown-item" href="#">Mentörlük Programları</a>
+          <a class="dropdown-item" href="#">İK Ekranı</a>
         </div>
       </li>
       <li class="navigation__item dropdown">
         <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuUcretArtisi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          ÜCRET ARTIŞI
+          ÜCRET ARTIŞI VE TEŞVİK
         </a>
         <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuUcretArtisi">
-          <a class="dropdown-item" href="#">Onay İşlemleri</a>
-          <a class="dropdown-item" href="#">Geçmiş Dönem Görüntüleme</a>
-        </div>
-      </li>
-      <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuButceTalep" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          BÜTÇE TALEP İŞLEMLERİ
-        </a>
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuButceTalep">
-          <a class="dropdown-item" href="#">Onay İşlemleri</a>
-        </div>
-      </li>
-      <li class="navigation__item dropdown">
-        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuTesvik" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          TEŞVİK
-        </a>
-        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuTesvik">
-          <a class="dropdown-item" href="#">Onay İşlemleri</a>
-          <a class="dropdown-item" href="#">Geçmiş Dönem Görüntüleme</a>
+          <a class="dropdown-item" href="#">Ücret Artışı</a>
+          <a class="dropdown-item" href="#">Geçmiş Ücret Artışı</a>
+          <a class="dropdown-item" href="#">Doküman Yükleme</a>
+          <a class="dropdown-item" href="#">Teşvik Primi</a>
         </div>
       </li>
       <li class="navigation__item">
         <a href="" class="navigation__link">
-          RAPORLAR
+          BÜTÇE PLANLAMA
         </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuGorevDegisikligi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          GÖREV DEĞİŞİKLİĞİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuGorevDegisikligi">
+          <a class="dropdown-item" href="#">Görev Değişikliği Talebi</a>
+          <a class="dropdown-item" href="#">Talep Onayları</a>
+          <a class="dropdown-item" href="#">Talep Sorgulama</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuAvans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AVANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuAvans">
+          <a class="dropdown-item" href="#">Avans Talebi</a>
+          <a class="dropdown-item" href="#">Önceki Avans Talepleriniz</a>
+          <a class="dropdown-item" href="#">Onaylama İşlemleri</a>
+        </div>
       </li>
       <li class="navigation__item dropdown">
         <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuDiger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           DİĞER İŞLEMLER
         </a>
         <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuDiger">
-          <a class="dropdown-item" href="#">Avans talep</a>
+          <a class="dropdown-item" href="#">Rotasyon</a>
+          <a class="dropdown-item" href="#">Ödül</a>
           <a class="dropdown-item" href="#">Anket</a>
-          <a class="dropdown-item" href="#">İstifa Ön Formu</a>
+          <a class="dropdown-item" href="#">Ön İstifa Formu</a>
+          <a class="dropdown-item" href="#">İK’ya Ulaşın</a>
+          <a class="dropdown-item" href="#">Şifre Değiştir</a>
         </div>
       </li>
       <li class="navigation__item">
         <a href="" class="navigation__link">
-          ÇIKIŞ YAP
+          Çıkış Yap
         </a>
       </li>
     </ul>

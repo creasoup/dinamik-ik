@@ -1,5 +1,5 @@
-html,
-body {
+html#dinamikWeb,
+html#dinamikWeb body {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,7 +8,7 @@ body {
   font-family: $font-family-base;
 }
 
-html {
+html#dinamikWeb {
   font-size: 100%;
 
   // @media (min-width: 1200px) {
@@ -20,89 +20,92 @@ html {
   // }
 }
 
-body {
+html#dinamikWeb body {
 	transition: all 0.5s;
   background-image: radial-gradient(0% 50%, #005B87 0%, #002B44 100%);
   background-image: -ms-radial-gradient(0% 50%, #005B87 0%, #002B44 100%);
   background-image: -webkit-radial-gradient(0% 50%, #005B87 0%, #002B44 100%);
 }
 
-.page-dashboard {
-  height: 100vh;
-  max-height: 900px;
-}
+#dinamikWeb {
 
-img {
-	max-width: 100%;
-	height: auto;
-}
+  .page-dashboard {
+    height: 100vh;
+    max-height: 900px;
+  }
 
-a,
-a:focus,
-a:hover {
-  text-decoration: none;
-  color: inherit;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-p {
-  @include light-regular;
-  font-size: 16px;
-  color: #4A4A4A;
-  margin: 0;
-  padding-bottom: 5px;
-}
+  a,
+  a:focus,
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 
-.app {
-  width: calc(100% - 240px);
-  height: 100vh;
-  padding: 20px 20px 0;
-  margin-left: 240px;
-  position: relative;
-  transition: all 0.5s;
-}
-
-.logo {
-  text-align: center;
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-small {
-  font-size: 60%;
-}
-
-body.no-sidebar {
+  p {
+    @include light-regular;
+    font-size: 16px;
+    color: #4A4A4A;
+    margin: 0;
+    padding-bottom: 5px;
+  }
 
   .app {
-    width: calc(100% - 50px);
-    margin-left: 50px;
+    width: calc(100% - 240px);
+    height: 100vh;
+    padding: 20px 20px 0;
+    margin-left: 240px;
+    position: relative;
+    transition: all 0.5s;
   }
 
-}
-
-@media screen and (min-width: 1400px) {
-  .row--height-100 {
-    height: 100%;
+  .logo {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-.row--full-height {
-  height: 100vh;
-}
-
-.row--1_4 {
-  height: calc(100vh - 240px - 140px);
-
-  .row {
-    height: 100%;
+  small {
+    font-size: 60%;
   }
-}
 
-.no-height {
-  height: auto !important;
-  min-height: 0 !important;
+  body.no-sidebar {
+
+    .app {
+      width: calc(100% - 50px);
+      margin-left: 50px;
+    }
+
+  }
+
+  @media screen and (min-width: 1400px) {
+    .row--height-100 {
+      height: 100%;
+    }
+  }
+
+  .row--full-height {
+    height: 100vh;
+  }
+
+  .row--1_4 {
+    height: calc(100vh - 240px - 140px);
+
+    .row {
+      height: 100%;
+    }
+  }
+
+  .no-height {
+    height: auto !important;
+    min-height: 0 !important;
+  }
 }

@@ -1,184 +1,186 @@
-.button {
-	border: 0;
-	outline: 0;
-	text-align: left;
-	display: inline-block;
-	color: $white;
-	cursor: pointer;
-	border-radius: 4px;
-	min-height: 35px;
-	padding: 10px 20px;
-	font-size: 14px;
-	@include bold;
-
-	&:focus,
-	&:hover,
-	&:active {
-		outline: 0;
-		color: $white;
-	}
-}
-
-//Blue
-.button--aqua {
-	background: $aqua;
-
-	&:hover {
-		background-color: $aqua-hover;
-	}
-
-	&:active {
-		background-color: $aqua-active;
-	}
-}
-
-//Yellow
-.button--yellow {
-	background: $yellowDark;
-
-	&:hover {
-		background-color: $yellowDark-hover;
-	}
-
-	&:active {
-		background-color: $yellowDark-active;
-	}
-}
-
-//Green
-.button--green {
-	background: $green;
-
-	&:hover {
-		background-color: $green-hover;
-	}
-
-	&:active {
-		background-color: $green-active;
-	}
-}
-
-//Cyan
-.button--cyan {
-	background: $cyan;
-
-	&:hover {
-		background-color: $cyan-hover;
-	}
-
-	&:active {
-		background-color: $cyan-active;
-	}
-}
-
-//purple
-.button--purple {
-	background: $purple;
-
-	&:hover {
-		background-color: $purple-hover;
-	}
-
-	&:active {
-		background-color: $purple-active;
-	}
-}
-
-//darkBlue
-.button--darkBlue {
-	background: $darkBlue;
-
-	&:hover {
-		background-color: $darkBlue-hover;
-	}
-
-	&:active {
-		background-color: $darkBlue-active;
-	}
-}
-
-.button--red {
-	background: $red;
-
-	&:hover {
-		background-color: $red-hover;
-	}
-
-	&:active {
-		background-color: $red-hover;
-	}
-}
-
-//Dark Orange
-.button--darkOrange {
-	background: $dark-orange;
-
-	&:hover {
-		background-color: $dark-orange-hover;
-	}
-
-	&:active {
-		background-color: $dark-orange-active;
-	}
-}
-
-.button--size-md {
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-.button--size-sm {
-	padding-left: 30px;
-	padding-right:  30px;
-}
-
-.button--size-xs {
-	padding: 5px 15px;
-	min-height: 20px;
-	font-size: 12px;
-	line-height: 12px;
-}
-
-.button--link {
-	@include bold;
-	font-size: 14px;
-	margin: 0;
-	padding: 0;
-}
-
-.button--link-light-gray {
-	font-size: 13px;
-	color: #9B9B9B;
-	@include light-regular;
-	min-height: 0;
-
-	&:hover,
-	&:focus {
-		color: #777373;
-	}
-}
-
-.button--link-success {
-	color: $green;
-	
-	&:hover {
-		color: $green-active;
-	}
-}
-
-.button--link-error {
-	color: $red;
-
-	&:hover {
-		color: $red-hover;
-	}
-}
-
-.button-group {
-	display: flex;
-	flex-direction: row;
-
+#dinamikWeb {
 	.button {
-		margin-right: 10px;
+		border: 0;
+		outline: 0;
+		text-align: left;
+		display: inline-block;
+		color: $white;
+		cursor: pointer;
+		border-radius: 4px;
+		min-height: 35px;
+		padding: 10px 20px;
+		font-size: 14px;
+		@include bold;
+
+		&:focus,
+		&:hover,
+		&:active {
+			outline: 0;
+			color: $white;
+		}
+	}
+
+	//Blue
+	.button--aqua {
+		background: $aqua;
+
+		&:hover {
+			background-color: $aqua-hover;
+		}
+
+		&:active {
+			background-color: $aqua-active;
+		}
+	}
+
+	//Yellow
+	.button--yellow {
+		background: $yellowDark;
+
+		&:hover {
+			background-color: $yellowDark-hover;
+		}
+
+		&:active {
+			background-color: $yellowDark-active;
+		}
+	}
+
+	//Green
+	.button--green {
+		background: $green;
+
+		&:hover {
+			background-color: $green-hover;
+		}
+
+		&:active {
+			background-color: $green-active;
+		}
+	}
+
+	//Cyan
+	.button--cyan {
+		background: $cyan;
+
+		&:hover {
+			background-color: $cyan-hover;
+		}
+
+		&:active {
+			background-color: $cyan-active;
+		}
+	}
+
+	//purple
+	.button--purple {
+		background: $purple;
+
+		&:hover {
+			background-color: $purple-hover;
+		}
+
+		&:active {
+			background-color: $purple-active;
+		}
+	}
+
+	//darkBlue
+	.button--darkBlue {
+		background: $darkBlue;
+
+		&:hover {
+			background-color: $darkBlue-hover;
+		}
+
+		&:active {
+			background-color: $darkBlue-active;
+		}
+	}
+
+	.button--red {
+		background: $red;
+
+		&:hover {
+			background-color: $red-hover;
+		}
+
+		&:active {
+			background-color: $red-hover;
+		}
+	}
+
+	//Dark Orange
+	.button--darkOrange {
+		background: $dark-orange;
+
+		&:hover {
+			background-color: $dark-orange-hover;
+		}
+
+		&:active {
+			background-color: $dark-orange-active;
+		}
+	}
+
+	.button--size-md {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.button--size-sm {
+		padding-left: 30px;
+		padding-right:  30px;
+	}
+
+	.button--size-xs {
+		padding: 5px 15px;
+		min-height: 20px;
+		font-size: 12px;
+		line-height: 12px;
+	}
+
+	.button--link {
+		@include bold;
+		font-size: 14px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.button--link-light-gray {
+		font-size: 13px;
+		color: #9B9B9B;
+		@include light-regular;
+		min-height: 0;
+
+		&:hover,
+		&:focus {
+			color: #777373;
+		}
+	}
+
+	.button--link-success {
+		color: $green;
+		
+		&:hover {
+			color: $green-active;
+		}
+	}
+
+	.button--link-error {
+		color: $red;
+
+		&:hover {
+			color: $red-hover;
+		}
+	}
+
+	.button-group {
+		display: flex;
+		flex-direction: row;
+
+		.button {
+			margin-right: 10px;
+		}
 	}
 }

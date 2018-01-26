@@ -1,31 +1,33 @@
-.table {
-  border-collapse: collapse;
-  border-spacing: 0;
+#dinamikWeb {
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0;
 
-  th,
-  td {
-    padding: 3px;
-  }
+    th,
+    td {
+      padding: 3px;
+    }
 
-  tbody tr:hover {
-    // background: #FFFFFF;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.20);
-  }
+    tbody tr:hover {
+      // background: #FFFFFF;
+      box-shadow: 0 10px 20px 0 rgba(0,0,0,0.20);
+    }
 
-  th {
-    @include regular;
-    font-size: 11px;
-    color: #4A4A4A;
-    text-align: left;
-    font-weight: normal;
-    border-top: 0;
-  }
-  td {
-    padding: 10px 3px;
-    @include light-regular;
-    color: #4A4A4A;
-    font-size: 13px;
-    text-align: left;
-    vertical-align: middle;
+    th {
+      @include regular;
+      font-size: 11px;
+      color: #4A4A4A;
+      text-align: left;
+      font-weight: normal;
+      border-top: 0;
+    }
+    td {
+      padding: 10px 3px;
+      @include light-regular;
+      color: #4A4A4A;
+      font-size: 13px;
+      text-align: left;
+      vertical-align: middle;
+    }
   }
 }

@@ -1,127 +1,130 @@
-.sidebar {
-	width: 240px;
-	max-width: 240px;
-	height: 100vh;
-	position: fixed;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(255,255,255,0.00);
-	box-shadow: 6px 0 12px 0 rgba(0,0,0,0.10);
-	transition: all 0.5s;
-	z-index: 2;
-
-	&__toggle {
-		display: block;
-		position: absolute;
-		right: 20px;
-		top: 40px;
-		color: $white;
-		background: transparent;
-		border: 0;
-		outline: 0;
-		font-size: 20px;
-		cursor: pointer;
-
-		&:focus,
-		&:active {
-			outline: 0;
-		}
-	}
-
-	&__profile {
-		padding: 50px 45px;
-		margin-bottom: 30px;
-		text-align: center;
-
-		@media screen and (max-height: 900px) {
-			padding: 50px 45px 20px;
-			margin-bottom: 15px;
-		}
-	}
-
-	&__avatar {
-		width: 120px;
-		height: 120px;
-		border-radius: 50%;
-		display: inline-block;
-		text-align: center;
-		margin: 0 auto 20px;
-		position: relative;
-		overflow: hidden;
-		background: #FFFFFF;
-		border: 6px solid #00A8E1;
-		box-shadow: 0 20px 40px 0 rgba(0,0,0,0.20);
-	}
-
-	&__fullname {
-		font-size: 16px;
-		color: #00A8E1;
-		@include light-regular;
-		line-height: 24px;
-	}
-
-	&__nav {
-		.navigation {
-			list-style: none;
-			margin: 0 10px;
-			padding: 0;
-		}
-
-		.navigation__item {
-			width: 100%;
-			border-bottom: 1px solid rgba(0,0,0,0.10);
-		}
-
-		.navigation__link {
-			display: block;
-			font-size: 13px;
-			color: #FFFFFF;
-			line-height: 32px;
-			padding-left: 10px;
-			@include regular;
-		}
-	}
-}
-
-.sidebar--card {
-	// width: 100%;
-	// max-width: 100%;
-	height: auto;
-	position: static;
-	background: transparent;
-	box-shadow: none;
-	transform: none !important;
-	display: flex;
-  justify-content: center;
-  align-items: center;
-
-	& > * {
-		opacity: 1 !important;
-		visibility: visible !important;
-	}
-
-	.sidebar__avatar {
-		border-width: 3px;
-		margin: 0;
-	}
-}
-
-body.no-sidebar {
-
+#dinamikWeb {
 	.sidebar {
-		transform: translate3d(-77%, 0, 0);
-
-		& > * {
-			opacity: 0;
-			visibility: hidden;
-		}
+		width: 240px;
+		max-width: 240px;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(255,255,255,0.00);
+		box-shadow: 6px 0 12px 0 rgba(0,0,0,0.10);
+		transition: all 0.5s;
+		z-index: 2;
 
 		&__toggle {
-			opacity: 1;
-			visibility: visible;
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 40px;
+			color: $white;
+			background: transparent;
+			border: 0;
+			outline: 0;
+			font-size: 20px;
+			cursor: pointer;
+
+			&:focus,
+			&:active {
+				outline: 0;
+			}
 		}
 
+		&__profile {
+			padding: 50px 45px;
+			margin-bottom: 30px;
+			text-align: center;
+
+			@media screen and (max-height: 900px) {
+				padding: 50px 45px 20px;
+				margin-bottom: 15px;
+			}
+		}
+
+		&__avatar {
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			display: inline-block;
+			text-align: center;
+			margin: 0 auto 20px;
+			position: relative;
+			overflow: hidden;
+			background: #FFFFFF;
+			border: 6px solid #00A8E1;
+			box-shadow: 0 20px 40px 0 rgba(0,0,0,0.20);
+		}
+
+		&__fullname {
+			font-size: 16px;
+			color: #00A8E1;
+			@include light-regular;
+			line-height: 24px;
+		}
+
+		&__nav {
+			.navigation {
+				list-style: none;
+				margin: 0 10px;
+				padding: 0;
+			}
+
+			.navigation__item {
+				width: 100%;
+				border-bottom: 1px solid rgba(0,0,0,0.10);
+			}
+
+			.navigation__link {
+				display: block;
+				font-size: 13px;
+				color: #FFFFFF;
+				line-height: 32px;
+				padding-left: 10px;
+				@include regular;
+			}
+		}
+	}
+
+	.sidebar--card {
+		// width: 100px;
+		// max-width: 100px;
+		height: auto;
+		position: static;
+		background: transparent;
+		box-shadow: none;
+		transform: none !important;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding-top: 10px;
+
+		& > * {
+			opacity: 1 !important;
+			visibility: visible !important;
+		}
+
+		.sidebar__avatar {
+			border-width: 3px;
+			margin: 0;
+		}
+	}
+
+	body.no-sidebar {
+
+		.sidebar {
+			transform: translate3d(-77%, 0, 0);
+
+			& > * {
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&__toggle {
+				opacity: 1;
+				visibility: visible;
+			}
+
+		}
 	}
 }
