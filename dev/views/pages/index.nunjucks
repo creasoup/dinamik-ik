@@ -21,6 +21,12 @@
     <li>
       <a href="kisisel-bilgiler.html">Kişisel Bilgiler</a>
     </li>
+    <li>
+      <a href="calisan-bilgileri-listeleme.html">Çalışan Bilgileri Listeleme</a>
+    </li>
+    <li>
+      <a href="calisan-bilgileri-goruntuleme.html">Çalışan Bilgileri Goruntuleme</a>
+    </li>
   </ul>
 </body>
 </html>

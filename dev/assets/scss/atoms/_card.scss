@@ -81,6 +81,10 @@ $cardBottomSpace: 20px;
       padding-bottom: 10px;
     }
 
+    .card__header-form {
+      padding-right: 0;
+    }
+
     .card__price {
       @include bold;
       font-size: 24px;
@@ -353,6 +357,24 @@ $cardBottomSpace: 20px;
         border-color: transparent;
         background: transparent;
         cursor: text;
+      }
+    }
+
+    &.form-layout.form-layout--no-editing {
+      .list__item-form-group {
+        height: auto;
+      }
+
+      .form-control,
+      .selectbox {
+        padding: 0;
+        height: auto;
+      }
+    }
+
+    &.list--content-col3 {
+      .list__item {
+        width: calc(33.33% - 25px);
       }
     }
   }

@@ -30,4 +30,8 @@
       vertical-align: middle;
     }
   }
+
+  tr:hover .button-group--has-hover-active {
+    opacity: 1;
+  }
 }

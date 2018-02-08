@@ -53,4 +53,20 @@
 		font-size: 13px;
 		@include regular;
 	}
+
+	.items-horizontal {
+		display: flex;
+
+		&__item {
+			margin: 0 10px 0;
+
+			&-lg {
+				flex: 1;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 }

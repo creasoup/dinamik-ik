@@ -56,6 +56,12 @@
       padding-right: 130px;
     }
 
+    &--no-aside {
+      .personal-card__info {
+        padding-right: 15px !important;
+      } 
+    }
+
     .card__header {
       padding-right: 30px;
     }

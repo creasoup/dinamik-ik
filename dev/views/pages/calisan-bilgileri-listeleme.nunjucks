@@ -1,0 +1,127 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Çalışan Bilgileri - Listeleme
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Çalışan Bilgileri</h2>
+          <div class="col-md-6 card__header-form items-horizontal">
+            <div class="form-group items-horizontal__item items-horizontal__item-lg">
+              <input type="text" class="form-control" placeholder="Aradığınız kişi adını yazınız..">
+            </div>
+            <div class="form-group items-horizontal__item">
+              <button class="button button--aqua">Ara</button>
+            </div>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Perno</th>
+                  <th>Adı Soyadı</th>
+                  <th>Bölüm</th>
+                  <th>Görev</th>
+                  <th>Ücret <br> Bilgisini</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>13.10.2014</td>
+                  <td>Özge <br> Akyıldız</td>
+                  <td>Dos Merkez Şekerpınar <br> VW Binek &amp; Ticari Araç - VW Binek &amp; Ticari SSH</td>
+                  <td>Yeden Parça <br> Koordinasyon &amp; Aksesu</td>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox1">
+                      <label for="customCheckbox1"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-sm button--cyan">Göster</a>
+                      <a href="" class="button button--size-sm button--cyan">Bağlı Çalışan</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13.10.2014</td>
+                  <td>Özge <br> Akyıldız</td>
+                  <td>Dos Merkez Şekerpınar <br> VW Binek &amp; Ticari Araç - VW Binek &amp; Ticari SSH</td>
+                  <td>Yeden Parça <br> Koordinasyon &amp; Aksesu</td>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox2">
+                      <label for="customCheckbox2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-sm button--cyan">Göster</a>
+                      <a href="" class="button button--size-sm button--cyan">Bağlı Çalışan</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13.10.2014</td>
+                  <td>Özge <br> Akyıldız</td>
+                  <td>Dos Merkez Şekerpınar <br> VW Binek &amp; Ticari Araç - VW Binek &amp; Ticari SSH</td>
+                  <td>Yeden Parça <br> Koordinasyon &amp; Aksesu</td>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox3">
+                      <label for="customCheckbox3"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-sm button--cyan">Göster</a>
+                      <a href="" class="button button--size-sm button--cyan">Bağlı Çalışan</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13.10.2014</td>
+                  <td>Özge <br> Akyıldız</td>
+                  <td>Dos Merkez Şekerpınar <br> VW Binek &amp; Ticari Araç - VW Binek &amp; Ticari SSH</td>
+                  <td>Yeden Parça <br> Koordinasyon &amp; Aksesu</td>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox4">
+                      <label for="customCheckbox4"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-sm button--cyan">Göster</a>
+                      <a href="" class="button button--size-sm button--cyan">Bağlı Çalışan</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
