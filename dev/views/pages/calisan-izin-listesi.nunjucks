@@ -1,0 +1,110 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	İzin İşlemleri
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Planlanan İzin İşlemleri</h2>
+          <div class="card__header--actions">
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>İzin Türü</th>
+                  <th width="100">İzne Çıkış <br> Tarih ve Saati</th>
+                  <th>İşe Başlama <br> Tarih ve Saati</th>
+                  <th>Açıklama</th>
+                  <th width="50">Süre</th>
+                  <th>Tatil Süre</th>
+                  <th>Durum</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Yıllık İzin</td>
+                  <td>14.11.2016 <br> 17.00</td>
+                  <td>14.11.2016 <br> 17.00</td>
+                  <td>Lorem Ipsum is simply dummy0text of the printing...</td>
+                  <td>2 Gun</td>
+                  <td>0</td>
+                  <td class="td-error"><span>ONAY <br> BEKLİYOR</span></td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Onayla</a>
+                      <a href="" class="button button--size-xs button--red">Reddet</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Yıllık İzin</td>
+                  <td>14.11.2016 <br> 17.00</td>
+                  <td>14.11.2016 <br> 17.00</td>
+                  <td>Lorem Ipsum is simply dummy0text of the printing...</td>
+                  <td>2 Gun</td>
+                  <td>0</td>
+                  <td class="td-success"><span>ONAYLANDI</span></td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Onayla</a>
+                      <a href="" class="button button--size-xs button--red">Reddet</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

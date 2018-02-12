@@ -7,4 +7,12 @@
     width: 50%;
     flex: 0 0 0 50%;
   }
+
+  .list--bootstrap-grid {
+    .list__item {
+      width: inherit !important;
+      margin-right: 0 !important;
+      padding: 7.5px 15px !important;
+    }
+  }
 }

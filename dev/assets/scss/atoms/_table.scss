@@ -34,4 +34,49 @@
   tr:hover .button-group--has-hover-active {
     opacity: 1;
   }
+
+  .table__footer {
+    background: #00A8E1;
+    td {
+      color: #fff;
+    }
+  }
+
+  .td-error span {
+    color: $red;
+    font-weight: bold;
+  }
+
+  .td-success span {
+    color: #4FADA9;
+    font-weight: bold;
+  }
+
+  .td-waiting span {
+    color: #D6C300;
+    font-weight: bold;
+  }
+
+  .tr-transparent {
+    background: transparent !important;
+  }
+
+  .vertical-align--md {
+    th, td {
+      vertical-align: middle;
+    }
+  }
+
+  .u--no-bottom-border {
+    th, td {
+      border-bottom: 0 !important;
+    }
+  }
+
+  .hr-style {
+    opacity: 0.4;
+    border: 1px solid #00A8E1;
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
 }

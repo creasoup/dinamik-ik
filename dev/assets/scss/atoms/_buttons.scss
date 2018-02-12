@@ -187,4 +187,15 @@
 	.button-group--has-hover-active {
 		opacity: 0;
 	}
+
+	.text-bg {
+		color: #fff;
+		line-height: 30px;
+		min-height: auto;
+		height: auto;
+	}
+
+	.text-bg--size-xs {
+		padding: 0 10px;
+	}
 }

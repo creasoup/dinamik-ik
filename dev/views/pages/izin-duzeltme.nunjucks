@@ -1,0 +1,126 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	İzin İşlemleri
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Planlanan İzin İşlemleri</h2>
+          <div class="card__header--actions">
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Sicil <br> No</th>
+                  <th>Adı <br> Soyadı</th>
+                  <th>İzne Çıkış <br> Tarihi</th>
+                  <th>İşe Başlama <br> Tarihi</th>
+                  <th>İzin Türü</th>
+                  <th>Eski Süre</th>
+                  <th>Yeni Süre</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox2" />
+                      <label for="customCheckbox2"></label>
+                    </div>
+                  </td>
+                  <td>000</td>
+                  <td>Ali Ender <br> Yakıcı</td>
+                  <td>14.11.2016</td>
+                  <td>14.11.2016</td>
+                  <td>Lorem Ipsum is…</td>
+                  <td>2 Gün</td>
+                  <td>2 Gün</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Düzenle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox2" />
+                      <label for="customCheckbox2"></label>
+                    </div>
+                  </td>
+                  <td>000</td>
+                  <td>Ali Ender <br> Yakıcı</td>
+                  <td>14.11.2016</td>
+                  <td>14.11.2016</td>
+                  <td>Lorem Ipsum is…</td>
+                  <td>2 Gün</td>
+                  <td>2 Gün</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Düzenle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tr-transparent">
+                  <td colspan="9">
+                    <a href="#" class="button button--size-sm button--aqua">Seçilenleri Düzenle</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

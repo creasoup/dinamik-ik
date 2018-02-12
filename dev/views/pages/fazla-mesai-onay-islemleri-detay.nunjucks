@@ -1,0 +1,164 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Fazla Mesai
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Bağlı Çalışan Mesai Bilgileri</h2>
+          <a href="#" class="button button--aqua">Geri Dön</a>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Kişisel Bilgiler</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Sicil No</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="90998" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Bölüm</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="VW Binek &amp; Ticari-SSH" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ad</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Ayşe Ekin" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Görev</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="SSH Müdürü" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Soyad</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Osmanoğulları" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ünvan</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Müdür" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">&nbsp;</li>
+            <li class="list__item">
+              <label class="list__item-title">İşe Giriş Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="23.10.1997" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="sidebar sidebar--card personal-card__avatar text-align-center">
+        <picture class="sidebar__avatar sidebar__avatar--md">
+          <img src="assets/images/calisan-avatar-lg.jpg" alt="">
+        </picture>
+      </aside>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Fazla Mesai Detayı</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>Fazla Mesai</th>
+                  <th>Başlangıç Saati</th>
+                  <th>Bitiş Saati</th>
+                  <th>Süre</th>
+                  <th>Açıklama</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox2">
+                      <label for="customCheckbox2"></label>
+                    </div>
+                  </td>
+                  <td>24.03.2016</td>
+                  <td>18.00</td>
+                  <td>15.5</td>
+                  <td>4.5</td>
+                  <td>Fazla Mesai</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--cyan">Onayla</a>
+                      <a href="" class="button button--size-xs button--red">Reddet</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group custom-checkbox">
+                      <input type="checkbox" id="customCheckbox2">
+                      <label for="customCheckbox2"></label>
+                    </div>
+                  </td>
+                  <td>24.03.2016</td>
+                  <td>18.00</td>
+                  <td>15.5</td>
+                  <td>4.5</td>
+                  <td>Fazla Mesai</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--cyan">Onayla</a>
+                      <a href="" class="button button--size-xs button--red">Reddet</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tr-transparent">
+                  <td colspan="9">
+                    <a href="#" class="button button--size-sm button--aqua">Tümünü Onayla</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

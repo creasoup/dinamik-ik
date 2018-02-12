@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" id="dinamikWeb">
+<head>
+  <meta charset="UTF-8">
+  <title>
+	Bordro Sorgulama Sonuc
+</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="">
+
+  
+
+<aside class="sidebar">
+
+  <button class="sidebar__toggle">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </button>
+
+  <div class="sidebar__profile">
+    <div class="sidebar__avatar">
+      <img src="assets/images/calisan-avatar.jpg" alt="">
+    </div>
+    <h3 class="sidebar__fullname">
+      AYŞE EKİN <br> OSMANOĞULLARI
+    </h3>
+  </div>
+  <nav class="sidebar__nav">
+    <ul class="navigation">
+      <li class="navigation__item dropdown">
+        <a href="kisisel-bilgiler.html" class="navigation__link dropdown-toggle" id="dropdownMenuKisiselBilgiler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          KİŞİSEL BİLGİLER
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuKisiselBilgiler">
+          <a class="dropdown-item" href="#">Bilgileri Göster</a>
+          <a class="dropdown-item" href="#">Ücretli Özgeçmiş</a>
+          <a class="dropdown-item" href="#">Ücretliz Özgeçmiş</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          ÇALIŞAN BİLGİLERİ
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          BORDRO SORGULAMA
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIzin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İZİN İŞLEMLERİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIzin">
+          <a class="dropdown-item" href="#">İzin İşlemlerim</a>
+          <a class="dropdown-item" href="#">Onay İşlemlerim</a>
+          <a class="dropdown-item" href="#">Çalışan İzin Bilgileri</a>
+          <a class="dropdown-item" href="#">Planlanan İzin İşlemleri</a>
+          <a class="dropdown-item" href="#">İK İzin Düzeltme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuFazlaMesai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          FAZLA MESAİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuFazlaMesai">
+          <a class="dropdown-item" href="#">Fazla Mesai İşlemlerim</a>
+          <a class="dropdown-item" href="#">Onay İşlemleri</a>
+          <a class="dropdown-item" href="#">Çalışan Mesai İşlemleri</a>
+          <a class="dropdown-item" href="#">Toplu Mesai Girişi</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIseAlim" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İŞE ALIM
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIseAlim">
+          <a class="dropdown-item" href="#">Personel Talep Girişi</a>
+          <a class="dropdown-item" href="#">Talep Sorgulama</a>
+          <a class="dropdown-item" href="#">Talep Onaylama İşlemleri</a>
+          <a class="dropdown-item" href="#">İş Teklifi Formları</a>
+          <a class="dropdown-item" href="#">Stajyer Talebi</a>
+          <a class="dropdown-item" href="#">Aday Grubu</a>
+          <a class="dropdown-item" href="#">Aday Filtreleme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PERFORMANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIseAlim">
+          <a class="dropdown-item" href="#">Performans Sonuç</a>
+          <a class="dropdown-item" href="#">Güncel Dönem Değerlendirme</a>
+          <a class="dropdown-item" href="#">Geçmiş Dönem Değerlendirme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuMentor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MENTÖR/MENTEE
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuMentor">
+          <a class="dropdown-item" href="#">Mentör İşlemleri</a>
+          <a class="dropdown-item" href="#">Mentee İşlemleri</a>
+          <a class="dropdown-item" href="#">Mentörlük Programları</a>
+          <a class="dropdown-item" href="#">İK Ekranı</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuUcretArtisi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ÜCRET ARTIŞI VE TEŞVİK
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuUcretArtisi">
+          <a class="dropdown-item" href="#">Ücret Artışı</a>
+          <a class="dropdown-item" href="#">Geçmiş Ücret Artışı</a>
+          <a class="dropdown-item" href="#">Doküman Yükleme</a>
+          <a class="dropdown-item" href="#">Teşvik Primi</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          BÜTÇE PLANLAMA
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuGorevDegisikligi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          GÖREV DEĞİŞİKLİĞİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuGorevDegisikligi">
+          <a class="dropdown-item" href="#">Görev Değişikliği Talebi</a>
+          <a class="dropdown-item" href="#">Talep Onayları</a>
+          <a class="dropdown-item" href="#">Talep Sorgulama</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuAvans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AVANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuAvans">
+          <a class="dropdown-item" href="#">Avans Talebi</a>
+          <a class="dropdown-item" href="#">Önceki Avans Talepleriniz</a>
+          <a class="dropdown-item" href="#">Onaylama İşlemleri</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuDiger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DİĞER İŞLEMLER
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuDiger">
+          <a class="dropdown-item" href="#">Rotasyon</a>
+          <a class="dropdown-item" href="#">Ödül</a>
+          <a class="dropdown-item" href="#">Anket</a>
+          <a class="dropdown-item" href="#">Ön İstifa Formu</a>
+          <a class="dropdown-item" href="#">İK’ya Ulaşın</a>
+          <a class="dropdown-item" href="#">Şifre Değiştir</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          Çıkış Yap
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <img src="assets/images/logo.png" class="logo__img" alt="">
+  </div>
+</aside>
+
+
+<div class="app container">
+	
+	<div class="search">
+  <div class="form-control">
+    <i class="fa fa-search"></i>
+    <input type="text" class="form-control" placeholder="Aramak istediğiniz kelimeyi yazınız...">
+  </div>
+  <button class="button button--aqua">Arama Yap</button>
+</div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Doğuş Otomotiv</h2>
+          <div class="card__header-form items-horizontal">
+            <div class="form-group items-horizontal__item">
+              <button class="button button--aqua">Geri Dön</button>
+            </div>
+            <div class="form-group items-horizontal__item">
+              <button class="button button--aqua">Yazdır</button>
+            </div>
+          </div>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout list--content-col3 form-layout--no-editing">
+            <li class="list__item">
+              <label class="list__item-title">Bordro Türü</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Maaş" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Adı Soyadı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Ayşe Ekin Osmanoğulları" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Kümüle Vergi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Paremetre Türü</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Normal" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Şirket</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Doğuş Otomotiv Servis ve Ticaret A.Ş." disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Küm. Vergi Matrah</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Dönemi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="10.10.2020" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Önceki Ay Küm. Vergi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">T.C. Kimlik No</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="99887766554" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İşyeri</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="DOS" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Önceki Ay Küm. V.M.</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">SSK No</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="433221100" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Bölümü</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Strateji Pazarlama ve Kurumsal İletişim - DİM" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Birim Ücret</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Banka/Hesap No</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="123/4567890" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Toplam Ücret</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İşyeri Ticaret Ün.</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Doğuş Otomtiv Servis  ve Ticaret A.Ş." disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Görevi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Değer ve İlgili Merkezi Müdür" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Mersis No.</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İşyeri Adresi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Orhan Veli Kanık Caddesi Funda Sokak No: 360 Beykoz/İstanbul" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İşyeri V.D. No</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Büyük Mükellefler 3090114713" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Çalışma, İzin ve Mesai Saatleri</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Tür</th>
+                    <th>Normal</th>
+                    <th>Haftalık <br> Tatil</th>
+                    <th>Günlük <br> Tatil</th>
+                    <th>Rapor <br> Tatil</th>
+                    <th>Yıllık</th>
+                    <th>Ücretsiz <br> İzin</th>
+                    <th>Fazla Mesai <br> %50</th>
+                    <th>Fazla Mesai <br> %100</th>
+                    <th>Fazla Mesai <br> Diğer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Genel</td>
+                    <td>30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>İkincil Ücret</td>
+                    <td>30</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr class="table__footer">
+                    <td>Toplam</td>
+                    <td>30,00</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Ek Gelirler</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Ek Gelir Tanımı</th>
+                    <th>Puantaj</th>
+                    <th>Net Tutar</th>
+                    <th>Brüt Tutar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>İkramiye</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Prim Distribütör (Brüt)</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Grup Sağlık Sigortası</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Grup Hayat Sigortası</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Grup Hayat Sigortaı - DT</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Yemek Çeki - DİM</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Özel Kesintiler -II</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Özel Kesinti Tanımı</th>
+                    <th>Kesilmesi <br> Gereken Tutar</th>
+                    <th>Kesilecek <br> Tutar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Grup Sağlık Kesintisi</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Grup Hayat Kesintisi</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Özel Sağlık Sigortası</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Yemek Çeki - DİM</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Vergi İndirimleri</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Vergi İndirimi Tanımı</th>
+                    <th>Vergi İndirimi <br> Tutarı</th>
+                    <th>İndirimler <br> Tutarı</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Özel Sağlık Sigortası</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Ödeme ve Kesinti Toplamları</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Tutar</th>
+                    <th>&nbsp;</th>
+                    <th>Tutar</th>
+                    <th>&nbsp;</th>
+                    <th>Tutar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ek Gelir Toplamı</td>
+                    <td>0</td>
+                    <td>Özel Gider İndirimi / Asgari Geçim İndirimi</td>
+                    <td>0</td>
+                    <td>Kazanç Toplamı</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Özel Kesintiler Toplamı</td>
+                    <td>0</td>
+                    <td>Yasal Kesinti Toplamı</td>
+                    <td>0</td>
+                    <td>Kesinti Toplamı I-II</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><strong>NET ÖDENEN</strong></td>
+                    <td><strong>0</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-red no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <div class="card__main">
+          <div class="card__main-note">
+            <p>BU EKRANDAKİ BORDRO GÖRÜNTÜSÜ BİLGİLENDİRME AMAÇLIDIR.</p>
+            <p>RESMİ KURUMLARA VERİLECEK OLAN BORDROLAR İÇİN TYS’DEN TALEP AÇMANIZ GEREKMEKTEDİR.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+  
+  
+  <script src="assets/js/libs.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Personel Talep Bilgilieri
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Personel Talep Formu</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="form u-full">
+            <ul class="list list--column list--content list-no-col form-layout">
+              <li class="list__item">
+                <label class="list__item-title">Bölüm</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimBolum" id="iseAlimBolum" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Pozisyon</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimPozisyon" id="iseAlimPozisyon" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">İş Ailesi</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimIsAilesi" id="iseAlimIsAilesi" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Personel Grubu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimPersonelGrubu" id="iseAlimPersonelGrubu" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Personel Tipi</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimPersonelTipi" id="iseAlimPersonelTipi" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Çalışma Durumu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimCalismaDurumu" id="iseAlimCalismaDurumu" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Sözleşme Durumu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimSozlesmeDurumu" id="iseAlimSozlesmeDurumu" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Yeni Kadro</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__item">
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Yerine Kadro</option>
+                      </select>
+                    </div>
+                    <textara class="form-control input-size--lg"></textara>
+                  </div>
+                  <div class="d-flex__item">
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Yerine Kadro</option>
+                      </select>
+                    </div>
+                    <textara class="form-control input-size--lg"></textara>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Görev Tanımı</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__item">
+                    <textara class="form-control input-size--lg"></textara>
+                  </div>
+                  <div class="d-flex__item"></div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Görev Gerektirdiği Nitelikler</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__item">
+                    <textara class="form-control input-size--lg"></textara>
+                  </div>
+                  <div class="d-flex__item"></div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Yaş Aralığı</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__group">
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Min</option>
+                      </select>
+                    </div>
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Max</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Öğrenim Durumu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimOgrenimDurumu" id="iseAlimOgrenimDurumu" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Cinsiyet</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimCinsiyet" id="iseAlimCinsiyet" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Ehliyet</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimEhliyet" id="iseAlimEhliyet" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Yabancı Dil</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__group">
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Seçiniz</option>
+                      </select>
+                    </div>
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Düzey</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">2. Yabancı Dil</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__group">
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Seçiniz</option>
+                      </select>
+                    </div>
+                    <div class="selectbox">
+                      <select name="iseAlimTalepEdilenKisiSayisi" id="iseAlimTalepEdilenKisiSayisi" required>
+                        <option value="">Düzey</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Deneyim Bilgisi</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimEhliyet" id="iseAlimEhliyet" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Diğer</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__item">
+                    <textara class="form-control input-size--lg" required></textara>
+                  </div>
+                  <div class="d-flex__item"></div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Pozisyon için Uygun Adayın İsmi</label>
+                <div class="list__item-form-group d-flex d-flex--cols">
+                  <div class="d-flex__item">
+                    <input type="text" class="form-control" required />
+                  </div>
+                  <div class="d-flex__item"></div>
+                </div>
+              </li>
+              <li class="list__item m-top-50">
+                <button class="button button--size-sm button--aqua">Talep Et</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

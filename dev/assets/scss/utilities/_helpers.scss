@@ -19,6 +19,10 @@
 		text-align: right;
 	}
 
+	.important {
+		color: $red;
+	}
+
 	.d-flex {
 		display: flex;
 	}
@@ -31,12 +35,34 @@
 		width: 100%;
 	}
 
+	.no-height {
+		height: auto !important;
+		vertical-align: top;
+		p {
+			padding-left: 0.75rem !important;
+			font-family: $font-family-base;
+			font-weight: 700;
+			font-size: 13px;
+			color: #4A4A4A;
+			line-height: 38px;
+		}
+	}
+
+	.border-top--light {
+		border-top: 1px solid #D8D8D8;
+		padding-top: 15px;
+	}
+
 	.p-bottom-0 {
 		padding-bottom: 0 !important;
 	}
 
 	.m-top-10 {
 		margin-top: 10px !important;
+	}
+
+	.m-top-50 {
+		margin-top: 50px !important;
 	}
 
 	.visible-block-lg-down {

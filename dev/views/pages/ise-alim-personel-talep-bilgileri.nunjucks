@@ -1,0 +1,269 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Personel Talep Bilgilieri
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Personel Talep Bilgilieri</h2>
+          <a href="#" class="button button--aqua">Geri Dön</a>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content list--content-col3 form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Talep No:</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="7578" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Talep Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="00.00.0000" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Talep Eden Kişi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="İsmail Berkay Okkan" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Genel Bilgiler</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Talep Edilen Kişi Sayısı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="1 Kişi Yeni Kadro" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Personel Grubu</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Kadrolu" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Talep Nedeni</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Personel Tipi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Normal" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Pozisyon</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Eğitim Yöneticisi" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Çalışma Durumu</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Tam Zamanlı" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Şirket</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Doğuş Otomotiv Servis ve Ticaret A.Ş." disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Sözleşme Durumu</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Süreli" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Bölüm</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="İnsan Kaynakları ve Süreç Yönetimi Doğuş Otomotiv - Eğitim" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Görev Tanımı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">&nbsp;</li>
+            <li class="list__item">
+              <label class="list__item-title">Görev Nitelikleri</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Görevin Getirdiği Nitelikler" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Aday Nitelikleri</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Cinsiyeti</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Kadin" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">1.Yabancı Dil</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="İngilizce, Advenced" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Öğrenim</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Lisans" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">2.Yabancı Dil</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Almanca, Orta" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yaş Aralığı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="20-25" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Deneyim Bilgisi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="1 - 6" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ehliyet</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="A2 Sınıfı" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Diğer</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Diğer" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Uygun Adaylar</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Aday No</th>
+                  <th>Ad Soyad</th>
+                  <th>Doğum Tarihi</th>
+                  <th>Cinsiyet</th>
+                  <th>Öğrenim Durumu</th>
+                  <th>Süreç</th>
+                  <th>Uygunluk</th>
+                  <th>CV</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>00000</td>
+                  <td>Ebru Atış</td>
+                  <td>00.00.0000</td>
+                  <td>Kadın</td>
+                  <td>Lisans</td>
+                  <td>Lorem ipsum….</td>
+                  <td>Lorem ipsum….</td>
+                  <td>
+                    <div class="float-right button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Görüntüle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>00000</td>
+                  <td>Ebru Atış</td>
+                  <td>00.00.0000</td>
+                  <td>Kadın</td>
+                  <td>Lisans</td>
+                  <td>Lorem ipsum….</td>
+                  <td>Lorem ipsum….</td>
+                  <td>
+                    <div class="float-right button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Görüntüle</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Süreç Durmu</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Onaylayan</th>
+                  <th>Onay <br> Tarihi</th>
+                  <th>Onay <br> Durmu</th>
+                  <th>Açıklama</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tuğba Baydar</td>
+                  <td>00.00.0000</td>
+                  <td class="td-success"><span>Onaylandi</span></td>
+                  <td>Lorem ipsum….</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

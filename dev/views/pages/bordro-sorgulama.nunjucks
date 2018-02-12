@@ -1,0 +1,59 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Bordro Sorgulama
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Bordro Sorgulama</h2>
+        </header>
+        <div class="card__main">
+          <div class="col-md-10">
+            <ul class="list list--content form-layout">
+              <li class="list__item list__item--horizontal">
+                <label class="list__item-title">Ay / Yıl</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="bordroAy" id="bordroAy" required>
+                      <option value="01">Ocak</option>
+                      <option value="02">Subat</option>
+                    </select>
+                  </div>
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="bordroYil" id="bordroYil" required>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                    </select>
+                  </div>
+                  <div class="list__item-element">
+                    <button class="button button--aqua">Görüntüle</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="card__main-note">
+              <p>Bordronuz ekranda görüntülenecektir. Lütfen ücret gizliği prensibini dikkate alınız.</p>
+              <p>Son ödeme yapılan ayın bordrosu İK’nın ödeme sonrası tüm işlemlerinin tamamlanmasını takiben görüntülenebilecektir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

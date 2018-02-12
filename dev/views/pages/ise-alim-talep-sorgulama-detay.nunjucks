@@ -1,0 +1,132 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Talep Sorgulama
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Talep Detay</h2>
+          <div class="card__header-form items-horizontal">
+            <div class="form-group items-horizontal__item">
+              <button class="button button--aqua">Geri Dön</button>
+            </div>
+            <div class="form-group items-horizontal__item">
+              <button class="button button--aqua">Yazdır</button>
+            </div>
+          </div>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Adı Soyadı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Ahmet Mehmetoğulları (0902)" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Kademe</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="-" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Şirket</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Doğuş Otomotiv Servis ve Ticaret A.Ş." disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ücret</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="0.00,00 Net" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İşyeri</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="DOS Merkez Şekerpınar" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">İş Ailesi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Yönetim Destek" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Kadro</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Kadrolu" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Diğer Şartlar</label>
+              <div class="list__item-form-group no-height">
+                <p>Hayat Sigortası</p>
+                <p>Özel Sağlık Sigortası</p>
+                <p>Yemek</p>
+                <p>Servis</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Bölüm</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="VW Binek & Ticaret SSH" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Görev</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="SSH Müdürü" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ünvan</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Müdür" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="card__main card__main--listing border-top--light">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">1.Değerlendirme</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Sevil Kıpırtı" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Durumu</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control form-control--success" value="Onaylandı (29.07.2016, 09:45:41)" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Açıklama</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry." disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

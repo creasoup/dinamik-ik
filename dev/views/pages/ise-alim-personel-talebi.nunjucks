@@ -1,0 +1,111 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Personel Talebi
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Personel Talebi</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th width="220">Bölüm</th>
+                  <th width="300">Görev</th>
+                  <th>Personel <br> Grubu</th>
+                  <th width="50">Kadro</th>
+                  <th width="50">Fiili</th>
+                  <th width="50">GD</th>
+                  <th width="50">İA</th>
+                  <th width="50">Fark</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>İnsan Kaynakarlı ve Süreç Yönetimi Direktörlüğü</td>
+                  <td>İnsan Kaynakları Müdürü</td>
+                  <td>Kadrolu</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-1</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active float-right">
+                      <a href="#" class="button button--size-sm button--aqua">Görüntüle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>İnsan Kaynakarlı ve Süreç Yönetimi Direktörlüğü</td>
+                  <td>İnsan Kaynakları Müdürü</td>
+                  <td>Kadrolu</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-1</td>
+                  <td align="right">
+                    <div class="button-group button-group--has-hover-active float-right">
+                      <a href="#" class="button button--size-sm button--aqua">Görüntüle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>İnsan Kaynakarlı ve Süreç Yönetimi Direktörlüğü</td>
+                  <td>İnsan Kaynakları Müdürü</td>
+                  <td>Kadrolu</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td><span class="button text-bg text-bg--size-xs button--cyan">-1</span></td>
+                  <td align="right">
+                    <div class="button-group button-group--has-hover-active float-right">
+                      <a href="#" class="button button--size-sm button--aqua">Görüntüle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>İnsan Kaynakarlı ve Süreç Yönetimi Direktörlüğü</td>
+                  <td>İnsan Kaynakları Müdürü</td>
+                  <td>Kadrolu</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>-1</td>
+                  <td align="right">
+                    <div class="button-group button-group--has-hover-active float-right">
+                      <a href="#" class="button button--size-sm button--aqua">Görüntüle</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -51,6 +51,20 @@ $cardBottomSpace: 20px;
 
     .card__main {
       padding-left: 20px;
+
+      &-note {
+        margin-top: 70px;
+        margin-bottom: 40px;
+        padding-left: 111px;
+        p {
+          margin: 0;
+          padding: 0;
+          font-family: $font-family-base;
+          font-size: 13px;
+          line-height: 24px;
+          color: #CC0000;
+        }
+      }
     }
 
     .card__main--listing {
@@ -194,6 +208,24 @@ $cardBottomSpace: 20px;
     }
   }
 
+  .card--widget-red {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10), inset 0 4px 0 0 $red;
+
+    .card__main-note {
+      margin: 0;
+      padding: 25px 0;
+    }
+    
+    .card__header {
+      border-color: $red;
+    }
+
+    .card__title,
+    .list__title {
+      color: $red;
+    }
+  }
+
   .list--bar {
     list-style: none;
     margin: 0;
@@ -305,6 +337,13 @@ $cardBottomSpace: 20px;
       margin-bottom: 0;
     }
 
+    &.form-layout.form-layout--1-3 .list__item {
+      width: inherit;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+
     &.form-layout .list__item-title {
       min-width: 110px;
       margin-right: 5px;
@@ -321,6 +360,11 @@ $cardBottomSpace: 20px;
         top: 0;
       }
     }
+    
+    &.form-layout.form-layout--1-3 .list__item-title {
+      min-width: 75px;
+      width: 75px;
+    }
 
     &.form-layout .list__item-form-group {
       width: 100%;
@@ -336,6 +380,11 @@ $cardBottomSpace: 20px;
 
       .selectbox {
         width: 100%;
+      }
+
+      &.selectbox-group-min .selectbox {
+        width: 100px;
+        margin: 0 5px;
       }
 
       .selectbox select {
@@ -375,6 +424,18 @@ $cardBottomSpace: 20px;
     &.list--content-col3 {
       .list__item {
         width: calc(33.33% - 25px);
+      }
+    }
+
+    &.list-no-col {
+      max-width: 80%;
+      .list__item {
+        width: 100%;
+      }
+
+      .selectbox,
+      .form-group {
+        max-width: 70%;
       }
     }
   }
@@ -481,5 +542,78 @@ $cardBottomSpace: 20px;
       // padding-left: 120px;
       padding-top: 25px;
     }
+  }
+
+  .list__item-form-group__col {
+    display: flex;
+    align-items: center;
+
+    .form-group {
+      margin-bottom: 0;
+    }
+    .form-group:first-child {
+      margin-right: 5px;
+    }
+  }
+
+  .list__item-textarea {
+    align-items: flex-start !important;
+    vertical-align: top !important;
+
+    .list__item-title {
+      width: auto !important;
+    }
+
+    .list__item-form-group,
+    textarea.form-control {
+      height: auto !important;
+    }
+  }
+
+  .card__header--actions {
+    display: flex;
+  }
+
+  .card__header--actions-title {
+    font-family: $font-family-base;
+    font-weight: 700;
+    font-size: 11px;
+    color: #4F4F4F;
+    vertical-align: bottom;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .exports {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    &__item {
+      margin: 0 5px;
+    }
+  }
+
+  .d-flex--cols {
+    height: auto !important;
+
+    .selectbox {
+      width: 180px !important;
+    }
+
+    .d-flex__item {
+      width: 100%;
+      margin-right: 60px;
+    }
+
+    .d-flex__group {
+      max-width: 50%;
+      display: flex;
+    }
+  }
+
+  .taxim-spaces {
+    padding-right: 15px;
   }
 }
