@@ -307,4 +307,8 @@
   .form-control--success {
     color: #4FADA9 !important; 
   }
+
+  .form-control--error {
+    color: $red !important; 
+  }
 }

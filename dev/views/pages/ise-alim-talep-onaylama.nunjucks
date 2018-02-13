@@ -1,0 +1,192 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Talep Sorgulama
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Ara</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content list--bootstrap-grid form-layout">
+            <li class="list__item col-md-12">
+              <label class="list__item-title">Tarih</label>
+              <div class="list__item-form-group selectbox-group-min d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="tarihGun" id="tarihGun" required="">
+                    <option value="01">01</option>
+                    <option value="02">01</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="tarihAy" id="tarihAy" required="">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="tarihYil" id="tarihYil" required="">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                  </select>
+                </div>
+              </div>
+              <span class="taxim-spaces">/</span>
+              <div class="list__item-form-group selectbox-group-min d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="tarihGun" id="tarihGun" required="">
+                    <option value="01">01</option>
+                    <option value="02">01</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="tarihAy" id="tarihAy" required="">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="tarihYil" id="tarihYil" required="">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Onay Bekleyen Talepler</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Talep <br> No</th>
+                  <th>Talep Edilen <br> Pozisyon</th>
+                  <th>Talep <br> Eden Kişi</th>
+                  <th>Talep <br> Tarihi</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000</td>
+                  <td>Süreç ve İş Geliştirme Uzman <br> Yardımcısı</td>
+                  <td>Ali Ender <br> Yakıcı</td>
+                  <td>29.07.2016</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Detayları Göster</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Onaylananlar Talepler</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Talep <br> No</th>
+                  <th>Talep Edilen <br> Pozisyon</th>
+                  <th>Talep <br> Eden Kişi</th>
+                  <th>Talep <br> Tarihi</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000</td>
+                  <td>Süreç ve İş Geliştirme Uzman <br> Yardımcısı</td>
+                  <td>Ali Ender <br> Yakıcı</td>
+                  <td>29.07.2016</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Detayları Göster</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-red no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Reddedilen Talepler</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Talep <br> No</th>
+                  <th>Talep Edilen <br> Pozisyon</th>
+                  <th>Talep <br> Eden Kişi</th>
+                  <th>Talep <br> Tarihi</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000</td>
+                  <td>Süreç ve İş Geliştirme Uzman <br> Yardımcısı</td>
+                  <td>Ali Ender <br> Yakıcı</td>
+                  <td>29.07.2016</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Detayları Göster</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}
