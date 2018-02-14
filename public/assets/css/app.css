@@ -5809,12 +5809,19 @@ html#dinamikWeb body {
 #dinamikWeb .card--widget .list--bar {
   margin-left: -10px; }
 
-#dinamikWeb .card--widget .card__title {
+#dinamikWeb .card--widget .card__title,
+#dinamikWeb .card--widget .card__sub-title {
   font-family: montserrat_lightregular;
   font-size: 24px;
   padding-left: 10px;
   margin-bottom: 0;
   padding-bottom: 10px; }
+
+#dinamikWeb .card--widget .card__sub-title {
+  font-size: 13px;
+  color: #00A8E1;
+  padding-left: 20px;
+  margin-top: 30px; }
 
 #dinamikWeb .card--widget .card__header-form {
   padding-right: 0; }
@@ -5928,6 +5935,12 @@ html#dinamikWeb body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+  #dinamikWeb .list--content .list__item--note .list__item-title:after {
+    content: '' !important; }
+  #dinamikWeb .list--content .list__item--note .list__item-form-group {
+    white-space: normal; }
+  #dinamikWeb .list--content .list__item--note p {
+    color: #F42534; }
   #dinamikWeb .list--content .list__item,
   #dinamikWeb .list--content .list__item p {
     margin: 0;
@@ -5947,6 +5960,9 @@ html#dinamikWeb body {
     padding-bottom: 0;
     margin-bottom: 10px;
     border-bottom: 1px solid #D8D8D8; }
+  #dinamikWeb .list--content .list__item.no-height .list__item-form-group,
+  #dinamikWeb .list--content .list__item.no-height .list__item-form-group .form-control {
+    height: auto; }
   #dinamikWeb .list--content .list__title {
     font-family: montserratbold;
     font-size: 13px;
@@ -6010,11 +6026,28 @@ html#dinamikWeb body {
     #dinamikWeb .list--content.form-layout .list__item-form-group .form-control,
     #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox {
       height: 40px; }
+    #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple,
+    #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple select[multiple] {
+      height: 100px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      -webkit-appearance: menu;
+      outline: 0; }
+      #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple:focus, #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple:hover,
+      #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple select[multiple]:focus,
+      #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple select[multiple]:hover {
+        outline: 0; }
+    #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox--multiple:after {
+      display: none; }
     #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox {
       width: 100%; }
     #dinamikWeb .list--content.form-layout .list__item-form-group.selectbox-group-min .selectbox {
       width: 100px;
-      margin: 0 5px; }
+      margin: 0;
+      margin-right: 5px; }
+    #dinamikWeb .list--content.form-layout .list__item-form-group.selectbox-group-half .selectbox {
+      width: 100%;
+      margin: 0; }
     #dinamikWeb .list--content.form-layout .list__item-form-group .selectbox select {
       width: 100%;
       height: 40px;
@@ -6184,6 +6217,22 @@ html#dinamikWeb body {
 
 #dinamikWeb .taxim-spaces {
   padding-right: 15px; }
+
+#dinamikWeb .list--content.form-layout.list--v2 .list__item {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: 0; }
+  #dinamikWeb .list--content.form-layout.list--v2 .list__item-title {
+    min-width: auto;
+    width: 80px; }
+
+#dinamikWeb .list--content.form-layout.list--v2 .list--v2__item {
+  width: 50%;
+  margin: 0 5px; }
+
+#dinamikWeb .list--content.form-layout.list--v2 .button-group {
+  -ms-flex-align: end;
+      align-items: flex-end; }
 
 #dinamikWeb .carousel-control {
   width: 100px;

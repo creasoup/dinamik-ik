@@ -1,0 +1,606 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Yeni Aday Grubu Talep İşlemleri
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Aday Filtreleme İşlemleri</h2>
+        </header>
+        <div class="card__main">
+          <div class="form u-full">
+            <ul class="list list--content form-layout form-layout--1-3">
+              <li class="list__item col-md-4">
+                <label class="list__item-title">Seçili Filtre</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="" id="" required="">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item col-md-4">
+                <label class="list__item-title">Arama Türü</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="" id="" required="">
+                      <option value="">Durum Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item col-md-4">
+                <div class="button-group list--v2__item">
+                  <button class="button button--size-sm button--cyan">Uygula</button>
+                  <button class="button button--size-sm button--aqua">Kaydet</button>
+                  <button class="button button--size-sm button--aqua">Yeni</button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="card__main card__main--tabs">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#genelBilgiler" role="tab">Genel Bilgiler</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#adresBilgilieri" role="tab">Adres Bilgilieri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#ogrenimBilgileri" role="tab">Öğrenim Bilgilieri</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#yabanciDil" role="tab">Yabancı Dil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#tecrube" role="tab">Tecrübe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#sinav" role="tab">Sınav</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#arama" role="tab">Arama</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="genelBilgiler" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Ad</label>
+                        <div class="list__item-form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Soyad</label>
+                        <div class="list__item-form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Yaş</label>
+                        <div class="list__item-form-group selectbox-group-half d-flex">
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="min">Min.</option>
+                            </select>
+                          </div>
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="max">Max</option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Cinsiyet</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="e">Erkek</option>
+                              <option value="k">Kadin</option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Medeni Durum</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Uyruk</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Askerlik Durumu</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Tecil Tarihi</label>
+                        <div class="list__item-form-group selectbox-group-half d-flex">
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="01">01</option>
+                            </select>
+                          </div>
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="01">01</option>
+                            </select>
+                          </div>
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="2018">2018</option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Ehliyet Sınıfı</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Çalışma Durumu</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Personel Durum</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Kaynak</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Referans</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Aday Durumu</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required=""></select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Başvurduğu Şirket</label>
+                        <div class="list__item-form-group">
+                          <input type="text" class="form-control"></select>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="adresBilgilieri" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Ülke</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">İl</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">İlçe</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="ogrenimBilgileri" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Öğrenim Durumu</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item"></li>
+                      <li class="list__item"></li>
+                      <li class="list__item">
+                        <label class="list__item-title">Okul</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Fakülte</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Bölüm</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="yabanciDil" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Yabancı Dil</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Düzey</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Konusma</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Yazma</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Okuma</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tecrube" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Kapsam</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Tecrübe Türü</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Tecrübe</label>
+                        <div class="list__item-form-group selectbox-group-half d-flex">
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="min">Min.</option>
+                            </select>
+                          </div>
+                          <div class="selectbox list__item-element">
+                            <select class="form-control" name="" id="" required="">
+                              <option value="max">Max</option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Görev</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Kurum</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Son Tecrübe</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="sinav" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Kümülatif Düzey</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item"></li>
+                      <li class="list__item"></li>
+                      <li class="list__item">
+                        <label class="list__item-title">Sınav Türü</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Durum</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Sınav Sonuç</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane" id="arama" role="tabpanel">
+                  <div class="form">
+                    <ul class="list list--content list--content-col3 form-layout">
+                      <li class="list__item">
+                        <label class="list__item-title">Arama Tipi</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Arama</label>
+                        <div class="list__item-form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                      </li>
+                      <li class="list__item">
+                        <label class="list__item-title">Aday Grubu</label>
+                        <div class="list__item-form-group">
+                          <div class="selectbox">
+                            <select class="form-control" name="" id="" required="">
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Uygulanan Filtreler</h2>
+        </header>
+        <div class="card__main"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Aday Grupları</h2>
+        </header>
+        <div class="card__main">
+          <div class="form u-full">
+            <ul class="list list--content form-layout form-layout--1-3">
+              <li class="list__item col-md-4">
+                <label class="list__item-title">Aday Grubu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="" id="" required="">
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item col-md-4">
+                <label class="list__item-title">Aday Grubu Adı</label>
+                <div class="list__item-form-group">
+                  <input type="text" class="form-control">
+                </div>
+              </li>
+              <li class="list__item col-md-4">
+                <button class="button button--size-sm button--aqua">Yeni Aday Grubu Oluşturunuz</button>
+              </li>
+            </ul>
+
+            <hr class="hr-style">
+
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>&nbsp;</th>
+                    <th>Sicil <br> No</th>
+                    <th>Adı <br> Soyadı</th>
+                    <th>Ünvanı</th>
+                    <th>Talep Detayları</th>
+                    <th>Adayın Çekmceleri</th>
+                    <th>CV</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-group custom-checkbox">
+                        <input type="checkbox" id="customCheckbox2">
+                        <label for="customCheckbox2"></label>
+                      </div>
+                    </td>
+                    <td>000</td>
+                    <td>Ali Ender <br> Yakıcı</td>
+                    <td>Süreç ve İş Geliştirme Uzman Yardımcısı</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                      <a href="#" class="button button--size-xs button--aqua">CV</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}

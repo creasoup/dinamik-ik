@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" id="dinamikWeb">
+<head>
+  <meta charset="UTF-8">
+  <title>
+	Stajyer Talep Formu
+</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body class="">
+
+  
+
+<aside class="sidebar">
+
+  <button class="sidebar__toggle">
+    <i class="fa fa-angle-left" aria-hidden="true"></i>
+  </button>
+
+  <div class="sidebar__profile">
+    <div class="sidebar__avatar">
+      <img src="assets/images/calisan-avatar.jpg" alt="">
+    </div>
+    <h3 class="sidebar__fullname">
+      AYŞE EKİN <br> OSMANOĞULLARI
+    </h3>
+  </div>
+  <nav class="sidebar__nav">
+    <ul class="navigation">
+      <li class="navigation__item dropdown">
+        <a href="kisisel-bilgiler.html" class="navigation__link dropdown-toggle" id="dropdownMenuKisiselBilgiler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          KİŞİSEL BİLGİLER
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuKisiselBilgiler">
+          <a class="dropdown-item" href="#">Bilgileri Göster</a>
+          <a class="dropdown-item" href="#">Ücretli Özgeçmiş</a>
+          <a class="dropdown-item" href="#">Ücretliz Özgeçmiş</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          ÇALIŞAN BİLGİLERİ
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          BORDRO SORGULAMA
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIzin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İZİN İŞLEMLERİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIzin">
+          <a class="dropdown-item" href="#">İzin İşlemlerim</a>
+          <a class="dropdown-item" href="#">Onay İşlemlerim</a>
+          <a class="dropdown-item" href="#">Çalışan İzin Bilgileri</a>
+          <a class="dropdown-item" href="#">Planlanan İzin İşlemleri</a>
+          <a class="dropdown-item" href="#">İK İzin Düzeltme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuFazlaMesai" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          FAZLA MESAİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuFazlaMesai">
+          <a class="dropdown-item" href="#">Fazla Mesai İşlemlerim</a>
+          <a class="dropdown-item" href="#">Onay İşlemleri</a>
+          <a class="dropdown-item" href="#">Çalışan Mesai İşlemleri</a>
+          <a class="dropdown-item" href="#">Toplu Mesai Girişi</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuIseAlim" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          İŞE ALIM
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIseAlim">
+          <a class="dropdown-item" href="#">Personel Talep Girişi</a>
+          <a class="dropdown-item" href="#">Talep Sorgulama</a>
+          <a class="dropdown-item" href="#">Talep Onaylama İşlemleri</a>
+          <a class="dropdown-item" href="#">İş Teklifi Formları</a>
+          <a class="dropdown-item" href="#">Stajyer Talebi</a>
+          <a class="dropdown-item" href="#">Aday Grubu</a>
+          <a class="dropdown-item" href="#">Aday Filtreleme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuPerformans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          PERFORMANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuIseAlim">
+          <a class="dropdown-item" href="#">Performans Sonuç</a>
+          <a class="dropdown-item" href="#">Güncel Dönem Değerlendirme</a>
+          <a class="dropdown-item" href="#">Geçmiş Dönem Değerlendirme</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuMentor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MENTÖR/MENTEE
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuMentor">
+          <a class="dropdown-item" href="#">Mentör İşlemleri</a>
+          <a class="dropdown-item" href="#">Mentee İşlemleri</a>
+          <a class="dropdown-item" href="#">Mentörlük Programları</a>
+          <a class="dropdown-item" href="#">İK Ekranı</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuUcretArtisi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ÜCRET ARTIŞI VE TEŞVİK
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuUcretArtisi">
+          <a class="dropdown-item" href="#">Ücret Artışı</a>
+          <a class="dropdown-item" href="#">Geçmiş Ücret Artışı</a>
+          <a class="dropdown-item" href="#">Doküman Yükleme</a>
+          <a class="dropdown-item" href="#">Teşvik Primi</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          BÜTÇE PLANLAMA
+        </a>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuGorevDegisikligi" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          GÖREV DEĞİŞİKLİĞİ
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuGorevDegisikligi">
+          <a class="dropdown-item" href="#">Görev Değişikliği Talebi</a>
+          <a class="dropdown-item" href="#">Talep Onayları</a>
+          <a class="dropdown-item" href="#">Talep Sorgulama</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuAvans" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AVANS
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuAvans">
+          <a class="dropdown-item" href="#">Avans Talebi</a>
+          <a class="dropdown-item" href="#">Önceki Avans Talepleriniz</a>
+          <a class="dropdown-item" href="#">Onaylama İşlemleri</a>
+        </div>
+      </li>
+      <li class="navigation__item dropdown">
+        <a href="" class="navigation__link dropdown-toggle" id="dropdownMenuDiger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          DİĞER İŞLEMLER
+        </a>
+        <div class="dropdown-menu dropdown-menu--right" aria-labelledby="dropdownMenuDiger">
+          <a class="dropdown-item" href="#">Rotasyon</a>
+          <a class="dropdown-item" href="#">Ödül</a>
+          <a class="dropdown-item" href="#">Anket</a>
+          <a class="dropdown-item" href="#">Ön İstifa Formu</a>
+          <a class="dropdown-item" href="#">İK’ya Ulaşın</a>
+          <a class="dropdown-item" href="#">Şifre Değiştir</a>
+        </div>
+      </li>
+      <li class="navigation__item">
+        <a href="" class="navigation__link">
+          Çıkış Yap
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="logo">
+    <img src="assets/images/logo.png" class="logo__img" alt="">
+  </div>
+</aside>
+
+
+<div class="app container">
+	
+	<div class="search">
+  <div class="form-control">
+    <i class="fa fa-search"></i>
+    <input type="text" class="form-control" placeholder="Aramak istediğiniz kelimeyi yazınız...">
+  </div>
+  <button class="button button--aqua">Arama Yap</button>
+</div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Stajyer Talep Formu</h2>
+        </header>
+        <div class="card__main">
+          <div class="form u-full">
+            <ul class="list list--column list--content list-no-col form-layout">
+              <li class="list__item">
+                <label class="list__item-title">Staja Başlayacağı Tarih</label>
+                <div class="list__item-form-group selectbox-group-min d-flex">
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="izinCikisTarihiGun" id="izinCikisTarihiGun" required="">
+                      <option value="01">01</option>
+                      <option value="02">01</option>
+                    </select>
+                  </div>
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="izinCikisTarihiAy" id="izinCikisTarihiAy" required="">
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                    </select>
+                  </div>
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="izinCikisTarihiYil" id="izinCikisTarihiYil" required="">
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Bölüm</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Personel Grubu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimIsAilesi" id="iseAlimIsAilesi" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 personal-card__info">
+        <h3 class="card__sub-title">Aranan Nitelikler:</h3>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout u-full">
+            <li class="list__item">
+              <label class="list__item-title">Üniversite</label>
+              <div class="list__item-form-group no-height">
+                <div class="selectbox selectbox--multiple">
+                  <select name="stajUni" id="stajUni" multiple required>
+                    <option value="AAA">AAA Üniversitesi</option>
+                    <option value="BBB">BBB Üniversitesi</option>
+                    <option value="AAA">AAA Üniversitesi</option>
+                    <option value="BBB">BBB Üniversitesi</option>
+                    <option value="AAA">AAA Üniversitesi</option>
+                    <option value="BBB">BBB Üniversitesi</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Bölüm</label>
+              <div class="list__item-form-group no-height">
+                <div class="selectbox selectbox--multiple">
+                  <select name="stajUniBolum" id="stajUniBolum" multiple required>
+                    <option value="AAA">AAA Bölüm</option>
+                    <option value="BBB">BBB Bölüm</option>
+                    <option value="AAA">AAA Bölüm</option>
+                    <option value="BBB">BBB Bölüm</option>
+                    <option value="AAA">AAA Bölüm</option>
+                    <option value="BBB">BBB Bölüm</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Lise</label>
+              <div class="list__item-form-group no-height">
+                <div class="selectbox selectbox--multiple">
+                  <select name="stajUniBolum" id="stajUniBolum" multiple required>
+                    <option value="AAA">AAA Lise</option>
+                    <option value="BBB">BBB Lise</option>
+                    <option value="AAA">AAA Lise</option>
+                    <option value="BBB">BBB Lise</option>
+                    <option value="AAA">AAA Lise</option>
+                    <option value="BBB">BBB Lise</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item list__item--note">
+              <label class="list__item-title">&nbsp;</label>
+              <div class="list__item-form-group no-height">
+                <p>Üniversite, Bölüm ve Lise seçimlerini “CTRL” tuşuna basarak çoklu seçim yapabilirsiniz.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yabancı Dil</label>
+              <div class="list__item-form-group selectbox-group-half d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item">
+              <label class="list__item-title">2. Yabancı Dil</label>
+              <div class="list__item-form-group selectbox-group-half d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item no-height">
+              <label class="list__item-title">Bilgisayar Bilgisi</label>
+              <div class="list__item-form-group">
+                <textarea name="" id="" cols="3" rows="4" class="form-control"></textarea>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item no-height">
+              <label class="list__item-title">Açıklama</label>
+              <div class="list__item-form-group">
+                <textarea name="" id="" cols="3" rows="4" class="form-control"></textarea>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item">
+              <label class="list__item-title">Pozisyon İcin Uygun Adayın İsmi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control">
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item m-top-50">
+              <button class="button button--size-sm button--aqua">Talep Et</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+  
+  
+  
+  <script src="assets/js/libs.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

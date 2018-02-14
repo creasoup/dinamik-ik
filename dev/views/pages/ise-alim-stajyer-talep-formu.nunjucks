@@ -1,0 +1,194 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Stajyer Talep Formu
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Stajyer Talep Formu</h2>
+        </header>
+        <div class="card__main">
+          <div class="form u-full">
+            <ul class="list list--column list--content list-no-col form-layout">
+              <li class="list__item">
+                <label class="list__item-title">Staja Başlayacağı Tarih</label>
+                <div class="list__item-form-group selectbox-group-min d-flex">
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="izinCikisTarihiGun" id="izinCikisTarihiGun" required="">
+                      <option value="01">01</option>
+                      <option value="02">01</option>
+                    </select>
+                  </div>
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="izinCikisTarihiAy" id="izinCikisTarihiAy" required="">
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                    </select>
+                  </div>
+                  <div class="selectbox list__item-element">
+                    <select class="form-control" name="izinCikisTarihiYil" id="izinCikisTarihiYil" required="">
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Bölüm</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Personel Grubu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="iseAlimIsAilesi" id="iseAlimIsAilesi" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 personal-card__info">
+        <h3 class="card__sub-title">Aranan Nitelikler:</h3>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout u-full">
+            <li class="list__item">
+              <label class="list__item-title">Üniversite</label>
+              <div class="list__item-form-group no-height">
+                <div class="selectbox selectbox--multiple">
+                  <select name="stajUni" id="stajUni" multiple required>
+                    <option value="AAA">AAA Üniversitesi</option>
+                    <option value="BBB">BBB Üniversitesi</option>
+                    <option value="AAA">AAA Üniversitesi</option>
+                    <option value="BBB">BBB Üniversitesi</option>
+                    <option value="AAA">AAA Üniversitesi</option>
+                    <option value="BBB">BBB Üniversitesi</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Bölüm</label>
+              <div class="list__item-form-group no-height">
+                <div class="selectbox selectbox--multiple">
+                  <select name="stajUniBolum" id="stajUniBolum" multiple required>
+                    <option value="AAA">AAA Bölüm</option>
+                    <option value="BBB">BBB Bölüm</option>
+                    <option value="AAA">AAA Bölüm</option>
+                    <option value="BBB">BBB Bölüm</option>
+                    <option value="AAA">AAA Bölüm</option>
+                    <option value="BBB">BBB Bölüm</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Lise</label>
+              <div class="list__item-form-group no-height">
+                <div class="selectbox selectbox--multiple">
+                  <select name="stajUniBolum" id="stajUniBolum" multiple required>
+                    <option value="AAA">AAA Lise</option>
+                    <option value="BBB">BBB Lise</option>
+                    <option value="AAA">AAA Lise</option>
+                    <option value="BBB">BBB Lise</option>
+                    <option value="AAA">AAA Lise</option>
+                    <option value="BBB">BBB Lise</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item list__item--note">
+              <label class="list__item-title">&nbsp;</label>
+              <div class="list__item-form-group no-height">
+                <p>Üniversite, Bölüm ve Lise seçimlerini “CTRL” tuşuna basarak çoklu seçim yapabilirsiniz.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Yabancı Dil</label>
+              <div class="list__item-form-group selectbox-group-half d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item">
+              <label class="list__item-title">2. Yabancı Dil</label>
+              <div class="list__item-form-group selectbox-group-half d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seçiniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item no-height">
+              <label class="list__item-title">Bilgisayar Bilgisi</label>
+              <div class="list__item-form-group">
+                <textarea name="" id="" cols="3" rows="4" class="form-control"></textarea>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item no-height">
+              <label class="list__item-title">Açıklama</label>
+              <div class="list__item-form-group">
+                <textarea name="" id="" cols="3" rows="4" class="form-control"></textarea>
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item">
+              <label class="list__item-title">Pozisyon İcin Uygun Adayın İsmi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control">
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item m-top-50">
+              <button class="button button--size-sm button--aqua">Talep Et</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

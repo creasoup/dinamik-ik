@@ -87,12 +87,20 @@ $cardBottomSpace: 20px;
       margin-left: -10px;
     }
 
-    .card__title {
+    .card__title,
+    .card__sub-title {
       @include light-regular;
       font-size: 24px;
       padding-left: 10px;
       margin-bottom: 0;
       padding-bottom: 10px;
+    }
+
+    .card__sub-title {
+      font-size: 13px;
+      color: #00A8E1;
+      padding-left: 20px;
+      margin-top: 30px;
     }
 
     .card__header-form {
@@ -266,6 +274,20 @@ $cardBottomSpace: 20px;
       text-overflow: ellipsis;
     }
 
+    .list__item--note {
+      .list__item-title:after {
+        content: '' !important;
+      }
+
+      .list__item-form-group {
+        white-space: normal;
+      }
+
+      p {
+        color: $red;
+      }
+    }
+
     .list__item,
     .list__item p {
       margin: 0;
@@ -291,6 +313,11 @@ $cardBottomSpace: 20px;
       padding-bottom: 0;
       margin-bottom: 10px;
       border-bottom: 1px solid #D8D8D8;
+    }
+
+    .list__item.no-height .list__item-form-group,
+    .list__item.no-height .list__item-form-group .form-control {
+      height: auto;
     }
 
     .list__title {
@@ -378,13 +405,37 @@ $cardBottomSpace: 20px;
         height: 40px;
       }
 
+      .selectbox--multiple,
+      .selectbox--multiple select[multiple] {
+        height: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        -webkit-appearance: menu;
+        outline: 0;
+
+        &:focus,
+        &:hover {
+          outline: 0;
+        }
+      }
+
+      .selectbox--multiple:after {
+        display: none;
+      }
+
       .selectbox {
         width: 100%;
       }
 
       &.selectbox-group-min .selectbox {
         width: 100px;
-        margin: 0 5px;
+        margin: 0;
+        margin-right: 5px;
+      }
+
+      &.selectbox-group-half .selectbox {
+        width: 100%;
+        margin: 0;
       }
 
       .selectbox select {
@@ -615,5 +666,26 @@ $cardBottomSpace: 20px;
 
   .taxim-spaces {
     padding-right: 15px;
+  }
+
+  .list--content.form-layout.list--v2 {
+    .list__item {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 0;
+      &-title {
+        min-width: auto;
+        width: 80px;
+      }
+    }
+
+    .list--v2__item {
+      width: 50%;
+      margin: 0 5px;
+    }
+
+    .button-group {
+      align-items: flex-end;
+    }
   }
 }
