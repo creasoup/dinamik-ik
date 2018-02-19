@@ -1,0 +1,98 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Avans
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="card__main">
+      <div class="row">
+        <div class="col-md-12">
+          <header class="card__header">
+            <h2 class="card__title">Avans Talep Formu</h2>
+          </header>
+        </div>
+        <div class="col-md-7">
+          <ul class="list list--item-full list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Avans Talep Nedeni</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="" id="" required="">
+                    <option value="">Seciniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Talep Edilen Avans Tutarı</label>
+              <div class="list__item-form-group">
+                <div class="form-group">
+                  <input type="text" class="form-control" required>
+                </div>
+              </div>
+            </li>
+            <li class="list__item no-height">
+              <label class="list__item-title">Taksit Sayısı</label>
+              <div class="list__item-text">
+                <p>Talep ettiğiniz avans tutarının net maaşınıza oranına göre taksit miktarı aşağıda gözükmektedir.</p>
+                <div class="table-responsive">
+                  <table class="table list__item-table">
+                    <thead>
+                      <tr>
+                        <th>Alt Sınır</th>
+                        <th>Üst Sınır</th>
+                        <th>Taksit Miktarı</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="button-group">
+            <input type="submit" class="button button--size-md button--aqua" value="Talep Et">
+            <input type="submit" class="button button--size-md button--aqua" value="Geri Dön">
+          </div>
+          <br>
+        </div>
+        <div class="push-md-1 col-md-4">
+          <div class="panel panel--warning is-minHeight">
+            <p>Daha önce onaylanmış avans talebiniz bulunmamaktadır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

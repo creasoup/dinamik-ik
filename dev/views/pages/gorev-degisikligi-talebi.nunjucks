@@ -1,0 +1,119 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Gorev Degisikligi Talebi
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+{% include "./modals/personal-gorev-degisikligi.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Personel Görev Değişikliği Talebi</h2>
+          <a href="" class="important" data-toggle="modal" data-target="#personelGorevDegisikligi">Detaylı bilgi için tıklayınız.</a>
+        </header>
+        <div class="card__main">
+          <ul class="list list--content form-layout form-layout--1-3">
+            <li class="list__item col-md-4">
+              <label class="list__item-title">Personel Listesi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seciniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item col-md-4">
+              <label class="list__item-title">Çalışan İsmi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="">Seciniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item col-md-4">
+              <input type="submit" class="button button--size-md button--aqua" value="Başlat">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header">
+          <h2 class="card__title">Onaylanan Görev Değişiklikleri</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Bölüm</th>
+                    <th>Görev</th>
+                    <th>Personel Grubu</th>
+                    <th>Bütçe</th>
+                    <th>Fiili</th>
+                    <th>GD</th>
+                    <th>İA</th>
+                    <th>Kullanılabilir</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>İnsan Kaynakları ve Süreç Yönetimi - Doğuş Otomotiv - İşe Alım</td>
+                    <td>İnsan Kaynakları ve Süreç Yönetimi Direktörü</td>
+                    <td>Kadrolu</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>İnsan Kaynakları ve Süreç Yönetimi - Doğuş Otomotiv - İşe Alım</td>
+                    <td>İnsan Kaynakları ve Süreç Yönetimi Direktörü</td>
+                    <td>Kadrolu</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>İnsan Kaynakları ve Süreç Yönetimi - Doğuş Otomotiv - İşe Alım</td>
+                    <td>İnsan Kaynakları ve Süreç Yönetimi Direktörü</td>
+                    <td>Kadrolu</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

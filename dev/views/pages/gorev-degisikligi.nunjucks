@@ -1,0 +1,242 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Gorev Degisikligi
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+{% include "./modals/personal-gorev-degisikligi.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Görev Değişikliği Talep Formu</h2>
+        </header>
+        <div class="card__main">
+          <ul class="list list--content form-layout">
+            <li class="list__item col-md-12">
+              <label class="list__item-title">Görev Değişikliği Türü</label>
+              <div class="list__item-form-group checkbox-group">
+                <div class="form-group custom-checkbox">
+                  <input type="checkbox" id="checkbox1">
+                  <label for="checkbox1"><span>Terfi</span></label>
+                </div>
+                <div class="form-group custom-checkbox">
+                  <input type="checkbox" id="checkbox2">
+                  <label for="checkbox2"><span>Geçici Görev Değişikliği</span></label>
+                </div>
+                <div class="form-group custom-checkbox">
+                  <input type="checkbox" id="checkbox3">
+                  <label for="checkbox3"><span>Transfer</span></label>
+                </div>
+                <div class="form-group custom-checkbox">
+                  <input type="checkbox" id="checkbox4">
+                  <label for="checkbox4"><span>Görev Değişikliği</span></label>
+                  <a href="" class="button--link button--link-aqua">(Detaylı Bilgi İçin Tıklayınız)</a>
+                </div>
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Adı Soyadı</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="Ayşe Ekin Osmanoğulları" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Talep Tarihi</label>
+              <div class="list__item-form-group">
+                <input type="text" class="form-control" value="07.12.2016, 11:17" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+
+          <div class="card__main-cols row">
+            <div class="col-md-6">
+              <header class="card__header card__header--cols">
+                <h3 class="card__sub-title">Aday Grubu İşlemleri</h3>
+              </header>
+              <div class="card__main">
+                <ul class="list list--content form-layout">
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Şirketi</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Doğuş Otomotiv Servis ve Ticaret A.Ş." disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">İşyeri</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="DOS Merkez Şekerpınar" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Bölümü</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="VW Binek & Ticaret - SSS - Garanti" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Görevi</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Garanti Yetkilisi" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Ünvanı</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Yetkili" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Personel Grubu</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Kadrolu" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Maaşı</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="0.000,00 TL" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">İş Ailesi</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="Kanal Yönetimi" disabled>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-12">
+                    <label class="list__item-title">Kademe</label>
+                    <div class="list__item-form-group">
+                      <input type="text" class="form-control" value="0" disabled>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <header class="card__header card__header--cols">
+                <h3 class="card__sub-title">Personelin Mevcut</h3>
+              </header>
+              <div class="card__main">
+                <ul class="list list--content form-layout">
+                  <li class="list__item col-md-6">
+                    <label class="list__item-title">Şirketi</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select class="form-control" name="" id="" required="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-6">
+                    <label class="list__item-title">İşyeri</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select class="form-control" name="" id="" required="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-6">
+                    <label class="list__item-title">Bölümü</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select class="form-control" name="" id="" required="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-6">
+                    <label class="list__item-title">Görevi</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select class="form-control" name="" id="" required="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-6">
+                    <label class="list__item-title">Ünvanı</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select class="form-control" name="" id="" required="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list__item col-md-6">
+                    <label class="list__item-title">Personel Grubu</label>
+                    <div class="list__item-form-group">
+                      <div class="selectbox">
+                        <select class="form-control" name="" id="" required="">
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="hr-style">
+
+          <ul class="list list--content form-layout">
+            <li class="list__item col-md-8">
+              <label class="list__item-title">Değişikliğin Geçerli Olması İstenilen Tarih</label>
+              <div class="list__item-form-group selectbox-group-min d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="01">01</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="01">01</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item col-md-8 no-height">
+              <label class="list__item-title">Değişiklik Sebebi</label>
+              <div class="list__item-form-group">
+                <textarea name="" id="" rows="4" class="form-control"></textarea>
+              </div>
+            </li>
+          </ul>
+
+          <div class="button-group">
+            <input type="submit" class="button button--size-md button--aqua" value="Talep Et">
+            <input type="submit" class="button button--size-md button--aqua" value="Geri Dön">
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

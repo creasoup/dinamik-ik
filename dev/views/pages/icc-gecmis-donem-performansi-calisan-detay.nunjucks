@@ -1,0 +1,254 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	ICC - Bireysel Performans Degerlendirme
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Geçmiş Dönem Performansı</h2>
+          <a href="#" class="button button--aqua">Geri Dön</a>
+        </header>
+        <div class="card__main">
+          <ul class="list list--content form-layout form-layout--1-3">
+            <li class="list__item col-md-9">
+              <label class="list__item-title">Dönem</label>
+              <div class="list__item-form-group selectbox-group-min d-flex">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="01">01</option>
+                  </select>
+                </div>
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                  </select>
+                </div>
+                <div class="list__item-element">
+                  <a href="#" class="button button--aqua">Görüntüle</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Kişisel Bilgiler</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <ul class="list list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Sicil No</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="90998" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ünvan</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Müdür" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Ad</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Ayşe Ekin" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Performans Değerlendirme Dönemi</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="21.10.1997" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item">
+              <label class="list__item-title">Soyad</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Osmanoğulları" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item">
+              <label class="list__item-title">İşyeri</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="VW Binek & Ticari-SSH" disabled="disabled">
+              </div>
+            </li>
+            <li class="list__item"></li>
+            <li class="list__item">
+              <label class="list__item-title">Birim / Bölge</label>
+              <div class="list__item-form-group">
+                <input type="email" class="form-control" value="Maslak Bölge Direktörlüğü - Maslak - Satış - Seat Satış" disabled="disabled">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside class="sidebar sidebar--card personal-card__avatar text-align-center">
+        <picture class="sidebar__avatar sidebar__avatar--md">
+          <img src="assets/images/calisan-avatar-lg.jpg" alt="">
+        </picture>
+      </aside>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Çalışan Performans Puanı</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th width="90%">İş Bilgi ve Becerileri</th>
+                  <th>Değerlendirme</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th width="90%">Temel Yetkinlikler</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Proble Çözme</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Performans Puanı</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Yetkinlik Türü</th>
+                  <th>Ağırlık</th>
+                  <th>Toplam Puan</th>
+                  <th>Puan Ortalaması</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Temel Yetkinlik</td>
+                  <td>40</td>
+                  <td>80</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>İş Becerileri</td>
+                  <td>100</td>
+                  <td>40</td>
+                  <td>80</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td class="td-error"><span>Performans Puanı</span></td>
+                  <td class="td-error"><span>90</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-style">
+
+      <div class="col-md-12 personal-card__info">
+        <ul class="list list--content list--item-column form-layout form-layout--1-3">
+          <li class="list__item no-height col-md-4">
+            <label class="list__item-title">Çalışan İmzası</label>
+            <div class="list__item-form-group">
+              <textarea name="" id="" rows="4" class="form-control"></textarea>
+            </div>
+          </li>
+          <li class="list__item no-height col-md-4">
+            <label class="list__item-title">Yönetici İmzası</label>
+            <div class="list__item-form-group">
+              <textarea name="" id="" rows="4" class="form-control"></textarea>
+            </div>
+          </li>
+          <li class="list__item no-height col-md-4">
+            <label class="list__item-title">2. Yönetici İmzası</label>
+            <div class="list__item-form-group">
+              <textarea name="" id="" rows="4" class="form-control"></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+{% endblock %}

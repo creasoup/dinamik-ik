@@ -96,6 +96,15 @@ $cardBottomSpace: 20px;
       padding-bottom: 10px;
     }
 
+    .card__title.card__title--secondary {
+      @include regular;
+      color: #4A4A4A;
+      font-size: 16px;
+      span {
+        color: $aqua;
+      }
+    }
+
     .card__sub-title {
       font-size: 13px;
       color: #00A8E1;
@@ -686,6 +695,129 @@ $cardBottomSpace: 20px;
 
     .button-group {
       align-items: flex-end;
+    }
+  }
+
+  .list.list--item-column {
+    .list__item {
+      flex-direction: column;
+    }
+
+    .list__item-title {
+      width: 100% !important;
+      min-width: inherit !important;
+      margin-bottom: 20px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .card__quiz {
+    &-header,
+    &-footer,
+    &-body--result {
+      padding-left: 15px;
+      padding-bottom: 10px;
+    }
+
+    &-item--cols {
+      .card__quiz-body {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .card__quiz-col {
+          max-width: 45%;
+          flex: 0 0 50%;
+          margin-right: 5%;
+          margin-bottom: 30px;
+          position: relative;
+
+          .card__quiz-description {
+            padding-left: 0;
+          }
+        }
+      }
+
+      label span {
+        white-space: normal;
+        display: inline-block;
+      }
+    }
+
+    &-footer {
+      max-width: 60%;
+      margin-top: 30px;
+
+      label {
+        margin-bottom: 15px;
+      }
+
+      textarea.form-control {
+        height: 100px;
+      }
+    }
+
+    &-title {
+      @include regular;
+      font-size: 13px;
+      color: #00A8E1;
+      line-height: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-description {
+      @include bold;
+      font-size: 13px;
+      color: #4A4A4A;
+      line-height: 24px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-list {
+      list-style-type: none;
+      margin: 0 0 0 -12px;
+      padding: 0;
+
+      &__item {
+        margin-bottom: 10px;
+      }
+
+      .custom-radio {
+        font-size: 13px;
+        color: #4A4A4A;
+        line-height: 18px;
+        @include light-regular;
+      }
+    }
+
+    &-item {
+      padding-left: 55px;
+      margin-bottom: 40px;
+    }
+
+    &-body--result,
+    &-body--result > * {
+      @include light-regular;
+      font-size: 13px;
+      color: #4A4A4A;
+      line-height: 24px;
+    }
+    
+    &-body--result p {
+      margin: 0;
+      padding: 0;
+    }
+
+    &-body .card__quiz-description {
+      padding-left: 15px;
+      padding-bottom: 10px;
+    }
+    
+    &-body--result p strong {
+      @include regular;
     }
   }
 }

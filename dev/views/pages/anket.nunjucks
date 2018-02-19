@@ -1,0 +1,224 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Anket
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">İşe Alım Memnuniyet Anketi</h2>
+        </header>
+        <div class="card__main card__quiz">
+          <div class="card__quiz-item">
+            <header class="card__quiz-header">
+              <h3 class="card__quiz-title">GENEL MEMNUNİYET</h3>
+              <p class="card__quiz-description">İşe alım sürecinden genel olarak memnunum.</p>
+            </header>
+            <div class="card__quiz-body">
+              <ul class="card__quiz-list">
+                <li class="card__quiz-list__item">
+                  <div class="form-group custom-radio">
+                    <input type="radio" id="customRadio1">
+                    <label for="customRadio1"><span>Kesinlikle katılmıyorum</span></label>
+                  </div>
+                </li>
+                <li class="card__quiz-list__item">
+                  <div class="form-group custom-radio">
+                    <input type="radio" id="customRadio2">
+                    <label for="customRadio2"><span>Katılmıyorum</span></label>
+                  </div>
+                </li>
+                <li class="card__quiz-list__item">
+                  <div class="form-group custom-radio">
+                    <input type="radio" id="customRadio3">
+                    <label for="customRadio3"><span>Katılıyorum</span></label>
+                  </div>
+                </li>
+                <li class="card__quiz-list__item">
+                  <div class="form-group custom-radio">
+                    <input type="radio" id="customRadio4">
+                    <label for="customRadio4"><span>Kesinlikle Katılıyorum</span></label>
+                  </div>
+                </li>
+                <li class="card__quiz-list__item">
+                  <div class="form-group custom-radio">
+                    <input type="radio" id="customRadio5">
+                    <label for="customRadio5"><span>Kararsızım</span></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card__quiz-item card__quiz-item--cols">
+            <header class="card__quiz-header">
+              <h3 class="card__quiz-title">İŞE ALIM SÜRECİ DEĞERLENDİRMESİ</h3>
+            </header>
+            <div class="card__quiz-body">
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <ul class="card__quiz-list">
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio1">
+                      <label for="customRadio1"><span>İşindeki bilgi ve deneyimi yetersizdir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio2">
+                      <label for="customRadio2"><span>İşindeki bilgi ve deneyimi sınırlı seviyededir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio3">
+                      <label for="customRadio3"><span>İşindeki bilgi ve deneyimi yeterli seviyededir, verilen işleri eksiksiz yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio4">
+                      <label for="customRadio4"><span>İşindeki bilgi ve deneyimi iyi seviyededir, verilen işleri beklentinin üzerinde bir hız ve kalitede yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio5">
+                      <label for="customRadio5"><span>İşindeki bilgi ve deneyimi üst seviyededir.</span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <ul class="card__quiz-list">
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio1">
+                      <label for="customRadio1"><span>İşindeki bilgi ve deneyimi yetersizdir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio2">
+                      <label for="customRadio2"><span>İşindeki bilgi ve deneyimi sınırlı seviyededir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio3">
+                      <label for="customRadio3"><span>İşindeki bilgi ve deneyimi yeterli seviyededir, verilen işleri eksiksiz yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio4">
+                      <label for="customRadio4"><span>İşindeki bilgi ve deneyimi iyi seviyededir, verilen işleri beklentinin üzerinde bir hız ve kalitede yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio5">
+                      <label for="customRadio5"><span>İşindeki bilgi ve deneyimi üst seviyededir.</span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <ul class="card__quiz-list">
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio1">
+                      <label for="customRadio1"><span>İşindeki bilgi ve deneyimi yetersizdir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio2">
+                      <label for="customRadio2"><span>İşindeki bilgi ve deneyimi sınırlı seviyededir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio3">
+                      <label for="customRadio3"><span>İşindeki bilgi ve deneyimi yeterli seviyededir, verilen işleri eksiksiz yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio4">
+                      <label for="customRadio4"><span>İşindeki bilgi ve deneyimi iyi seviyededir, verilen işleri beklentinin üzerinde bir hız ve kalitede yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio5">
+                      <label for="customRadio5"><span>İşindeki bilgi ve deneyimi üst seviyededir.</span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <ul class="card__quiz-list">
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio1">
+                      <label for="customRadio1"><span>İşindeki bilgi ve deneyimi yetersizdir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio2">
+                      <label for="customRadio2"><span>İşindeki bilgi ve deneyimi sınırlı seviyededir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio3">
+                      <label for="customRadio3"><span>İşindeki bilgi ve deneyimi yeterli seviyededir, verilen işleri eksiksiz yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio4">
+                      <label for="customRadio4"><span>İşindeki bilgi ve deneyimi iyi seviyededir, verilen işleri beklentinin üzerinde bir hız ve kalitede yerine getirir.</span></label>
+                    </div>
+                  </li>
+                  <li class="card__quiz-list__item">
+                    <div class="form-group custom-radio">
+                      <input type="radio" id="customRadio5">
+                      <label for="customRadio5"><span>İşindeki bilgi ve deneyimi üst seviyededir.</span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="button-group">
+                <input type="submit" class="button button--size-md button--aqua" value="kaydet">
+                <input type="submit" class="button button--size-md button--aqua" value="Onayla">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

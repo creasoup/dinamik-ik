@@ -215,7 +215,7 @@
 
     [type="checkbox"]:not(:checked) + label,
     [type="checkbox"]:checked + label {
-      width: 20px;
+      // width: 20px;
       height: 20px;
       position: relative;
       cursor: pointer;
@@ -239,8 +239,8 @@
       content: "";
       position: absolute;
       top: 0;
-      right: 0;
-      left: 0;
+      // right: 0;
+      left: 5px;
       bottom: 0;
       margin: auto;
       width: 10px;
@@ -310,5 +310,32 @@
 
   .form-control--error {
     color: $red !important; 
+  }
+
+  .form-control--warning {
+    color: $yellow !important; 
+  }
+
+  .checkbox-group {
+    display: flex !important;
+    flex-direction: row !important;
+
+    .custom-checkbox {
+      margin-right: 25px;
+    }
+
+    .button--link {
+      margin-left: 5px;
+      font-size: 75%;
+    }
+  }
+
+  .list__item-form-group__col {
+    .custom-checkbox [type="checkbox"]:not(:checked) + label,
+    .custom-checkbox [type="checkbox"]:checked + label, 
+    .custom-radio [type="checkbox"]:not(:checked) + label,
+    .custom-radio [type="checkbox"]:checked + label {
+      width: 20px;
+    }
   }
 }

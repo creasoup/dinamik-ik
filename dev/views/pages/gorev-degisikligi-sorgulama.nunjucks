@@ -1,0 +1,89 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Gorev Degisikligi Sorgulama
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+{% include "./modals/personal-gorev-degisikligi.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header">
+          <h2 class="card__title">Görev Değişikliği Sorgulama</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Talep No</th>
+                  <th>Durum</th>
+                  <th>Geçerlilik Tarihi</th>
+                  <th>Personel Adı Soyadı</th>
+                  <th>Talep Nedeni</th>
+                  <th>Açıklama</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000</td>
+                  <td><span class="form-control--success">Onaylandı</span></td>
+                  <td>00.00.0000 00:00 AM</td>
+                  <td>Batuhan Özçelik</td>
+                  <td>Görev Değişikliği</td>
+                  <td>Görev değişikliğinin tamamlanabilmesi için süreci sonlandırmalısınız.</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Süreci Sonlandır</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>0000</td>
+                  <td><span class="form-control--warning">Süreç Devam Ediyor</span></td>
+                  <td>00.00.0000 00:00 AM</td>
+                  <td>Batuhan Özçelik</td>
+                  <td>Görev Değişikliği</td>
+                  <td>Görev değişikliğinin tamamlanabilmesi için süreci sonlandırmalısınız.</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Süreci Sonlandır</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>0000</td>
+                  <td><span class="form-control--error">Reddedildi</span></td>
+                  <td>00.00.0000 00:00 AM</td>
+                  <td>Batuhan Özçelik</td>
+                  <td>Görev Değişikliği</td>
+                  <td>Görev değişikliğinin tamamlanabilmesi için süreci sonlandırmalısınız.</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Süreci Sonlandır</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

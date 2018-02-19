@@ -57,6 +57,14 @@
     font-weight: bold;
   }
 
+  .tr-waiting td {
+    background: rgba(245,166,35,0.10);
+  }
+
+  .tr-error td {
+    background: rgba(208,2,27,0.10);
+  }
+
   .tr-transparent {
     background: transparent !important;
   }
@@ -77,6 +85,13 @@
     opacity: 0.4;
     border: 1px solid #00A8E1;
     margin: 0 0 40px 0;
+    padding: 0;
+  }
+
+  .hr-gray-style {
+    opacity: 0.5;
+    border: 1px solid #D8D8D8;
+    margin: 15px 0 25px 0;
     padding: 0;
   }
 }

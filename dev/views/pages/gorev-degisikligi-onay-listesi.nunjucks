@@ -1,0 +1,147 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Gorev Degisikligi Onay Listesi
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header">
+          <h2 class="card__title">Onay Bekleyen Görev Değişiklikleri</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Talep No</th>
+                  <th>Talep Eden Kişi</th>
+                  <th>Talep Tarihi</th>
+                  <th>Talep Nedeni</th>
+                  <th>Personel Adı Soyadı</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1363</td>
+                  <td>Mustafa Murat Uluer</td>
+                  <td>10.05.2012, 17.45</td>
+                  <td>Lorem Ipsum is simply dummy text of the printing…</td>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">İncele</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1363</td>
+                  <td>Mustafa Murat Uluer</td>
+                  <td>10.05.2012, 17.45</td>
+                  <td>Lorem Ipsum is simply dummy text of the printing…</td>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">İncele</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1363</td>
+                  <td>Mustafa Murat Uluer</td>
+                  <td>10.05.2012, 17.45</td>
+                  <td>Lorem Ipsum is simply dummy text of the printing…</td>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">İncele</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header">
+          <h2 class="card__title">Onaylanan Görev Değişiklikleri</h2>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Talep No</th>
+                  <th>Talep Eden Kişi</th>
+                  <th>Talep Tarihi</th>
+                  <th>Talep Nedeni</th>
+                  <th>Personel Adı Soyadı</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1363</td>
+                  <td>Mustafa Murat Uluer</td>
+                  <td>10.05.2012, 17.45</td>
+                  <td>Lorem Ipsum is simply dummy text of the printing…</td>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Detayları Göster</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1363</td>
+                  <td>Mustafa Murat Uluer</td>
+                  <td>10.05.2012, 17.45</td>
+                  <td>Lorem Ipsum is simply dummy text of the printing…</td>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Detayları Göster</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1363</td>
+                  <td>Mustafa Murat Uluer</td>
+                  <td>10.05.2012, 17.45</td>
+                  <td>Lorem Ipsum is simply dummy text of the printing…</td>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--aqua">Detayları Göster</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

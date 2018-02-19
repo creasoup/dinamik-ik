@@ -1,0 +1,159 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	ICC - Bireysel Performans Degerlendirme
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Hedef Envanteri</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Hedef</th>
+                    <th>Başarı Kriteri</th>
+                    <th>Gerçekleşen Durum</th>
+                    <th>Ağırlık</th>
+                    <th>Değerlendirme</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Aksesuar Ciro Hedeflerinin Gerçekleştirilmesi</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>20</td>
+                    <td>85</td>
+                  </tr>
+                  <tr>
+                    <td>İş Tekrarı Sonuçlarının Türkiye Ortalaması Altında Olması</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>20</td>
+                    <td>85</td>
+                  </tr>
+                  <tr>
+                    <td>Kişi Bazında Türkiye Ortalamasının Üstünde CSS Sonucu Elde Edilmesi</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>20</td>
+                    <td>85</td>
+                  </tr>
+                  <tr>
+                    <td>Toplam SSH Ciro Hedefinin Gerçekleştirilmesi</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>20</td>
+                    <td>85</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Hedef Puanı</td>
+                    <td>99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Değerlendirme</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th width="90%">Temel Yetkinlikler</th>
+                    <th align="center" style="text-align:center;">Değerlendirme</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Proble Çözme</td>
+                    <td align="center" style="text-align:center;">100</td>
+                  </tr>
+                  <tr>
+                    <td>Proble Çözme</td>
+                    <td align="center" style="text-align:center;">100</td>
+                  </tr>
+                  <tr>
+                    <td>Proble Çözme</td>
+                    <td align="center" style="text-align:center;">100</td>
+                  </tr>
+                  <tr>
+                    <td>Proble Çözme</td>
+                    <td align="center" style="text-align:center;">100</td>
+                  </tr>
+                  <tr>
+                    <td align="right" style="text-align:right;">Performans Puanı:</td>
+                    <td align="center" style="text-align:center;">106</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Performans Puanı</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Tarih</th>
+                    <th>Bireysel Hedef</th>
+                    <th>İş Bilgi ve Becerileri</th>
+                    <th>Temel Yetkinlik</th>
+                    <th>Performans Puanı</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>16.01.2009</td>
+                    <td>%60</td>
+                    <td>%0</td>
+                    <td>%0</td>
+                    <td>102</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

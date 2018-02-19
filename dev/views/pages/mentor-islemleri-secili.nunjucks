@@ -1,0 +1,61 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Mentor Islemleri Secili
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+{% include "./modals/icc-gecmis-donem-goster.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Mentee Adı: <span class="cyan-color">Tuğba Baydar</span></h2>
+          <button class="button button--aqua">Geri Dön</button>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th width="85%">Form</th>
+                    <th align="right">&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mentorluk Görüşme Kayıt Formu</td>
+                    <td align="right">
+                      <div class="button-group button-group--has-hover-active">
+                        <a href="" class="button button--aqua">Tarih Belirle</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mentorluk Programı Kapanış Kayıt Formu</td>
+                    <td align="right">
+                      <div class="button-group button-group--has-hover-active">
+                        <a href="" class="button button--aqua">Tarih Belirle</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+<div class="modal fade" id="iccGecmisDonemGoster">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Lütfen Görüntülemek İstediğiniz Dönmi Seçin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form" id="iccGecmisDonemGosterForm" method="post" action="">
+          <ul class="list list--column list--content form-layout">
+            <li class="list__item">
+              <label class="list__item-title">Performans Puanı Tarihi</label>
+              <div class="list__item-form-group">
+                <div class="selectbox">
+                  <select name="" id="" required>
+                    <option value="">Seciniz</option>
+                  </select>
+                </div>
+              </div>
+            </li>
+            <li class="list__item list__item-footer">
+              <label class="list__item-title no-after">&nbsp;</label>
+              <input type="submit" class="button button--aqua button--size-sm" value="Göster">
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

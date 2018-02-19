@@ -1,0 +1,92 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	ICC - Bireysel Performans Degerlendirme
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+{% include "./modals/icc-gecmis-donem-goster.nunjucks" %}
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Geçmiş Dönem Performansı</h2>
+          <div class="col-md-6 card__header-form items-horizontal">
+            <div class="form-group items-horizontal__item items-horizontal__item-lg">
+              <input type="text" class="form-control" placeholder="Aradığınız kişi adını yazınız..">
+            </div>
+            <div class="form-group items-horizontal__item">
+              <button class="button button--aqua">Ara</button>
+            </div>
+          </div>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Sicil No</th>
+                    <th>Adı Soyadı</th>
+                    <th width="250">İş Yeri</th>
+                    <th width="200">Birimi / Bölgesi</th>
+                    <th width="200">Son 3 Yıl Performansı</th>
+                    <th align="right">&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12109</td>
+                    <td>Ahber Buçukoğlu</td>
+                    <td>Dos Merkez Şekerpınar VW Binek & Ticari Araç - VW Binek & Ticari SSH</td>
+                    <td>Yedek Parça Koordinasyon & Aksesu</td>
+                    <td>000</td>
+                    <td align="right">
+                      <div class="button-group button-group--has-hover-active">
+                        <a href="" class="button button--cyan" data-toggle="modal" data-target="#iccGecmisDonemGoster">Göster</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12109</td>
+                    <td>Ahber Buçukoğlu</td>
+                    <td>Dos Merkez Şekerpınar VW Binek & Ticari Araç - VW Binek & Ticari SSH</td>
+                    <td>Yedek Parça Koordinasyon & Aksesu</td>
+                    <td>000</td>
+                    <td align="right">
+                      <div class="button-group button-group--has-hover-active">
+                        <a href="" class="button button--cyan" data-toggle="modal" data-target="#iccGecmisDonemGoster">Göster</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12109</td>
+                    <td>Ahber Buçukoğlu</td>
+                    <td>Dos Merkez Şekerpınar VW Binek & Ticari Araç - VW Binek & Ticari SSH</td>
+                    <td>Yedek Parça Koordinasyon & Aksesu</td>
+                    <td>000</td>
+                    <td align="right">
+                      <div class="button-group button-group--has-hover-active">
+                        <a href="" class="button button--cyan" data-toggle="modal" data-target="#iccGecmisDonemGoster">Göster</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

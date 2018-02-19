@@ -1,0 +1,16 @@
+<div class="modal fade" id="personelGorevDegisikligi">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Çalışanlarınızın Birbiri Yerine Hareketi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Her türlü oluşturulacak “Çalışanların Birbirine Yerine Hareketi” sırasında, çalışanınız 1. çalışan bilgi alanınından işaretlenmelidir. Yerin hareket oluşturacak diğer çalışan ise; 2. çalışan bilgi alanından işaretlenmelidir. Eğer talebiniz bu kapsamda ise; lütfen sürece devam ediniz.</p>
+        <button type="button" class="button button--size-md button--aqua m-top50" data-dismiss="modal" aria-label="Close">Tamam</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Anket
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">İşe Alım Memnuniyet Anketi</h2>
+          <div class="button-group">
+            <input type="submit" class="button button--size-md button--aqua" value="Geri Dön">
+            <input type="submit" class="button button--size-md button--aqua" value="Yazdır">
+          </div>
+        </header>
+        <div class="card__main card__quiz">
+          <div class="card__main card__main--listing">
+            <ul class="list list--content form-layout">
+              <li class="list__item">
+                <label class="list__item-title">Adı Soyadı</label>
+                <div class="list__item-form-group">
+                  <input type="text" class="form-control" value="Ayşe Ekin Osmanoğulları" disabled="disabled">
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Pozisyon</label>
+                <div class="list__item-form-group">
+                  <input type="email" class="form-control" value="Doğuş Otomotiv Servis ve Ticaret A.Ş." disabled="disabled">
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">Bölüm</label>
+                <div class="list__item-form-group">
+                  <input type="email" class="form-control" value="DOS Merkez Şekerpınar" disabled="disabled">
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <hr class="hr-gray-style">
+
+          <div class="card__quiz-item">
+            <header class="card__quiz-header">
+              <h3 class="card__quiz-title">GENEL MEMNUNİYET</h3>
+              <p class="card__quiz-description">İşe alım sürecinden genel olarak memnunum.</p>
+            </header>
+            <div class="card__quiz-body card__quiz-body--result">
+              <p>Kesinlikle katılmıyorum</p>
+            </div>
+          </div>
+
+          <div class="card__quiz-item card__quiz-item--cols">
+            <header class="card__quiz-header">
+              <h3 class="card__quiz-title">İŞE ALIM SÜRECİ DEĞERLENDİRMESİ</h3>
+            </header>
+            <div class="card__quiz-body card__quiz-body--result">
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <p class="card__quiz-description cyan-color">Kesinlikle katılmıyorum</p>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <p class="card__quiz-description cyan-color">Kesinlikle katılmıyorum</p>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <p class="card__quiz-description cyan-color">Kesinlikle katılmıyorum</p>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <p class="card__quiz-description cyan-color">Kesinlikle katılmıyorum</p>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <p class="card__quiz-description cyan-color">Kesinlikle katılmıyorum</p>
+              </div>
+              <div class="card__quiz-col">
+                <p class="card__quiz-description">Pozisyonun kapatılma süresinin makul bir süre olduğunu düşünüyorum.</p>
+                <p class="card__quiz-description cyan-color">Kesinlikle katılmıyorum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
