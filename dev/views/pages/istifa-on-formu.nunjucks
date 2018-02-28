@@ -1,0 +1,147 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	İstifa Ön Formu
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">İstifa Ön Formu</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="form u-full form-full-max">
+            <ul class="list list--column list--content list-no-col form-layout">
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Adı Soyadı</label>
+                <div class="list__item-form-group">
+                  <input type="text" class="form-control">
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Şirket Adı</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Depertman/Bölüm</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Görev/Ünvan</label>
+                <div class="list__item-form-group">
+                  <input type="text" class="form-control">
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">İşe Başlama Tarihi</label>
+                <div class="list__item-form-group">
+                  <input type="date" class="form-control">
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">İşten Ayrılma Tarihi</label>
+                <div class="list__item-form-group">
+                  <input type="date" class="form-control">
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Personelin İstifası İstenilen İstifa mıdır?</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <label class="list__item-title">İstifanın Nedeni</label>
+                <div class="list__item-form-group checkbox-group checkbox-group--cols row">
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"><span>Ekip ile İlişkiler</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2"><span>Yönetici ile İlişkiler</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3"><span>Şirket Yapısı ve Politikaları</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4"><span>Çalışma Saatleri</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5"><span>Ücret & Ödenekler</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6"><span>Sağlık Nedenleri</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7"><span>Askerlik</span></label>
+                  </div>
+                  <div class="form-group custom-checkbox col-md-4">
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8"><span>Kişisel Nedenler (Evlilik, Doğum, Emeklilik, Taşınma...)</span></label>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">İstifa nedeni Askerklik ise; <br> askerden gelince kişi ile çalışmaya devam etmek isteniyor mu?</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item no-height valign-top">
+                <label class="list__item-title">Yönetici Görüşleri</label>
+                <div class="list__item-form-group">
+                  <textarea name="" id="" cols="4" rows="4" class="form-control"></textarea>
+                  <div class="button-group m-top-10">
+                    <button class="button button--aqua button--size-md">Kaydet</button>
+                    <button class="button button--aqua button--size-md">Onayla</button>
+                    <button class="button button--aqua button--size-md">Yazdır</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

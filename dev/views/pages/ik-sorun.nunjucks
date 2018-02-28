@@ -1,0 +1,58 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	İK’ya Ulaşın
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row personal-card personal-card--no-aside">
+      <div class="col-md-12 personal-card__info">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">İK’ya Ulaşın</h2>
+        </header>
+        <div class="card__main card__main--listing">
+          <div class="form u-full form-full-max">
+            <ul class="list list--column list--content list-no-col form-layout">
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Adı Soyadı</label>
+                <div class="list__item-form-group">
+                  <input type="text" class="form-control">
+                </div>
+              </li>
+              <li class="list__item u-full--max">
+                <label class="list__item-title">Konu</label>
+                <div class="list__item-form-group">
+                  <div class="selectbox">
+                    <select name="" id="" required>
+                      <option value="">Seçiniz</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item no-height valign-top">
+                <label class="list__item-title">Açıklama</label>
+                <div class="list__item-form-group">
+                  <textarea name="" id="" cols="4" rows="4" class="form-control"></textarea>
+                  <button class="button button--aqua button--size-md m-top-10">Gönder</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

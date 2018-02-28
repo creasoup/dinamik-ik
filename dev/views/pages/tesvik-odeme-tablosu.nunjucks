@@ -1,0 +1,169 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Ucret Artis Tablosu
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Teşvik Ödeme Tablosu</h2>
+          <div class="card__header--actions">
+            <a href="" class="card__header--actions-title important m-right-15">KURLAR</a>
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped table--vertical-top">
+              <thead>
+                <tr>
+                  <th width="100">Adı Soyadı</th>
+                  <th width="150">Bölümü</th>
+                  <th width="150">Görevi</th>
+                  <th>Ünvanı</th>
+                  <th>İşe Giriş <br> Tarihi</th>
+                  <th>Kademe</th>
+                  <th>Perf. <br> Perf Puan</th>
+                  <th>Bütçeye Esas <br> Üc./Politika Üc.</th>
+                  <th>Önerilen K.S./ <br> Öderilen Tut.</th>
+                  <th>Nihai K.S./ <br> Nihai Tut.</th>
+                  <th>Fark % <br> Fark TL</th>
+                  <th>B.E.Ü. <br> G.K.S.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>VW Binek & Ticari SHH Bölge Servisi</td>
+                  <td>Müşteri İlişkileri ve Operasyon Yöneticisi</td>
+                  <td>Uzman Yardımcısı</td>
+                  <td>01.01.2000</td>
+                  <td>100</td>
+                  <td><strong>0</strong> <br> 100</td>
+                  <td><strong>0.00</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>%0</strong> <br> 0.00</td>
+                  <td><strong>0</strong></td>
+                </tr>
+                <tr>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>VW Binek & Ticari SHH Bölge Servisi</td>
+                  <td>Müşteri İlişkileri ve Operasyon Yöneticisi</td>
+                  <td>Uzman Yardımcısı</td>
+                  <td>01.01.2000</td>
+                  <td>100</td>
+                  <td><strong>0</strong> <br> 100</td>
+                  <td><strong>0.00</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>%0</strong> <br> 0.00</td>
+                  <td><strong>0</strong></td>
+                </tr>
+                <tr>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>VW Binek & Ticari SHH Bölge Servisi</td>
+                  <td>Müşteri İlişkileri ve Operasyon Yöneticisi</td>
+                  <td>Uzman Yardımcısı</td>
+                  <td>01.01.2000</td>
+                  <td>100</td>
+                  <td><strong>0</strong> <br> 100</td>
+                  <td><strong>0.00</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>%0</strong> <br> 0.00</td>
+                  <td><strong>0</strong></td>
+                </tr>
+                <tr>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>VW Binek & Ticari SHH Bölge Servisi</td>
+                  <td>Müşteri İlişkileri ve Operasyon Yöneticisi</td>
+                  <td>Uzman Yardımcısı</td>
+                  <td>01.01.2000</td>
+                  <td>100</td>
+                  <td><strong>0</strong> <br> 100</td>
+                  <td><strong>0.00</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>%0</strong> <br> 0.00</td>
+                  <td><strong>0</strong></td>
+                </tr>
+                <tr>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>VW Binek & Ticari SHH Bölge Servisi</td>
+                  <td>Müşteri İlişkileri ve Operasyon Yöneticisi</td>
+                  <td>Uzman Yardımcısı</td>
+                  <td>01.01.2000</td>
+                  <td>100</td>
+                  <td><strong>0</strong> <br> 100</td>
+                  <td><strong>0.00</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>%0</strong> <br> 0.00</td>
+                  <td><strong>0</strong></td>
+                </tr>
+                <tr>
+                  <td>Ayşe Ekin Osmanoğulları</td>
+                  <td>VW Binek & Ticari SHH Bölge Servisi</td>
+                  <td>Müşteri İlişkileri ve Operasyon Yöneticisi</td>
+                  <td>Uzman Yardımcısı</td>
+                  <td>01.01.2000</td>
+                  <td>100</td>
+                  <td><strong>0</strong> <br> 100</td>
+                  <td><strong>0.00</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>0</strong> <br> 0.00</td>
+                  <td><strong>%0</strong> <br> 0.00</td>
+                  <td><strong>0</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

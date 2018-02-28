@@ -820,4 +820,31 @@ $cardBottomSpace: 20px;
       @include regular;
     }
   }
+
+  .form-full-max {
+    .list--content.form-layout .list__item-title {
+      width: 210px;
+      min-width: 210px;
+    }
+
+    .form-group {
+      max-width: inherit;
+    }
+
+    .list--content.form-layout .u-full--max {
+      max-width: 60%;
+    }
+  }
+
+  .checkbox-group--cols {
+    height: auto !important;
+    margin-top: 25px;
+    margin-bottom: 25px !important;
+
+    .custom-checkbox {
+      max-width: 33.33333% !important;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+  }
 }

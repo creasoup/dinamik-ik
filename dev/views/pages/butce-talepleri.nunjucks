@@ -1,0 +1,273 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Bütçe Onay
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Bütçe Talebi</h2>
+          <div class="card__header--actions">
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped table-striped--type2">
+              <thead>
+                <tr>
+                  <th>Bölüm</th>
+                  <th>Görev</th>
+                  <th>Personel Grubu</th>
+                  <th>Mevcut</th>
+                  <th>Bütçe</th>
+                  <th>Oca.</th>
+                  <th>Şub.</th>
+                  <th>Mar.</th>
+                  <th>Nis.</th>
+                  <th>May.</th>
+                  <th>Haz.</th>
+                  <th>Tem.</th>
+                  <th>Agu.</th>
+                  <th>Eyl.</th>
+                  <th>Eki.</th>
+                  <th>Kas.</th>
+                  <th>Ara.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mali İşler Direktörlüğü <br> Genel Muhasebe</td>
+                  <td>Muhasebe <br> Müdürü</td>
+                  <td>Kadrolu</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr class="table-result">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button class="button button--size-md button--aqua">Onayla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Genel Durum Bilgisi</h2>
+          <div class="card__header--actions">
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped table-striped--type2">
+              <thead>
+                <tr>
+                  <th>Bölüm</th>
+                  <th>Görev</th>
+                  <th>Personel Grubu</th>
+                  <th>İşe Alım</th>
+                  <th>İşten Ayrılma</th>
+                  <th>Veri Transferi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="table-result">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Bütçe Talebi</h2>
+          <div class="card__header--actions">
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped table-striped--type2">
+              <thead>
+                <tr>
+                  <th>Adı Soyadı</th>
+                  <th>Mevcut Görev</th>
+                  <th>Yeni Görev</th>
+                  <th>Hareket Türü</th>
+                  <th>Dönem</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr class="table-result">
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

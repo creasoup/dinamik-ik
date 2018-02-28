@@ -1,0 +1,73 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Bütçe Talebi
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua">
+    <div class="card__main">
+      <div class="row">
+        <div class="col-md-12">
+          <header class="card__header">
+            <h2 class="card__title">Bütçe Talebi</h2>
+          </header>
+        </div>
+        <div class="col-md-7">
+          <ul class="list list--item-full list--content form-layout">
+            <li class="list__item list__item--horizontal m-bottom-25">
+              <label class="list__item-title">Mevcut Versiyon Adı</label>
+              <div class="list__item-form-group">
+                <div class="selectbox list__item-element">
+                  <select class="form-control" name="" id="" required="">
+                    <option value="01">Seciniz</option>
+                  </select>
+                </div>
+                <div class="list__item-element">
+                  <div class="button-group">
+                    <button class="button button--aqua">Göster</button>
+                    <button class="button button--red">Sil</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list__item list__item--horizontal m-bottom-25">
+              <label class="list__item-title">Yeni Versiyon Adı</label>
+              <div class="list__item-form-group">
+                <div class="list__item-element">
+                  <input type="text" class="form-control">
+                </div>
+                <div class="list__item-element">
+                  <div class="button-group">
+                    <button class="button button--aqua">Yeni Oluştur</button>
+                    <button class="button button--aqua">Kopyalayarak Yeni Oluştur</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="push-md-1 col-md-4">
+          <div class="panel panel--warning is-minHeight">
+            <p>Yeni versiyon oluşturmak için <strong>“Yeni Versiyon Adı“</strong> nı yazıp <strong>“Yeni Oluştur”</strong> butonuna tıklayın.</p>
+            <p>Mevcut versiyonu görüntülemek için <strong>“Mecut Versiyon Adı”</strong> alanından seçim yaparak <strong>“Göster”</strong> butonuna tıklayın.</p>
+            <p>Mevut bir versiyonu kopyalayarak yeni bir versiyon oluşturmak için kopyalanacak versiyonu seçip <strong>“Koypyalayarak Yeni Oluştur”</strong> butonuna tıklayın.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

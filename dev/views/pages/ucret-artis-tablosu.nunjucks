@@ -1,0 +1,263 @@
+{% extends "./templates/layout.nunjucks" %}
+
+{% block title %}
+	Ucret Artis Tablosu
+{% endblock %}
+
+{% block bodyClass %}{% endblock %}
+
+{% block content %}
+
+{% include "./partials/sidebar-calisan.nunjucks" %}
+
+
+<div class="app container">
+	
+	{% include "./partials/header.nunjucks" %}
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="card__main card__main--tabs">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item nav-item--none">
+          <a class="nav-link" href="#">Bütçe Takip Tablosu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#beyazYaka" role="tab">Beyaz Yaka</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#maviYaka" role="tab">Mavi Yaka</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="beyazYaka" role="tabpanel">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Mevcut Ücret Toplamı</th>
+                  <th>Önerilen Artış Oranı</th>
+                  <th>Önerilen Ücret Toplamı</th>
+                  <th>Yeni Artış Oranı</th>
+                  <th>Yeni Ücret Toplamı</th>
+                  <th>Bütçe Aşımı</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>71,50</td>
+                  <td>% 5.59</td>
+                  <td>75,323</td>
+                  <td>% 5.59</td>
+                  <td>75,323</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane__footer">
+            <button class="button button--size-md button--aqua">Ücret Artış Oranlarını Göster</button>
+            <div class="align-right">
+              <span class="fsize-sm important">ONAYLAMA İŞLEMİ TAMAMLANMAMIŞTIR!</span>
+              <button class="button button--size-md button--aqua">Onayla</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="maviYaka" role="tabpanel">
+          <header class="card__header card__header--cols">
+            <h2 class="card__title">Süreci Sonlanan Talep Bilgileri</h2>
+          </header>
+          <div class="card__main">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th width="220">Talep No</th>
+                    <th width="300">Görev</th>
+                    <th>Onaylayacak <br> Kişi</th>
+                    <th>Talep <br> Tarihi</th>
+                    <th>Durum</th>
+                    <th>&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>00000</td>
+                    <td>İşe Alım Yöneticisi</td>
+                    <td>Tuğba Baydar</td>
+                    <td>00.00.0000</td>
+                    <td class="td-success"><span>Onaylandı</span></td>
+                    <td>
+                      <div class="button-group button-group--has-hover-active float-right">
+                        <a href="#" class="button button--size-sm button--aqua">Görüntüle</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>00000</td>
+                    <td>İşe Alım Yöneticisi</td>
+                    <td>Tuğba Baydar</td>
+                    <td>00.00.0000</td>
+                    <td class="td-error"><span>Redddildi</span></td>
+                    <td>
+                      <div class="button-group button-group--has-hover-active float-right">
+                        <a href="#" class="button button--size-sm button--aqua">Görüntüle</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card--widget col-widget card--widget-aqua no-height">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="card__header card__header--cols">
+          <h2 class="card__title">Ücret Artış Tablosu</h2>
+          <div class="card__header--actions">
+            <span class="card__header--actions-title">DIŞA AKTAR:</span>
+            <ul class="exports">
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/pdf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xls.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/xlsx.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/rtf.png" alt="">
+                </a>
+              </li>
+              <li class="exports__item">
+                <a href="">
+                  <img src="assets/images/csv.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <div class="card__main">
+          <div class="table-responsive">
+            <table class="table table-striped table--vertical-top">
+              <thead>
+                <tr>
+                  <th>Sicil No</th>
+                  <th>Adı Soyadı</th>
+                  <th>Bölümü</th>
+                  <th>Görevi / Unvanı</th>
+                  <th>Kademe</th>
+                  <th>Perf.</th>
+                  <th>Mevcut Ücret</th>
+                  <th>Mevcut PIR</th>
+                  <th>Önerilen Ücret</th>
+                  <th>Önerilen PIR</th>
+                  <th>Yeni Artış</th>
+                  <th>Yeni Ücret</th>
+                  <th>Yeni PIR</th>
+                  <th>Fark</th>
+                  <th>Onaylanan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000</td>
+                  <td>Aydın Çıtak</td>
+                  <td>Yedek Parça ve Lojistik</td>
+                  <td>Audi SSH Eğitimi - Eğitim Yetkilisi</td>
+                  <td>??</td>
+                  <td>??</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>
+                    <div>0.000</div>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--cyan">Güncelle</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>0000</td>
+                  <td>Aydın Çıtak</td>
+                  <td>Yedek Parça ve Lojistik</td>
+                  <td>Audi SSH Eğitimi - Eğitim Yetkilisi</td>
+                  <td>??</td>
+                  <td>??</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>
+                    <div>0.000</div>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--cyan">Güncelle</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-striped table--vertical-top">
+              <thead>
+                <tr>
+                  <th colspan="15">
+                    <span class="important">TERFİ (Bu çalışanınızın ücretinde değişiklik yapamazsınız.)</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000</td>
+                  <td>Aydın Çıtak</td>
+                  <td>Yedek Parça ve Lojistik</td>
+                  <td>Audi SSH Eğitimi - Eğitim Yetkilisi</td>
+                  <td>??</td>
+                  <td>??</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>0.000</td>
+                  <td>%00</td>
+                  <td>0.000</td>
+                  <td>
+                    <div>0.000</div>
+                    <div class="button-group button-group--has-hover-active">
+                      <a href="#" class="button button--size-xs button--cyan">Güncelle</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

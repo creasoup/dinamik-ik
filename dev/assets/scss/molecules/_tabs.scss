@@ -79,4 +79,25 @@
       }
     }
   }
+
+  .nav-tabs .nav-item--none {
+    a {
+      text-align: left;
+      @include light-regular;
+      font-size: 24px !important;
+      color: #00A8E1 !important;
+      background: transparent !important;
+    }
+  }
+
+  .tab-pane__footer {
+    display: flex;
+    justify-content: space-between;
+
+    .align-right {
+      .button {
+        margin-left: 30px;
+      }
+    }
+  }
 }

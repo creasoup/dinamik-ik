@@ -31,6 +31,16 @@
     }
   }
 
+  .table-striped--type2 {
+    tbody tr:nth-of-type(odd) {
+      background-color: #fff;
+    }
+  }
+
+  .table--vertical-top td {
+    vertical-align: top;
+  }
+
   tr:hover .button-group--has-hover-active {
     opacity: 1;
   }
@@ -93,5 +103,12 @@
     border: 1px solid #D8D8D8;
     margin: 15px 0 25px 0;
     padding: 0;
+  }
+
+  .table-result {
+    td {
+      background: rgba(217,221,224,0.40);
+      color: $aqua;
+    }
   }
 }

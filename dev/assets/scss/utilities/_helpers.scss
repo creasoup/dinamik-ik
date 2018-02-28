@@ -24,11 +24,19 @@
 	}
 
 	.important {
-		color: $red;
+		color: $red !important;
+	}
+
+	.success {
+		color: $green;
 	}
 
 	.cyan-color {
 		color: $cyan !important;
+	}
+
+	.fsize-sm {
+		font-size: 12px;
 	}
 
 	.d-flex {
@@ -43,6 +51,10 @@
 		&:after {
 			display:none;
 		}
+	}
+
+	.m-right-15 {
+		margin-right: 15px;
 	}
 
 	.u-full {
@@ -77,6 +89,10 @@
 
 	.m-top-50 {
 		margin-top: 50px !important;
+	}
+
+	.m-bottom-25 {
+		margin-bottom: 25px !important;
 	}
 
 	.visible-block-lg-down {
